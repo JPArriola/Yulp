@@ -1,8 +1,10 @@
 import React from "react";
+import {Route} from 'react-router-dom';
+import LoginContainer from './session/login_container';
 
 const App = () => (
   <div>
-    <h1>Yulp</h1>
+    <Route exact to='/login' component={LoginContainer} />
   </div>
 );
 
