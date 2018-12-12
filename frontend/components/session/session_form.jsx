@@ -8,8 +8,7 @@ class SessionForm extends React.Component{
 
     this.state = {
       signup : true,
-    }
-    
+    };
   }
 
   handleClick(boolean) {
@@ -19,8 +18,7 @@ class SessionForm extends React.Component{
     }
   }
 
-  render(){
-    
+  render(){  
     let {login, signup} = this.props;
 
     let form = this.state.signup ? 
@@ -42,14 +40,3 @@ class SessionForm extends React.Component{
   }
 
 export default SessionForm;
-
-
-
-  // <form>
-  //   <label htmlFor="">
-  //     <input type="text" placeholder="Email" />
-  //   </label>
-  //   <label htmlFor="">
-  //     <input type="text" placeholder="Password" />
-  //   </label>
-  // </form>
