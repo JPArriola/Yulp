@@ -35,24 +35,30 @@ class LoginForm extends React.Component{
     }
     return (
       <div>
-        <h2>Log In to Yulp</h2>
-        <p>New to Yulp? <Link to="/signup">Sign Up</Link></p>
-        <p>
-          By logging in, you agree to Yulp’s Terms of Service and Privacy
-          Policy.
-        </p>
-        <div onClick={this.handleClick}>Demo User</div>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            <input type="text" placeholder="Email" value={this.state.email} onChange={this.update('email')} />
-          </label>
-          <label>
-            <input type="text" placeholder="Password" value={this.state.password} onChange={this.update('password')}/>
-          </label>
-          <a> Forgot Password? </a>
-          <input type="submit" value="Login" />
-          {errors}
-        </form>
+        <div className="login-container">
+          <h2>Log In to Yulp</h2>
+          <div className="login-subheading">
+            New to Yulp? <Link className="signup-link" to="/signup">Sign Up</Link>
+          </div>
+          <div className="legal">
+            By logging in, you agree to Yulp’s Terms of Service and Privacy
+            Policy.
+          </div>
+          <div className="demo-button" onClick={this.handleClick}>Demo User</div>
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              <input className="session-input-boxes" type="text" placeholder="Email" value={this.state.email} onChange={this.update("email")} />
+            </label>
+            <label>
+              <input className="session-input-boxes" type="text" placeholder="Password" value={this.state.password} onChange={this.update("password")} />
+            </label>
+            <div className="forgot-link-div">
+              <Link className="forgot-link" to='/'>Forgot Password?</Link>
+            </div>
+            <input className="login-button"type="submit" value="Log In" ></input>
+            <div>{errors}</div>
+          </form>
+        </div>
       </div>
     )
   }

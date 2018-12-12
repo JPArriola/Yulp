@@ -1,0 +1,75 @@
+.session-input-boxes{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.login-container{
+  flex-flow: column, wrap;
+  width: 300px;
+}
+
+.login-button{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #d90007;
+  font-size: 16px;
+  height: 48px;
+  width: 300px;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21px;
+  color: #d32323;
+  font-weight: bold;
+  text-align: center;
+}
+
+.demo-button{
+  background-color: #4267b2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  height: 30px;
+  width: 300px;
+  padding: 5px 0px;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.legal{
+  color: #333;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.login-subheading{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.signup-link {
+  color: #0073bb;
+}
+
+.forgot-link-div {
+  color: #0073bb;
+  font-size: 12px;
+  
+  text-align: right;
+}
+
+.forgot-link {
+  color: #0073bb;
+  font-size: 12px;
+}

@@ -1,0 +1,41 @@
+.yulp-banner {
+  display: flex;
+  background: #d32323;
+  height: 65px;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.yulp-header {
+  height: 80px;
+  width: 100px;
+  font-size: 24px;
+  font-family: "RockoFLF";
+  font-weight: bold;
+  background-image: url(https://s3-media1.fl.yelpcdn.com/assets/srv0/styleguide/891ac3707136/assets/img/brand_guidelines/yelp_fullcolor@2x.png);
+  background-size: 110px 70px;
+  background-repeat: no-repeat;
+}
+
+.body-container {
+  display: flex;
+  height: 771px;
+  flex-direction: column;
+}
+
+.login-tiny-text{
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #999;
+  font-weight: normal;
+  text-align: right;
+}
+
+.login-tiny-text a{
+  color: blue;
+}
+
+.user-login{
+  width: 100%;
+}
