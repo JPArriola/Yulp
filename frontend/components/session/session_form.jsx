@@ -19,11 +19,11 @@ class SessionForm extends React.Component{
   }
 
   render(){  
-    let {login, signup} = this.props;
+    let {login, signup, errors} = this.props;
 
     let form = this.state.signup ? 
-      <LoginForm login={login}></LoginForm> :
-      <SignupForm signup={signup}></SignupForm>
+      <LoginForm login={login} errors={errors}></LoginForm> :
+      <SignupForm signup={signup} errors={errors}></SignupForm>
     
     let text = this.state.signup ?
       <p> New to Yulp? <a onClick={this.handleClick(false)}> SignUp </a></p> :
@@ -31,8 +31,11 @@ class SessionForm extends React.Component{
   
     return(
       <div>
-        { form }
-        { text }
+        <div>
+            <h2 className='yulp-banner'>Yulp</h2>
+            { form }
+            { text }
+        </div>
       </div>
     )
   }
