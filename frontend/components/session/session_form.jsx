@@ -28,15 +28,14 @@ class SessionForm extends React.Component{
     let text = this.state.signup ?
       <p> New to Yulp? <a onClick={this.handleClick(false)}> SignUp </a></p> :
       <p> Already on Yulp? <a onClick={this.handleClick(true)}> Login </a></p> 
-
   
-      return(
-        <div>
-          { form }
-          { text }
-        </div>
-      )
-    }
+    return(
+      <div>
+        { form }
+        { text }
+      </div>
+    )
   }
+}
 
 export default SessionForm;
