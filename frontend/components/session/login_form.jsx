@@ -33,18 +33,26 @@ class LoginForm extends React.Component{
     if (this.props.errors.length) {
       errors = this.props.errors;
     }
-    return (
-      <div>
+    return <div>
         <div className="login-container">
           <h2>Log In to Yulp</h2>
           <div className="login-subheading">
-            New to Yulp? <Link className="signup-link" to="/signup">Sign Up</Link>
+            New to Yulp? <Link className="signup-link" to="/signup">
+              Sign up
+            </Link>
           </div>
           <div className="legal">
             By logging in, you agree to Yulp’s Terms of Service and Privacy
             Policy.
           </div>
-          <div className="demo-button" onClick={this.handleClick}>Demo User</div>
+          <div className="demo-button" onClick={this.handleClick}>
+            Demo User
+          </div>
+          <div class="login-seperator">
+            <legend align="center">
+              ------------------OR------------------
+            </legend>
+          </div>
           <form onSubmit={this.handleSubmit}>
             <label>
               <input className="session-input-boxes" type="text" placeholder="Email" value={this.state.email} onChange={this.update("email")} />
@@ -53,14 +61,15 @@ class LoginForm extends React.Component{
               <input className="session-input-boxes" type="text" placeholder="Password" value={this.state.password} onChange={this.update("password")} />
             </label>
             <div className="forgot-link-div">
-              <Link className="forgot-link" to='/'>Forgot Password?</Link>
+              <Link className="forgot-link" to="/">
+                Forgot Password?
+              </Link>
             </div>
-            <input className="login-button"type="submit" value="Log In" ></input>
+            <input className="login-button" type="submit" value="Log In" />
             <div>{errors}</div>
           </form>
         </div>
-      </div>
-    )
+      </div>;
   }
 }
 
