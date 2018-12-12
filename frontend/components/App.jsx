@@ -6,9 +6,9 @@ import HomeContainer from "./home/home_container";
 const App = () => (
   <div>
     <Switch>
-      <Route exact to='/login' component={LoginContainer} />
-      <Route exact to='/' component={HomeContainer} />
-      <Route exact to='/signup' component={LoginContainer} />
+      <Route exact path='/login' component={LoginContainer} />
+      <Route exact path='/' component={HomeContainer} />
+      <Route exact path='/signup' component={LoginContainer} />
     </Switch>
   </div>
 );
