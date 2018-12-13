@@ -10,11 +10,16 @@
 .login-container{
   flex-flow: column, wrap;
   width: 300px;
-  
+  margin-top: 50px;
+}
+
+.signup-container{
+  flex-flow: column, wrap;
+  width: 300px;
 }
 
 .login-button{
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   background-color: #d90007;
   font-size: 16px;
   height: 48px;
@@ -92,4 +97,35 @@ h2 {
   margin-bottom: 10px;
   color: grey;
   padding: 10px;
+}
+
+.session-names{
+
+}
+
+.session-input-names{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.session-first-name{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 148px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.session-last-name{
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 5px 9px;
+  width: 147px;
+  height: 30px;
+  margin-bottom: 10px;
 }
