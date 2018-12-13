@@ -38,11 +38,7 @@ class SessionForm extends React.Component{
                 { form }
                 { text }
               </div>
-<<<<<<< HEAD
               <div className="session-img"></div>
-=======
-              <div></div>
->>>>>>> 139cb3baa7aaf6ac0ef5409a0f779f9cde8f3997
             </div>
         </div>
       </div>

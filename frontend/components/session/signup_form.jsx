@@ -27,7 +27,6 @@ class SignupForm extends React.Component {
   }
 
   render(){
-<<<<<<< HEAD
     let errors;
     if (this.props.errors.length) {
       errors = this.props.errors;
@@ -81,36 +80,6 @@ class SignupForm extends React.Component {
           </form>
         </div>
       </div>;
-=======
-    return (
-      <div>
-        <h2>Sign Up for Yulp</h2>
-        <p>Connect with great local businesses</p>
-        <p>
-          By continuing, you agree to Yulp’s Terms of Service and
-          acknowledge Yulp’s Privacy Policy.
-        </p>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            <input type="text" placeholder="First Name" value={this.state.first_name} onChange={this.update("first_name")} />
-          </label>
-          <label>
-            <input type="text" placeholder="Last Name" value={this.state.last_name} onChange={this.update("last_name")} />
-          </label>
-          <label>
-            <input type="text" placeholder="Email" value={this.state.email} onChange={this.update("email")} />
-          </label>
-          <label>
-            <input type="text" placeholder="Password" value={this.state.password} onChange={this.update("password")} />
-          </label>
-          <label>
-            <input type="text" placeholder="ZIP Code" value={this.state.zipcode} onChange={this.update("zipcode")} />
-          </label>
-          <input type="submit" value="Sign Up" />
-        </form>
-      </div>
-    )
->>>>>>> 139cb3baa7aaf6ac0ef5409a0f779f9cde8f3997
   }
 }
 
