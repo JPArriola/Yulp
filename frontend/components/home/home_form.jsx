@@ -13,16 +13,29 @@ class HomeForm extends React.Component{
     this.props.logout();
   }
 
+  loggedIn(){
+    if(this.props.currentUser){
+      return (
+        <form onSubmit={this.handleSubmit}>
+          <input type="submit" value="Logout" />
+        </form>
+      )
+    } else {
+      return (
+        <div>
+          <Link to='/login'>Log in</Link>
+          <Link to='/signup'>Sign Up</Link>
+          <Link to='/login'>Demo User</Link>
+        </div>
+      )
+    }
+  }
+
   render(){
     return (
       <div>
         <h2>YULP HOME PAGE!!!</h2>
-        <form onSubmit={this.handleSubmit}>
-          <input type="submit" value="Logout" />
-        </form>
-        <Link to='/login'>Log in</Link>
-        <Link to='/signup'>Sign Up</Link>
-        <Link to='/login'>Demo User</Link>
+        {this.loggedIn()}
       </div>
     )
   }

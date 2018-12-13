@@ -70,7 +70,7 @@ class SignupForm extends React.Component {
             <label>
               <input className="session-input-boxes" type="text" placeholder="ZIP Code" value={this.state.zipcode} onChange={this.update("zipcode")} />
             </label>
-            <div className="legal">
+            <div className="legal-left">
               You also understand that Yulp won't send marketing emails
               about Yulp’s products, services, and local events. You can't
               subscribe at any time.

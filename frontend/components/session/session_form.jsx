@@ -35,10 +35,10 @@ class SessionForm extends React.Component{
           <div className='yulp-banner'><div className='yulp-header'></div></div>
             <div className='body-container'>  
               <div className='user-login'>
-              { form }
-              { text }
+                { form }
+                { text }
               </div>
-              <div></div>
+              <div className="session-img"></div>
             </div>
         </div>
       </div>

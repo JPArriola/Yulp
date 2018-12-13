@@ -4,7 +4,7 @@ import HomeForm from './home_form';
 
 const mSP = (state, ownProps) => {
   return ({
-    
+    currentUser: state.session.id,
   });
 };
 
