@@ -22,10 +22,10 @@ class HomeForm extends React.Component{
       )
     } else {
       return (
-        <div>
+        <div class="nav-bar-right">
+          <Link to='/login'>Demo User</Link>
           <Link to='/login'>Log in</Link>
           <Link to='/signup'>Sign Up</Link>
-          <Link to='/login'>Demo User</Link>
         </div>
       )
     }
@@ -33,9 +33,23 @@ class HomeForm extends React.Component{
 
   render(){
     return (
-      <div>
-        <h2>YULP HOME PAGE!!!</h2>
-        {this.loggedIn()}
+      <div class="home-page">
+        <div class="home-main-section">
+          <div class="home-main-nav-bar">
+            <div class="home-nav-bar">
+              <div class="nav-bar-left">
+                Write a Review!
+              </div>
+              <div >
+                {this.loggedIn()}
+              </div>
+            </div>
+          </div>
+          <div>
+            Logooooo
+          </div>
+
+        </div>
       </div>
     )
   }

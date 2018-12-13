@@ -1,0 +1,33 @@
+.home-main-section{
+  background: url(https://s3-media2.fl.yelpcdn.com/bphoto/56iJtZPYDgoy0hSV4Ez5zw/o.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-nav-bar{
+  display: flex;
+  flex-direction: row;
+  background-color: pink;
+  justify-content: space-around;
+  height: 38px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.nav-bar-left{
+  display: flex;
+  justify-items: left;
+}
+
+.nav-bar-right{
+  display: flex;
+  background-color: blue;
+  justify-content: space-between;
+  
+  width: 300px;
+}
+
