@@ -22,7 +22,7 @@ class HomeForm extends React.Component{
       )
     } else {
       return (
-        <div class="nav-bar-right">
+        <div className="nav-bar-right">
           <Link to='/login'>Demo User</Link>
           <Link to='/login'>Log in</Link>
           <Link to='/signup'>Sign Up</Link>
@@ -33,20 +33,28 @@ class HomeForm extends React.Component{
 
   render(){
     return (
-      <div class="home-page">
-        <div class="home-main-section">
-          <div class="home-main-nav-bar">
-            <div class="home-nav-bar">
-              <div class="nav-bar-left">
-                Write a Review!
+      <div className="home-page">
+        <div className="home-main-section">
+          <div className="home-main-nav-bar">
+            <div className="home-nav-bar">
+              <div className="nav-bar-left">
+                Write a Review
               </div>
               <div >
                 {this.loggedIn()}
               </div>
             </div>
           </div>
-          <div>
-            Logooooo
+          <div className="home-main-inner">
+            <div className="home-logo-banner">
+              <div className="home-logo">
+              </div>
+            </div>
+            <div className="home-search-bar-main">
+              <div className="home-search-bar">
+
+              </div>
+            </div>
           </div>
 
         </div>
