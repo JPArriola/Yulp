@@ -4,7 +4,7 @@ import SessionForm from './session_form';
 
 const mSP = state => {
   return ({
-    signupStatus: {signupStatus: false},
+    signupStatus: {signupStatus: true},
     errors: state.errors.session
   });
 };
@@ -12,6 +12,7 @@ const mSP = state => {
 const mDP = dispatch => {
   return ({
     login: (user) => dispatch(login(user)),
+    signup: (user) => dispatch(signup(user)),
     clearErrors: () => dispatch(clearErrors()),
   });
 };

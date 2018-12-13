@@ -6,11 +6,10 @@ class SessionForm extends React.Component{
   constructor(props){
     super(props);
 
-    this.state = {
-      signup : true,
-    };
+    this.state = this.props.signupStatus;
 
     this.handleClickLogo = this.handleClickLogo.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClickLogo(e){
@@ -21,21 +20,22 @@ class SessionForm extends React.Component{
   handleClick(boolean) {
     return (e) => {
       e.preventDefault();
-      this.setState({signup : boolean});
+      this.setState({signupStatus : boolean});
       this.props.clearErrors();
     }
   }
 
   render(){  
+    
     let {login, signup, errors, clearErrors} = this.props;
 
-    let form = this.state.signup ? 
-      <LoginForm login={login} errors={errors} clearErrors={clearErrors}></LoginForm> :
-      <SignupForm signup={signup} login={login} errors={errors} clearErrors={clearErrors}></SignupForm>
+    let form = this.state.signupStatus ?
+    <SignupForm signup={signup} login={login} errors={errors} clearErrors={clearErrors}></SignupForm> :
+    <LoginForm login={login} errors={errors} clearErrors={clearErrors}></LoginForm>
     
-    let text = this.state.signup ?
-      <div className="login-tiny-text"> New to Yulp? <a onClick={this.handleClick(false)}> SignUp </a></div> :
-      <div className="login-tiny-text"> Already on Yulp? <a onClick={this.handleClick(true)}> Login </a></div> 
+    let text = this.state.signupStatus ?
+    <div className="login-tiny-text"> Already on Yulp? <a onClick={this.handleClick(false)}> Login </a></div> :
+    <div className="login-tiny-text"> New to Yulp? <a onClick={this.handleClick(true)}> SignUp </a></div>
   
     return(
       <div>
