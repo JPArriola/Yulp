@@ -28,7 +28,6 @@ class LoginForm extends React.Component{
   }
 
   render(){
-    console.log(this.props);
     let errors;
     if (this.props.errors.length) {
       errors = this.props.errors;
@@ -48,10 +47,10 @@ class LoginForm extends React.Component{
           <div className="demo-button" onClick={this.handleClick}>
             Demo User
           </div>
-          <div class="login-seperator">
-            <legend align="center">
-              ------------------OR------------------
-            </legend>
+          <div>
+            <fieldset className="login-separator hr-line">
+              <legend align="center" className="or-separator" >OR</legend>
+            </fieldset>
           </div>
           <form onSubmit={this.handleSubmit}>
             <label>

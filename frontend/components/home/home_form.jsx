@@ -14,7 +14,6 @@ class HomeForm extends React.Component{
   }
 
   render(){
-    console.log(this.props)
     return (
       <div>
         <h2>YULP HOME PAGE!!!</h2>

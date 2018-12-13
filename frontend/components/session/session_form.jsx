@@ -38,6 +38,7 @@ class SessionForm extends React.Component{
               { form }
               { text }
               </div>
+              <div></div>
             </div>
         </div>
       </div>
