@@ -18,7 +18,7 @@ class SignupForm extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
-    this.props.login({ email: 'josh@josh.com', password: 'password' });
+    this.props.login({ email: "demo@guest.com", password: "password" });
   }
 
   handleSubmit(e) {

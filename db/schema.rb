@@ -10,10 +10,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181211223606) do
+ActiveRecord::Schema.define(version: 20181213185126) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "businesses", force: :cascade do |t|
+    t.string "biz_name", null: false
+    t.integer "price", null: false
+    t.string "address_1", null: false
+    t.string "address_2"
+    t.string "city", null: false
+    t.string "state", null: false
+    t.string "zipcode", null: false
+    t.float "lat", null: false
+    t.float "lng", null: false
+    t.integer "rating", null: false
+    t.text "hours", null: false
+    t.text "business_info", null: false
+    t.string "phone_number"
+    t.string "website"
+    t.boolean "takes_reservations", default: false, null: false
+    t.boolean "take_out", default: false, null: false
+    t.boolean "delivery", default: false, null: false
+    t.boolean "credit_card", default: false, null: false
+    t.boolean "bike_parking", default: false, null: false
+    t.boolean "free_wifi", default: false, null: false
+    t.boolean "pets_allowed", default: false, null: false
+    t.boolean "wheelchair_accessible", default: false, null: false
+    t.boolean "good_for_kids", default: false, null: false
+    t.boolean "good_for_groups", default: false, null: false
+    t.boolean "outdoor_seating", default: false, null: false
+    t.boolean "caters", default: false, null: false
+    t.integer "owner_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["address_1"], name: "index_businesses_on_address_1", unique: true
+    t.index ["biz_name"], name: "index_businesses_on_biz_name"
+    t.index ["city"], name: "index_businesses_on_city"
+    t.index ["owner_id"], name: "index_businesses_on_owner_id"
+    t.index ["state"], name: "index_businesses_on_state"
+    t.index ["zipcode"], name: "index_businesses_on_zipcode"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false

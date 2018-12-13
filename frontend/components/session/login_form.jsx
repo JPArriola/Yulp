@@ -8,6 +8,7 @@ class LoginForm extends React.Component{
     this.state = {email: '', password: ''};
     this.update = this.update.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemoClick = this.handleDemoClick.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -18,13 +19,17 @@ class LoginForm extends React.Component{
   }
 
   handleSubmit(e){
-    e.preventDefault()
+    e.preventDefault();
     this.props.login(this.state);
   }
 
-  handleClick(e){
+  handleClick(){
+    this.props.clearErrors();
+  }
+
+  handleDemoClick(e){
     e.preventDefault()
-    this.props.login({email: 'josh@josh.com', password: 'password'});
+    this.props.login({ email: "demo@guest.com", password: "password" });
   }
 
   render(){
@@ -36,7 +41,7 @@ class LoginForm extends React.Component{
         <div className="login-container">
           <h2>Log In to Yulp</h2>
           <div className="login-subheading">
-            New to Yulp? <Link className="signup-link" to="/signup">
+            New to Yulp? <Link className="signup-link" to="/signup" onClick={this.handleClick}>
               Sign up
             </Link>
           </div>
@@ -44,7 +49,7 @@ class LoginForm extends React.Component{
             By logging in, you agree to Yulp’s Terms of Service and Privacy
             Policy.
           </div>
-          <div className="demo-button" onClick={this.handleClick}>
+          <div className="demo-button" onClick={this.handleDemoClick}>
             Demo User
           </div>
           <div>
