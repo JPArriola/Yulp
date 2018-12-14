@@ -143,3 +143,15 @@ h2 {
   height: 30px;
   margin-bottom: 10px;
 }
+
+.session-errors {
+  margin-top: 5px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.session-errors li{
+  line-height: 20px;
+  background-color: #fcd6d3;
+}

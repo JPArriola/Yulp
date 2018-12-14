@@ -35,6 +35,7 @@
   font-weight: normal;
   text-align: right;
   width: 300px;
+  margin-top: 5px;
   cursor: pointer;
 }
 
@@ -46,6 +47,8 @@
   flex: 1;
   margin-left: 250px;
   // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .session-img {

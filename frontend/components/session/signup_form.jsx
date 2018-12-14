@@ -44,7 +44,7 @@ class SignupForm extends React.Component {
   render(){
     let errors;
     if (this.props.errors.length) {
-      errors = this.props.errors;
+      errors = this.props.errors.map(error => <li>{error}</li>);
     }
     return <div>
         <div className="signup-container">
@@ -91,7 +91,9 @@ class SignupForm extends React.Component {
               subscribe at any time.
             </div>
             <input className="login-button" type="submit" value="Sign Up" />
-            <div>{errors}</div>
+            <div className="session-errors-parent">
+              <div className="session-errors">{errors}</div>
+            </div>
           </form>
         </div>
       </div>;

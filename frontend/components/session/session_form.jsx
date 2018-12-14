@@ -43,8 +43,8 @@ class SessionForm extends React.Component{
           <div className='yulp-banner'><div className='yulp-header' onClick={this.handleClickLogo}></div></div>
             <div className='body-container'>  
               <div className='user-login'>
-                { form }
-                { text }
+                <div>{form}</div>
+                <div>{text}</div>
               </div>
               <div className="session-img"></div>
             </div>
