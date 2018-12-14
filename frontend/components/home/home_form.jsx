@@ -16,7 +16,7 @@ class HomeForm extends React.Component{
   loggedIn(){
     if(this.props.currentUser){
       return (
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className="nav-bar-right">
           <input type="submit" value="Logout" />
         </form>
       )
