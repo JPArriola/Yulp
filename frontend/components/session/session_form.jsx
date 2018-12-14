@@ -31,7 +31,7 @@ class SessionForm extends React.Component{
 
     let form = this.state.signupStatus ?
     <SignupForm signup={signup} login={login} errors={errors} clearErrors={clearErrors}></SignupForm> :
-    <LoginForm login={login} errors={errors} clearErrors={clearErrors}></LoginForm>
+    <LoginForm login={login} errors={errors} clearErrors={clearErrors} signup={signup}></LoginForm>
     
     let text = this.state.signupStatus ?
     <div className="login-tiny-text"> Already on Yulp? <a onClick={this.handleClick(false)}> Login </a></div> :

@@ -17,11 +17,17 @@
   flex-direction: column;
 }
 
+.home-main-nav-bar{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .home-nav-bar{
   display: flex;
   flex-direction: row;
   // background-color: pink;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 50px;
   margin-top: 30px;
   align-items: center;
@@ -29,6 +35,7 @@
   font-weight: 700;
   font-size: 14px;
   color: white;
+
 }
 
 .nav-bar-left{
@@ -91,6 +98,11 @@
   height: 30px;
   font-weight: 700;
   color: white;
+}
+
+#logout {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .home-main-inner{
