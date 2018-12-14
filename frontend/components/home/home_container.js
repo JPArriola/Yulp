@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { logout } from "../../actions/session_actions";
+import { logout, clearErrors } from "../../actions/session_actions";
 import HomeForm from './home_form';
 
 const mSP = (state, ownProps) => {
@@ -11,6 +11,7 @@ const mSP = (state, ownProps) => {
 const mDP = dispatch => {
   return ({
     logout: () => dispatch(logout()),
+    clearErrors: () => dispatch(clearErrors()),
   });
 };
 

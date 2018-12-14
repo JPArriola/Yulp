@@ -24,8 +24,8 @@ class HomeForm extends React.Component{
       return (
         <div className="nav-bar-right">
           <Link to='/login'>Demo User</Link>
-          <Link to='/login'>Log in</Link>
-          <Link to='/signup'>Sign Up</Link>
+          <Link to='/login' onClick={this.props.clearErrors}>Log in</Link>
+          <Link to='/signup' onClick={this.props.clearErrors}>Sign Up</Link>
         </div>
       )
     }

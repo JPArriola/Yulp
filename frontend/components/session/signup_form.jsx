@@ -1,4 +1,18 @@
 import React from "react";
+import { sampleSize } from 'lodash';
+
+const DEMO_USERS = [
+  { email: "demo@guest.com", password: "password" },
+  { email: "demo1@guest.com", password: "password" },
+  { email: "demo2@guest.com", password: "password" },
+  { email: "demo3@guest.com", password: "password" },
+  { email: "demo4@guest.com", password: "password" },
+  { email: "demo5@guest.com", password: "password" },
+  { email: "demo6@guest.com", password: "password" },
+  { email: 'demo7@guest.com', password: 'password' },
+  { email: "demo8@guest.com", password: "password" },
+  { email: "demo9@guest.com", password: "password" }
+];
 
 class SignupForm extends React.Component {
   constructor(props) {
@@ -18,7 +32,8 @@ class SignupForm extends React.Component {
 
   handleClick(e) {
     e.preventDefault()
-    this.props.login({ email: "demo@guest.com", password: "password" });
+    let sample = _.sampleSize(DEMO_USERS, 1)[0];
+    this.props.login(sample);
   }
 
   handleSubmit(e) {
@@ -62,10 +77,10 @@ class SignupForm extends React.Component {
               </label>
             </div>
             <label>
-              <input className="session-input-boxes" type="text" placeholder="Email" value={this.state.email} onChange={this.update("email")} />
+              <input className="session-input-boxes" type="email" placeholder="Email" value={this.state.email} onChange={this.update("email")} />
             </label>
             <label>
-              <input className="session-input-boxes" type="text" placeholder="Password" value={this.state.password} onChange={this.update("password")} />
+              <input className="session-input-boxes" type="password" placeholder="Password" value={this.state.password} onChange={this.update("password")} />
             </label>
             <label>
               <input className="session-input-boxes" type="text" placeholder="ZIP Code" value={this.state.zipcode} onChange={this.update("zipcode")} />
