@@ -1,6 +1,7 @@
 .home-main-section::after {
   content: "";
-  background: url(https://s3-media2.fl.yelpcdn.com/bphoto/56iJtZPYDgoy0hSV4Ez5zw/o.jpg);
+  // background: url(https://s3-media2.fl.yelpcdn.com/bphoto/56iJtZPYDgoy0hSV4Ez5zw/o.jpg);
+  background: url(https://s3-media4.fl.yelpcdn.com/bphoto/pkwm_5P7XMoIXHOzQR0Y7A/o.jpg);
   filter: brightness(70%);
   top: 0;
   left: 0;
@@ -15,32 +16,80 @@
   display: flex;
   flex-direction: column;
 }
+
 .home-nav-bar{
   display: flex;
   flex-direction: row;
   // background-color: pink;
   justify-content: space-around;
-  height: 38px;
+  height: 50px;
   margin-top: 30px;
   align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
 }
 
 .nav-bar-left{
   display: flex;
-  justify-items: left;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  color: white;
+  justify-content: space-around;
+  width: 350px;
+  align-items: center;
+}
+
+.github {
+  background-image: url(https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67);
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linkedin {
+  background-image: url(http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c528.png);
+  height: 30px;
+  width: 130px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-underline {
+  // transition: 0.15s;
+  padding-bottom: 8px;
+  margin-top: 8px;
+  border-bottom: 2px solid transparent;
+}
+
+.home-underline:hover{
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.home-signup{
+  border: 2px solid white;
+  padding: 7px 24px 8px;
+  border-radius: 4px;
+}
+
+.home-signup:hover{
+  background-color: white;
+  color: rgb(95, 95, 95)
+}
+
+.home-signup:active{
+  background-color: white;
+  color: rgb(168, 168, 168)
 }
 
 .nav-bar-right{
   display: flex;
   // background-color: blue;
   justify-content: space-between;
-  width: 250px;
+  align-items: center;
+  width: 350px;
+  height: 30px;
   font-weight: 700;
-  font-size: 14px;
   color: white;
 }
 

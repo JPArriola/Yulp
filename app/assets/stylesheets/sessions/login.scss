@@ -30,7 +30,11 @@
   color: white;
   font-weight: bold;
   margin-top: 10px;
-  border: 1px solid #7c1014
+  border: 1px solid #7c1014;
+}
+
+.login-button:hover {
+  background-color: #ec0008;
 }
 
 h2 {
@@ -54,6 +58,11 @@ h2 {
   font-weight: bold;
   margin-bottom: 10px;
   border: 1px solid #1f3663;
+  cursor: pointer;
+}
+
+.demo-button:hover{
+  background-color: #446ab6;
 }
 
 .legal{
