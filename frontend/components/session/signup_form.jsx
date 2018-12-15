@@ -69,18 +69,18 @@ class SignupForm extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <div className="session-names">
               <label>
-                <input className="session-first-name" type="text" placeholder="First Name" value={this.state.first_name} onChange={this.update("first_name")} />
+                <input className="session-first-name" type="text" placeholder="First Name" required value={this.state.first_name} onChange={this.update("first_name")} />
               </label>
               &nbsp;
               <label>
-                <input className="session-last-name" type="text" placeholder="Last Name" value={this.state.last_name} onChange={this.update("last_name")} />
+                <input className="session-last-name" type="text" placeholder="Last Name" required value={this.state.last_name} onChange={this.update("last_name")} />
               </label>
             </div>
             <label>
-              <input className="session-input-boxes" type="email" placeholder="Email" value={this.state.email} onChange={this.update("email")} />
+              <input className="session-input-boxes" type="email" placeholder="Email" required value={this.state.email} onChange={this.update("email")} />
             </label>
             <label>
-              <input className="session-input-boxes" type="password" placeholder="Password" value={this.state.password} onChange={this.update("password")} />
+              <input className="session-input-boxes" type="password" placeholder="Password" required value={this.state.password} onChange={this.update("password")} />
             </label>
             <label>
               <input className="session-input-boxes" type="text" placeholder="ZIP Code" value={this.state.zipcode} onChange={this.update("zipcode")} />
