@@ -1,0 +1,56 @@
+.business-nav-bar-parent {
+  background: #d32323;
+  height: 65px;
+  font-size: 12px;
+  min-width: 1020px;
+  justify-items: center;
+  align-items: center;
+}
+
+.business-nav-bar-upper{
+  display: flex;
+  max-width: 960px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.business-logo {
+  background-image: url(https://s3-media1.fl.yelpcdn.com/assets/srv0/styleguide/891ac3707136/assets/img/brand_guidelines/yelp_fullcolor@2x.png);
+  background-size: 110px 70px;
+  height: 65px;
+  width: 100px;
+}
+
+.business-nav-search{
+  height: 40px;
+  width: 703px;
+  background: white;
+  border-radius: 3px;
+}
+
+.business-nav-session{
+  display: flex;
+  height: 40px;
+  width: 141px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.business-nav-login {
+  background-color: #d32323;
+  color: white;
+  border: 1px solid #7c1014;
+  padding: 12px;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.business-nav-signup{
+  padding: 12px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}

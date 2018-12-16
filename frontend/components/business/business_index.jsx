@@ -13,14 +13,19 @@ class BusinessIndex extends React.Component{
         <BusinessIndexItem key={business.id} business={business}/>
       );
     });
-    return(
-      <div>
-        BUSINESSES PAGE
-        <ul>
-          {businesses}
-        </ul>
+    return (
+      <div className="business-nav-bar-parent">
+        <div className="business-nav-bar-upper">
+          <div className="business-logo" />
+          <div className="business-nav-search" />
+          <div className="business-nav-session">
+            <div className="business-nav-login">Log In</div>
+            <div className="business-nav-signup">Sign Up</div>
+          </div>
+        </div>
+        <ul>{businesses}</ul>
       </div>
-    )
+    );
   }
 }
 
