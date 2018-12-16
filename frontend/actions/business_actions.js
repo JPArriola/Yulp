@@ -5,8 +5,9 @@ export const RECEIVE_BUSINESS = 'RECEIVE_BUSINESS';
 export const RECEIVE_BUSINESS_ERRORS = 'RECEIVE_BUSINESS_ERRORS';
 export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 
-export const receiveBusinesses = () => ({
+export const receiveBusinesses = (businesses) => ({
   type: RECEIVE_BUSINESSES,
+  businesses,
 });
 
 export const receiveBusiness = business => ({

@@ -16,3 +16,4 @@ User.create!(email: 'demo6@guest.com', password: 'password', first_name: 'Guest'
 User.create!(email: 'demo7@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
 User.create!(email: 'demo8@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
 User.create!(email: 'demo9@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
+
