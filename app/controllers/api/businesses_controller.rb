@@ -1,6 +1,6 @@
 class Api::BusinessesController < ApplicationController
   def index
-    @businesses = Businesses.all
+    @businesses = Business.all
   end
 
   def show
