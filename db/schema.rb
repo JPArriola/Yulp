@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_14_173119) do
+ActiveRecord::Schema.define(version: 2018_12_16_055830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,25 +47,25 @@ ActiveRecord::Schema.define(version: 2018_12_14_173119) do
     t.float "lat", null: false
     t.float "lng", null: false
     t.integer "rating", null: false
-    t.text "hours", null: false
     t.text "business_info", null: false
     t.string "phone_number"
     t.string "website"
-    t.boolean "takes_reservations", default: false, null: false
-    t.boolean "take_out", default: false, null: false
-    t.boolean "delivery", default: false, null: false
-    t.boolean "credit_card", default: false, null: false
-    t.boolean "bike_parking", default: false, null: false
-    t.boolean "free_wifi", default: false, null: false
-    t.boolean "pets_allowed", default: false, null: false
-    t.boolean "wheelchair_accessible", default: false, null: false
-    t.boolean "good_for_kids", default: false, null: false
-    t.boolean "good_for_groups", default: false, null: false
-    t.boolean "outdoor_seating", default: false, null: false
-    t.boolean "caters", default: false, null: false
     t.integer "owner_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "hours", array: true
+    t.string "takes_reservations"
+    t.string "take_out"
+    t.string "delivery"
+    t.string "credit_card"
+    t.string "bike_parking"
+    t.string "free_wifi"
+    t.string "pets_allowed"
+    t.string "wheelchair_accessible"
+    t.string "good_for_kids"
+    t.string "good_for_groups"
+    t.string "outdoor_seating"
+    t.string "caters"
     t.index ["address_1"], name: "index_businesses_on_address_1", unique: true
     t.index ["biz_name"], name: "index_businesses_on_biz_name"
     t.index ["city"], name: "index_businesses_on_city"

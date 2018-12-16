@@ -13,25 +13,25 @@
 #  lat                   :float            not null
 #  lng                   :float            not null
 #  rating                :integer          not null
-#  hours                 :text             not null
 #  business_info         :text             not null
 #  phone_number          :string
 #  website               :string
-#  takes_reservations    :boolean          default(FALSE), not null
-#  take_out              :boolean          default(FALSE), not null
-#  delivery              :boolean          default(FALSE), not null
-#  credit_card           :boolean          default(FALSE), not null
-#  bike_parking          :boolean          default(FALSE), not null
-#  free_wifi             :boolean          default(FALSE), not null
-#  pets_allowed          :boolean          default(FALSE), not null
-#  wheelchair_accessible :boolean          default(FALSE), not null
-#  good_for_kids         :boolean          default(FALSE), not null
-#  good_for_groups       :boolean          default(FALSE), not null
-#  outdoor_seating       :boolean          default(FALSE), not null
-#  caters                :boolean          default(FALSE), not null
 #  owner_id              :integer          not null
 #  created_at            :datetime         not null
 #  updated_at            :datetime         not null
+#  hours                 :string           is an Array
+#  takes_reservations    :string
+#  take_out              :string
+#  delivery              :string
+#  credit_card           :string
+#  bike_parking          :string
+#  free_wifi             :string
+#  pets_allowed          :string
+#  wheelchair_accessible :string
+#  good_for_kids         :string
+#  good_for_groups       :string
+#  outdoor_seating       :string
+#  caters                :string
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

@@ -13,33 +13,30 @@
 #  lat                   :float            not null
 #  lng                   :float            not null
 #  rating                :integer          not null
-#  hours                 :text             not null
 #  business_info         :text             not null
 #  phone_number          :string
 #  website               :string
-#  takes_reservations    :boolean          default(FALSE), not null
-#  take_out              :boolean          default(FALSE), not null
-#  delivery              :boolean          default(FALSE), not null
-#  credit_card           :boolean          default(FALSE), not null
-#  bike_parking          :boolean          default(FALSE), not null
-#  free_wifi             :boolean          default(FALSE), not null
-#  pets_allowed          :boolean          default(FALSE), not null
-#  wheelchair_accessible :boolean          default(FALSE), not null
-#  good_for_kids         :boolean          default(FALSE), not null
-#  good_for_groups       :boolean          default(FALSE), not null
-#  outdoor_seating       :boolean          default(FALSE), not null
-#  caters                :boolean          default(FALSE), not null
 #  owner_id              :integer          not null
 #  created_at            :datetime         not null
 #  updated_at            :datetime         not null
+#  hours                 :string           is an Array
+#  takes_reservations    :string
+#  take_out              :string
+#  delivery              :string
+#  credit_card           :string
+#  bike_parking          :string
+#  free_wifi             :string
+#  pets_allowed          :string
+#  wheelchair_accessible :string
+#  good_for_kids         :string
+#  good_for_groups       :string
+#  outdoor_seating       :string
+#  caters                :string
 #
 
 class Business < ApplicationRecord
   validates :biz_name, :price, :city, :state, :zipcode, :lat, presence: true
   validates :lng, :rating, :hours, :business_info, :owner_id, presence: true
-  validates :takes_reservations, :take_out, :delivery, :credit_card, presence: true
-  validates :bike_parking, :free_wifi, :pets_allowed, :wheelchair_accessible, presence: true
-  validates :good_for_kids, :good_for_groups, :outdoor_seating, :caters, presence: true
 
   validates :address_1, presence: true, uniqueness: true
   
