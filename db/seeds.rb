@@ -59,6 +59,10 @@ biz1 = Business.create!(
 )
 photo_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/beverage-chiang-mai-cup-1581484.jpg')
 biz1.photos.attach(io: photo_file1, filename: 'boba1')
+photo_file2 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/rosalind-chang-658852-unsplash.jpg')
+biz1.photos.attach(io: photo_file2, filename: 'boba2')
+photo_file3 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.54.10+AM.png')
+biz1.photos.attach(io: photo_file3, filename: 'boba3')
 
 biz2 = Business.create!(
   biz_name: 'Hanlin Tea Restaurant',
@@ -98,8 +102,12 @@ biz2 = Business.create!(
 )
 photo_file4 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/bowl-caffeine-cooking-229493.jpg')
 biz2.photos.attach(io: photo_file4, filename: 'boba4')
+photo_file5 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.55.57+AM.png')
+biz2.photos.attach(io: photo_file5, filename: 'boba5')
+photo_file6 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.56.43+AM.png')
+biz2.photos.attach(io: photo_file6, filename: 'boba6')
 
-Business.create!(
+biz3 = Business.create!(
   biz_name: 'Boba Butt Tea House',
   price: 1,
   address_1: '714 Kearny St',
@@ -135,8 +143,14 @@ Business.create!(
     ["12:00", "19:00"]
   ]
 )
+photo_file7 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file8 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file9 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+biz3.photos.attach(io: photo_file7, filename: 'boba7')
+biz3.photos.attach(io: photo_file8, filename: 'boba8')
+biz3.photos.attach(io: photo_file9, filename: 'boba9')
 
-Business.create!(
+biz4 = Business.create!(
   biz_name: 'Boba Guys',
   price: 1,
   address_1: '429 Stockton St',
@@ -172,8 +186,14 @@ Business.create!(
     ["12:00", "18:00"]
   ]
 )
+photo_file10 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/jason-leung-708912-unsplash.jpg')
+photo_file11 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/jason-leung-708912-unsplash.jpg')
+photo_file12 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/jason-leung-708912-unsplash.jpg')
+biz4.photos.attach(io: photo_file10, filename: 'boba10')
+biz4.photos.attach(io: photo_file11, filename: 'boba11')
+biz4.photos.attach(io: photo_file12, filename: 'boba12')
 
-Business.create!(
+biz5 = Business.create!(
   biz_name: 'Identitea',
   price: 1,
   address_1: '3109 24th St',
@@ -209,8 +229,14 @@ Business.create!(
     ["11:00", "20:00"]
   ]
 )
+photo_file13 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.41.38+AM.png')
+photo_file14 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.50.01+AM.png')
+photo_file15 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.50.15+AM.png')
+biz5.photos.attach(io: photo_file13, filename: 'boba13')
+biz5.photos.attach(io: photo_file14, filename: 'boba14')
+biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
-Business.create!(
+biz6 = Business.create!(
   biz_name: 'i-Tea',
   price: 1,
   address_1: '253 Kearny St',
@@ -246,8 +272,14 @@ Business.create!(
     ["12:00", "19:00"]
   ]
 )
+photo_file16 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file17 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file18 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+biz6.photos.attach(io: photo_file16, filename: 'boba16')
+biz6.photos.attach(io: photo_file17, filename: 'boba17')
+biz6.photos.attach(io: photo_file18, filename: 'boba18')
 
-Business.create!(
+biz7 = Business.create!(
   biz_name: 'Purple Kow',
   price: 1,
   address_1: '3620 Balboa St',
@@ -283,8 +315,14 @@ Business.create!(
     ["12:00", "20:00"]
   ]
 )
+photo_file19 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file20 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file21 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+biz7.photos.attach(io: photo_file19, filename: 'boba19')
+biz7.photos.attach(io: photo_file20, filename: 'boba20')
+biz7.photos.attach(io: photo_file21, filename: 'boba21')
 
-Business.create!(
+biz8 = Business.create!(
   biz_name: 'Asha Tea House',
   price: 1,
   address_1: '17 Kearny St',
@@ -320,8 +358,14 @@ Business.create!(
     ["11:00", "18:30"]
   ]
 )
+photo_file22 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file23 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file24 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+biz8.photos.attach(io: photo_file22, filename: 'boba22')
+biz8.photos.attach(io: photo_file23, filename: 'boba23')
+biz8.photos.attach(io: photo_file24, filename: 'boba24')
 
-Business.create!(
+biz9 = Business.create!(
   biz_name: 'T & T',
   price: 1,
   address_1: '601 Broadway St',
@@ -357,8 +401,14 @@ Business.create!(
     ["8:00", "23:00"]
   ]
 )
+photo_file25 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file26 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file27 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+biz9.photos.attach(io: photo_file25, filename: 'boba25')
+biz9.photos.attach(io: photo_file26, filename: 'boba26')
+biz9.photos.attach(io: photo_file27, filename: 'boba27')
 
-Business.create!(
+biz10 = Business.create!(
   biz_name: 'E Tea',
   price: 1,
   address_1: '839 Kearny St',
@@ -394,6 +444,12 @@ Business.create!(
     ["11:30", "21:30"]
   ]
 )
+photo_file28 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file29 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file30 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+biz10.photos.attach(io: photo_file28, filename: 'boba28')
+biz10.photos.attach(io: photo_file29, filename: 'boba29')
+biz10.photos.attach(io: photo_file30, filename: 'boba30')
 
 # coffe shops
 Business.create!(
