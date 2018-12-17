@@ -85,10 +85,19 @@
 
 .nav-bar-lower-left{
   border-left: 1px solid rgb(221, 221, 221);
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  
+}
+
+.nav-bar-lower-left-item{
+
 }
 
 .nav-bar-lower-right{
   border-right: 1px solid rgb(221, 221, 221);
+  height: inherit;
 }
 
 .business-index-spacer{

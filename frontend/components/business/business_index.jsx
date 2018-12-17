@@ -30,7 +30,11 @@ class BusinessIndex extends React.Component{
           </div>
           <div className="business-nav-bar-lower-parent">
             <div className="business-nav-bar-lower">
-              <div className="nav-bar-lower-left">Coffee, Boba, Beer</div>
+              <div className="nav-bar-lower-left">
+                <div className="nav-bar-lower-left-item">Coffee</div>
+                <div className="nav-bar-lower-left-item">Boba</div>
+                <div className="nav-bar-lower-left-item">Beer</div>
+              </div>
               <div className="nav-bar-lower-right">Write a Review</div>
             </div>
           </div>
