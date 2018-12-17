@@ -48,3 +48,24 @@
   height: 50%;
   line-height: 22px;
 }
+
+.business-index-sidebar-parent{
+
+}
+
+.business-index-sidebar-stuck{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  background-color: rgb(221, 221, 221);
+  font-size: 20px;
+}
+
+.fake-map{
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  //delete this once you have a map
+  text-align: center;
+  font-size: 60px;
+}
