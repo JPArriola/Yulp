@@ -1,0 +1,25 @@
+.business-index-master{
+  font-size: 12px;
+  min-width: 1020px;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  margin-top: 20px;
+}
+
+.business-index-section-entire-master{
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.business-index-section-parent{
+  min-width: 630px;
+}
+
+.business-index-sidebar-parent{
+  min-width: 300px;
+  flex-direction: column;
+}

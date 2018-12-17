@@ -736,7 +736,7 @@ Business.create!(
   lat: '37.794160',
   lng: '-122.399140',
   rating: 3,
-  business_info: "Local Edition is more than just a cocktail bar.",
+  business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
   phone_number: "(415) 956-1710",
   website: "royalexchange.com",
   takes_reservations: "Yes",
