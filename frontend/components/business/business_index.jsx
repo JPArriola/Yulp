@@ -31,11 +31,28 @@ class BusinessIndex extends React.Component{
           <div className="business-nav-bar-lower-parent">
             <div className="business-nav-bar-lower">
               <div className="nav-bar-lower-left">
-                <div className="nav-bar-lower-left-item">Coffee</div>
-                <div className="nav-bar-lower-left-item">Boba</div>
-                <div className="nav-bar-lower-left-item">Beer</div>
+                <div className="nav-bar-lower-left-item">
+                  <img src="https://image.flaticon.com/icons/svg/633/633652.svg" className="nav-bar-lower-item-img" />
+                  Coffee
+                  <img src="https://static.thenounproject.com/png/1558740-200.png" className="nav-bar-dropdown-arrow" />
+                </div>
+                <div className="nav-bar-lower-left-item">
+                  <img src="https://image.flaticon.com/icons/svg/863/863412.svg" className="nav-bar-lower-item-img" />
+                  Boba
+                  <img src="https://static.thenounproject.com/png/1558740-200.png" className="nav-bar-dropdown-arrow" />
+                </div>
+                <div className="nav-bar-lower-left-item">
+                  <img src="https://image.flaticon.com/icons/svg/23/23417.svg" className="nav-bar-lower-item-img" />
+                  Beer
+                  <img src="https://static.thenounproject.com/png/1558740-200.png" className="nav-bar-dropdown-arrow" />
+                </div>
               </div>
-              <div className="nav-bar-lower-right">Write a Review</div>
+              <div className="nav-bar-lower-right">
+                <div className="nav-bar-lower-right-item">
+                  <img src="https://image.flaticon.com/icons/svg/61/61456.svg" className="nav-bar-lower-item-img" />
+                  Write a Review
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -47,9 +64,7 @@ class BusinessIndex extends React.Component{
             </div>
             <div className="business-index-sidebar-parent">
               <div className="business-index-sidebar-stuck">
-                <div className="fake-map">
-                  Map to be added. Stay tuned!
-                </div>
+                <div className="fake-map">Map to be added. Stay tuned!</div>
               </div>
             </div>
           </div>
