@@ -12,10 +12,14 @@
 }
 
 .business-index-item-photo{
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid black;
   height: 214px;
   width: 214px;
+}
+
+.business-index-item-photo img{
+  height: 100%;
 }
 
 .business-index-item-info-master{

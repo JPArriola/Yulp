@@ -21,7 +21,7 @@ User.create!(email: 'demo8@guest.com', password: 'password', first_name: 'Guest'
 User.create!(email: 'demo9@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
 
 # boba businesses
-Business.create!(
+biz1 = Business.create!(
   biz_name: 'Plentea',
   price: 1,
   address_1: '341 Kearny St',
@@ -57,8 +57,10 @@ Business.create!(
     ["11:00", "23:00"]
   ]
 )
+photo_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/beverage-chiang-mai-cup-1581484.jpg')
+biz1.photos.attach(io: photo_file1, filename: 'boba1')
 
-Business.create!(
+biz2 = Business.create!(
   biz_name: 'Hanlin Tea Restaurant',
   price: 2,
   address_1: '801 Kearny St',
@@ -94,6 +96,8 @@ Business.create!(
     ["11:00", "22:00"]
   ]
 )
+photo_file4 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/bowl-caffeine-cooking-229493.jpg')
+biz2.photos.attach(io: photo_file4, filename: 'boba4')
 
 Business.create!(
   biz_name: 'Boba Butt Tea House',
