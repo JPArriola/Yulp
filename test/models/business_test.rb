@@ -4,7 +4,6 @@
 #
 #  id                    :bigint(8)        not null, primary key
 #  biz_name              :string           not null
-#  price                 :integer          not null
 #  address_1             :string           not null
 #  address_2             :string
 #  city                  :string           not null
@@ -32,6 +31,7 @@
 #  good_for_groups       :string
 #  outdoor_seating       :string
 #  caters                :string
+#  price                 :string
 #
 
 require 'test_helper'

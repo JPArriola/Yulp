@@ -23,7 +23,7 @@ User.create!(email: 'demo9@guest.com', password: 'password', first_name: 'Guest'
 # boba businesses
 biz1 = Business.create!(
   biz_name: 'Plentea',
-  price: 1,
+  price: "$",
   address_1: '341 Kearny St',
   city: 'San Francisco',
   state: 'CA',
@@ -66,7 +66,7 @@ biz1.photos.attach(io: photo_file3, filename: 'boba3')
 
 biz2 = Business.create!(
   biz_name: 'Hanlin Tea Restaurant',
-  price: 2,
+  price: "$$",
   address_1: '801 Kearny St',
   city: 'San Francisco',
   state: 'CA',
@@ -109,7 +109,7 @@ biz2.photos.attach(io: photo_file6, filename: 'boba6')
 
 biz3 = Business.create!(
   biz_name: 'Boba Butt Tea House',
-  price: 1,
+  price: "$",
   address_1: '714 Kearny St',
   city: 'San Francisco',
   state: 'CA',
@@ -152,7 +152,7 @@ biz3.photos.attach(io: photo_file9, filename: 'boba9')
 
 biz4 = Business.create!(
   biz_name: 'Boba Guys',
-  price: 1,
+  price: "$",
   address_1: '429 Stockton St',
   city: 'San Francisco',
   state: 'CA',
@@ -195,7 +195,7 @@ biz4.photos.attach(io: photo_file12, filename: 'boba12')
 
 biz5 = Business.create!(
   biz_name: 'Identitea',
-  price: 1,
+  price: "$",
   address_1: '3109 24th St',
   city: 'San Francisco',
   state: 'CA',
@@ -238,7 +238,7 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
 biz6 = Business.create!(
   biz_name: 'i-Tea',
-  price: 1,
+  price: "$",
   address_1: '253 Kearny St',
   city: 'San Francisco',
   state: 'CA',
@@ -281,7 +281,7 @@ biz6.photos.attach(io: photo_file18, filename: 'boba18')
 
 biz7 = Business.create!(
   biz_name: 'Purple Kow',
-  price: 1,
+  price: "$",
   address_1: '3620 Balboa St',
   city: 'San Francisco',
   state: 'CA',
@@ -324,7 +324,7 @@ biz7.photos.attach(io: photo_file21, filename: 'boba21')
 
 biz8 = Business.create!(
   biz_name: 'Asha Tea House',
-  price: 1,
+  price: "$",
   address_1: '17 Kearny St',
   city: 'San Francisco',
   state: 'CA',
@@ -367,7 +367,7 @@ biz8.photos.attach(io: photo_file24, filename: 'boba24')
 
 biz9 = Business.create!(
   biz_name: 'T & T',
-  price: 1,
+  price: "$",
   address_1: '601 Broadway St',
   city: 'San Francisco',
   state: 'CA',
@@ -410,7 +410,7 @@ biz9.photos.attach(io: photo_file27, filename: 'boba27')
 
 biz10 = Business.create!(
   biz_name: 'E Tea',
-  price: 1,
+  price: "$",
   address_1: '839 Kearny St',
   city: 'San Francisco',
   state: 'CA',
@@ -454,7 +454,7 @@ biz10.photos.attach(io: photo_file30, filename: 'boba30')
 # coffe shops
 Business.create!(
   biz_name: 'Jackson Place Cafe',
-  price: 1,
+  price: "$",
   address_1: '633 Battery St',
   city: 'San Francisco',
   state: 'CA',
@@ -491,7 +491,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'Reveille Coffee Co. Truck',
-  price: 2,
+  price: "$$",
   address_1: '768 Sansome St',
   city: 'San Francisco',
   state: 'CA',
@@ -528,7 +528,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'Chapter 2 Coffee',
-  price: 1,
+  price: "$",
   address_1: '411 Sansome St',
   city: 'San Francisco',
   state: 'CA',
@@ -565,7 +565,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'Chapel Hill Coffee',
-  price: 2,
+  price: "$$",
   address_1: '670 Commercial St',
   city: 'San Francisco',
   state: 'CA',
@@ -602,7 +602,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'Joe & The Juice',
-  price: 2,
+  price: "$$",
   address_1: '301 Howard St',
   city: 'San Francisco',
   state: 'CA',
@@ -640,7 +640,7 @@ Business.create!(
 #bars
 Business.create!(
   biz_name: 'Pagan Idol',
-  price: 2,
+  price: "$$",
   address_1: '375 Bush St',
   city: 'San Francisco',
   state: 'CA',
@@ -677,7 +677,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'The Pink Elephant Alibi',
-  price: 2,
+  price: "$$",
   address_1: '142 Minna St',
   city: 'San Francisco',
   state: 'CA',
@@ -714,7 +714,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'The View Lounge',
-  price: 2,
+  price: "$$",
   address_1: '780 Mission St',
   city: 'San Francisco',
   state: 'CA',
@@ -751,7 +751,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'Local Edition',
-  price: 2,
+  price: "$$",
   address_1: '691 Market St',
   city: 'San Francisco',
   state: 'CA',
@@ -788,7 +788,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'The Royal Exchange',
-  price: 2,
+  price: "$$",
   address_1: '301 Sacramento St',
   city: 'San Francisco',
   state: 'CA',

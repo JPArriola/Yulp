@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_16_055830) do
+ActiveRecord::Schema.define(version: 2018_12_17_220709) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 2018_12_16_055830) do
 
   create_table "businesses", force: :cascade do |t|
     t.string "biz_name", null: false
-    t.integer "price", null: false
     t.string "address_1", null: false
     t.string "address_2"
     t.string "city", null: false
@@ -66,6 +65,7 @@ ActiveRecord::Schema.define(version: 2018_12_16_055830) do
     t.string "good_for_groups"
     t.string "outdoor_seating"
     t.string "caters"
+    t.string "price"
     t.index ["address_1"], name: "index_businesses_on_address_1", unique: true
     t.index ["biz_name"], name: "index_businesses_on_biz_name"
     t.index ["city"], name: "index_businesses_on_city"
