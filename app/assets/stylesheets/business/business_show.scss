@@ -2,7 +2,9 @@
   min-width: 1020px;
   display: flex;
   flex-direction: column;
-  
+  border-bottom: 1px solid rgb(221, 221, 221);
+  background-color: rgb(245, 245, 245);
+  height: 405px;
 }
 
 .showpage-working-size{
@@ -18,6 +20,7 @@
 .showpage-business-info-master{
   height: 440px;
   width: 100%;
+  
 }
 
 .showpage-business-info-top-master{
@@ -26,8 +29,86 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 21px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+.showpage-business-info-top-left{
+  display: flex;
+  flex-direction: column;
+  width: 50%
+}
+
+.showpage-business-name{
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.showpage-business-rating{
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.showpage-business-price{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.showpage-business-info-top-right{
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.showpage-review-button-container{
+  height: 37px;
+  width: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d32323;
+  border: 1px solid #7c1014;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
 }
 
 .showpage-business-info-lower-master{
   height: 310px;
+
+}
+
+.showpage-business-info-lower-parent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.showpage-map-container{
+  width: 33.3333%;
+  border: 1px solid black;
+  height: 317px;
+  //delete this once you have a map
+  background-color: rgb(221, 221, 221);
+}
+
+.showpage-info-photos{
+  width:66.6667%;
+  border: 1px solid black;
+  height: 222px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+}
+
+.showpage-info-photos div {
+  width: 33.3333%;
+  border: 1px solid black;
+  height: inherit;
 }

@@ -9,6 +9,7 @@ class BusinessIndex extends React.Component{
   }
 
   render(){
+    if (this.props.businesses.length === 1) return null;
     let businesses = this.props.businesses.map(business => {
       return(
         <BusinessIndexItem key={business.id} business={business}/>

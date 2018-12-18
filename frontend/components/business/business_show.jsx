@@ -18,10 +18,35 @@ class BusinessShow extends React.Component{
           <div className="showpage-working-size">
             <div className="showpage-business-info-master">
               <div className="showpage-business-info-top-master">
-                <div>{biz.bizName}</div>
-                <div>Write a Review</div>
+                <div className="showpage-business-info-top-left">
+                  <div className="showpage-business-name">
+                    {biz.bizName}
+                  </div>
+                  <div className="showpage-business-rating">
+                    {biz.rating}
+                  </div>
+                  <div className="showpage-business-price">{biz.price}</div>
+                </div>
+                <div className="showpage-business-info-top-right">
+                  <div className="showpage-review-button-container">
+                    <i class="fas fa-star"> Write a Review</i>
+                  </div>
+                </div>
               </div>
-              <div className="showpage-business-info-lower-master" />
+              <div className="showpage-business-info-lower-master">
+                <div className="showpage-business-info-lower-parent">
+                  <div className="showpage-map-container">
+                    <div className="showpage-map">
+                      
+                    </div>
+                  </div>
+                  <div className="showpage-info-photos">
+                    <div className="showpage-info-side-photo">side photo</div>
+                    <div className="showpage-info-middle-photo">middle photo</div>
+                    <div className="showpage-info-side-photo">side photo</div>
+                  </div>
+                </div>
+              </div>                
             </div>
           </div>
         </div>
