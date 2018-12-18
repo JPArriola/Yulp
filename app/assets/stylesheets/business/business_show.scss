@@ -1,0 +1,20 @@
+.showpage-master-size{
+  min-width: 1020px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.showpage-working-size{
+  display: flex;
+  max-width: 960px;
+  
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.showpage-business-info-master{
+  height: 440px;
+}

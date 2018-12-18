@@ -1,6 +1,5 @@
 .home-main-section::after {
   content: "";
-  // background: url(https://s3-media2.fl.yelpcdn.com/bphoto/56iJtZPYDgoy0hSV4Ez5zw/o.jpg);
   background: url(https://s3-media4.fl.yelpcdn.com/bphoto/pkwm_5P7XMoIXHOzQR0Y7A/o.jpg);
   filter: brightness(70%);
   top: 0;
@@ -26,7 +25,6 @@
 .home-nav-bar{
   display: flex;
   flex-direction: row;
-  // background-color: pink;
   justify-content: space-between;
   height: 50px;
   margin-top: 30px;
@@ -62,7 +60,6 @@
 }
 
 .home-underline {
-  // transition: 0.15s;
   padding-bottom: 8px;
   margin-top: 8px;
   border-bottom: 2px solid transparent;
@@ -95,7 +92,6 @@
 
 .nav-bar-right{
   display: flex;
-  // background-color: blue;
   justify-content: space-between;
   align-items: center;
   width: 350px;

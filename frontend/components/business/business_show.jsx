@@ -11,12 +11,19 @@ class BusinessShow extends React.Component{
     let biz = this.props.business;
     if (!biz) return null;
     
-    let history = this.props.history;
 
     return (
       <div>
-        <Navbar history={history}/>
-        {biz.bizName}
+        <Navbar />
+        <div className="showpage-master-size">
+          <div className="showpage-working-size">
+            <div className="showpage-business-info-master">
+
+              {biz.bizName}
+            </div>
+
+          </div>
+        </div>
       </div>
     )
   }

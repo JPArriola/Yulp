@@ -15,10 +15,8 @@ class BusinessIndex extends React.Component{
       );
     });
 
-    let history = this.props.history;
-
     return <div>
-        <Navbar history={history} />
+        <Navbar />
         <div className="business-index-spacer" />
         <div className="business-index-master">
           <div className="business-index-section-entire-master">
