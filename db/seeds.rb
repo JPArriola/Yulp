@@ -8,6 +8,7 @@
 
 User.destroy_all
 Business.destroy_all
+Review.destroy_all
 
 user1 = User.create!(email: 'demo@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
 User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
@@ -63,6 +64,13 @@ photo_file2 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/
 biz1.photos.attach(io: photo_file2, filename: 'boba2')
 photo_file3 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.54.10+AM.png')
 biz1.photos.attach(io: photo_file3, filename: 'boba3')
+
+review1 = Review.create!(
+  body: "THIS IS AN EXCELLENT REVIEW OF PLENTEA. GREAT PLACE TO STUDY FOR APP ACADEMY.",
+  rating: 5,
+  biz_id: biz1.id,
+  author_id: user1.id,
+)
 
 biz2 = Business.create!(
   biz_name: 'Hanlin Tea Restaurant',

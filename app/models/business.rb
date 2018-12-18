@@ -36,13 +36,17 @@
 
 class Business < ApplicationRecord
   validates :biz_name, :price, :city, :state, :zipcode, :lat, presence: true
-  validates :lng, :rating, :hours, :business_info, :owner_id, presence: true
+  validates :lng, :rating, :hours, :business_info, presence: true
 
   validates :address_1, presence: true, uniqueness: true
   
   belongs_to :owner,
   foreign_key: :owner_id,
   class_name: :User
+
+  has_many :reviews,
+  foreign_key: :biz_id,
+  class_name: :Review
 
   has_many_attached :photos
 end
