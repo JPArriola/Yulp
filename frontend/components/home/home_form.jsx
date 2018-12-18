@@ -59,31 +59,25 @@ class HomeForm extends React.Component{
             <div className="home-nav-bar">
               <div className="nav-bar-left">
                 <div className="home-underline">Write a Review</div>
-                <a href="https://github.com/JPArriola" className="github"></a>
-                <a href="https://www.linkedin.com/in/joshuaarriola/" className="linkedin"></a>
+                <a href="https://github.com/JPArriola" className="github" />
+                <a href="https://www.linkedin.com/in/joshuaarriola/" className="linkedin" />
               </div>
-              <div className="nav-right-parent" >
-                {this.loggedIn()}
-              </div>
+              <div className="nav-right-parent">{this.loggedIn()}</div>
             </div>
           </div>
           <div className="home-main-inner">
             <div className="home-logo-banner">
               <div className="home-logo" />
             </div>
-            <div className="business-nav-search">
+            <div className="home-search-bar">
               <input className="business-search-find" type="text" placeholder="coffee, boba, beer" />
               <input className="business-search-near" type="text" placeholder="City" />
             </div>
             <div className="home-category-navigation-bar">
-              <div className="home-category-navigation-business-index">
-              </div>
-              <div className="home-category-navigation-business-boba">
-              </div>
-              <div className="home-category-navigation-business-coffee">
-              </div>
-              <div className="home-category-navigation-business-bars">
-              </div>
+              <Link to='/businesses' className="nav-underline">Businesses</Link>
+              <div className="home-category-navigation-business-boba" />
+              <div className="home-category-navigation-business-coffee" />
+              <div className="home-category-navigation-business-bars" />
             </div>
           </div>
         </div>
