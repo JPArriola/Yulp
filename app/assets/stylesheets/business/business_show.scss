@@ -17,4 +17,17 @@
 
 .showpage-business-info-master{
   height: 440px;
+  width: 100%;
+}
+
+.showpage-business-info-top-master{
+  height: 130px;
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.showpage-business-info-lower-master{
+  height: 310px;
 }

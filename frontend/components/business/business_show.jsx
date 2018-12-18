@@ -12,20 +12,20 @@ class BusinessShow extends React.Component{
     if (!biz) return null;
     
 
-    return (
-      <div>
+    return <div>
         <Navbar />
         <div className="showpage-master-size">
           <div className="showpage-working-size">
             <div className="showpage-business-info-master">
-
-              {biz.bizName}
+              <div className="showpage-business-info-top-master">
+                <div>{biz.bizName}</div>
+                <div>Write a Review</div>
+              </div>
+              <div className="showpage-business-info-lower-master" />
             </div>
-
           </div>
         </div>
-      </div>
-    )
+      </div>;
   }
 }
 

@@ -66,9 +66,7 @@ class HomeForm extends React.Component{
             </div>
           </div>
           <div className="home-main-inner">
-            <div className="home-logo-banner">
-              <div className="home-logo" />
-            </div>
+            <div className="home-logo" />
             <div className="home-search-bar">
               <input className="business-search-find" type="text" placeholder="coffee, boba, beer" />
               <input className="business-search-near" type="text" placeholder="City" />
