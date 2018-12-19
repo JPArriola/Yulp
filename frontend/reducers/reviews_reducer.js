@@ -12,6 +12,7 @@ const reviewsReducer = (state = {}, action) => {
         [action.review.id]: action.review
       });
     case RECEIVE_BUSINESS:
+      if (!action.business.reviews) return {};
       return action.business.reviews;
     default:
       return state;

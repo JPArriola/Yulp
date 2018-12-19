@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../navbar/navbar_container";
+import ReviewIndex from "../review/review_container";
 
 class BusinessShow extends React.Component{
 
@@ -7,10 +8,11 @@ class BusinessShow extends React.Component{
     this.props.fetchBusiness(this.props.businessId);
   }
 
+
+
   render(){
     let biz = this.props.business;
-    if (!biz) return null;
-    
+    if (!biz) return null;    
 
     return <div>
         <Navbar />
@@ -60,7 +62,7 @@ class BusinessShow extends React.Component{
             <div className="showpage-working-size">
               <div className="showpage-business-content-master">
                 <div className="showpage-business-content-parent" >
-                  reviews
+                  <ReviewIndex />
                 </div>
                 <div className="showpage-business-sidebar-parent" >
                   <div className="showpage-business-sidebar-top-info">

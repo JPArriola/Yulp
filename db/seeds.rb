@@ -11,7 +11,7 @@ Business.destroy_all
 Review.destroy_all
 
 user1 = User.create!(email: 'demo@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
+user2 = User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
 User.create!(email: 'demo2@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
 User.create!(email: 'demo3@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
 User.create!(email: 'demo4@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
@@ -72,6 +72,13 @@ review1 = Review.create!(
   author_id: user1.id,
 )
 
+review2 = Review.create!(
+  body: "THIS IS AN EXCELLENT REVIEW OF PLENTEA. GREAT PLACE TO STUDY FOR APP ACADEMY WIT MA FRENDS.",
+  rating: 5,
+  biz_id: biz1.id,
+  author_id: user2.id,
+)
+
 biz2 = Business.create!(
   biz_name: 'Hanlin Tea Restaurant',
   price: "$$",
@@ -114,6 +121,13 @@ photo_file5 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/
 biz2.photos.attach(io: photo_file5, filename: 'boba5')
 photo_file6 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.56.43+AM.png')
 biz2.photos.attach(io: photo_file6, filename: 'boba6')
+
+review4 = Review.create!(
+  body: "THIS IS AN EXCELLENT REVIEW OF hanlin. GREAT PLACE FOR APP ACADEMY.",
+  rating: 5,
+  biz_id: biz2.id,
+  author_id: user1.id,
+)
 
 biz3 = Business.create!(
   biz_name: 'Boba Butt Tea House',
