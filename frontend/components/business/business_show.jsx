@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/navbar_container";
 import ReviewIndex from "../review/review_container";
+import { Link } from "react-router-dom";
 
 class BusinessShow extends React.Component{
 
@@ -35,7 +36,7 @@ class BusinessShow extends React.Component{
                   </div>
                   <div className="showpage-business-info-top-right">
                     <div className="showpage-review-button-container">
-                      <i className="fas fa-star"> Write a Review</i>
+                      <Link to={`/businesses/${biz.id}/review`}><i className="fas fa-star"> Write a Review</i></Link>
                     </div>
                   </div>
                 </div>

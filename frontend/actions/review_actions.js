@@ -22,7 +22,13 @@ export const receiveErrors = errors => ({
 
 export const clearErrors = () => ({
   type: CLEAR_ERRORS,
-})
+});
+
+export const createReview = review => dispatch => (
+  APIUtil.createReview(review).then(review => (
+    dispatch(receiveReview(review))
+  ))
+);
 
 export const fetchReviews = () => dispatch => (
   APIUtil.fetchReviews().then(reviews => (

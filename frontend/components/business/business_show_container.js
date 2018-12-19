@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import { fetchBusiness } from "../../actions/business_actions";
+import { createReview } from "../../actions/review_actions";
 import BusinessShow from './business_show';
 
 const mSP = (state, ownProps) => {
@@ -16,6 +17,7 @@ const mSP = (state, ownProps) => {
 const mDP = dispatch => {
   return ({
     fetchBusiness: (id) => dispatch(fetchBusiness(id)),
+    createReview: (review) => dispatch(createReview(review)),
   });
 };
 
