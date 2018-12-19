@@ -7,6 +7,7 @@ json.reviews do
 end
 json.businessinfo do
   json.partial! "api/businesses/business", business: @business
+  json.photoUrls @business.photos.map {|file| url_for(file)}
 end
 json.authors do
   @business.reviews.each do |review|

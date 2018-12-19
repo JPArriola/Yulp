@@ -12,9 +12,11 @@ class BusinessShow extends React.Component{
 
   render(){
     let biz = this.props.business;
-    if (!biz) return null;    
+    if (!biz) return null;
+    console.error(this.props)
+    // if (!this.props.business.photoUrls) return null;
     let users = this.props.users;
-    console.error(this.props);
+    // console.error("FIRST", this.props.business.photoUrls[0]);
 
     return <div>
         <Navbar />

@@ -114,7 +114,11 @@
   height: inherit;
 }
 
-.showpage-info-side-photo{
+.showpage-info-side-photo img{
+  height: 100%;
+}
+
+.showpage-info-middle-photo img{
   height: 100%;
 }
 
