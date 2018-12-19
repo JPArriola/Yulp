@@ -31,6 +31,8 @@ class User < ApplicationRecord
   foreign_key: :author_id,
   class_name: :Review
 
+  has_many_attached :photos
+
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)
     return nil unless user

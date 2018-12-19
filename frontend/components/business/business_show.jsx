@@ -13,6 +13,8 @@ class BusinessShow extends React.Component{
   render(){
     let biz = this.props.business;
     if (!biz) return null;    
+    let users = this.props.users;
+    console.error(this.props);
 
     return <div>
         <Navbar />
@@ -45,13 +47,13 @@ class BusinessShow extends React.Component{
                     </div>
                     <div className="showpage-info-photos">
                       <div className="showpage-info-side-photo">
-                        side photo
+                        <img src={this.props.business.photoUrls[0]} />
                       </div>
                       <div className="showpage-info-middle-photo">
-                        middle photo
+                        <img src={this.props.business.photoUrls[1]} />
                       </div>
                       <div className="showpage-info-side-photo">
-                        side photo
+                        <img src={this.props.business.photoUrls[2]} />
                       </div>
                     </div>
                   </div>
@@ -62,7 +64,7 @@ class BusinessShow extends React.Component{
             <div className="showpage-working-size">
               <div className="showpage-business-content-master">
                 <div className="showpage-business-content-parent" >
-                  <ReviewIndex />
+                  <ReviewIndex users={users}/>
                 </div>
                 <div className="showpage-business-sidebar-parent" >
                   <div className="showpage-business-sidebar-top-info">

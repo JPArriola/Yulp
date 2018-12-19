@@ -5,9 +5,11 @@ import BusinessShow from './business_show';
 const mSP = (state, ownProps) => {
   let businessId = ownProps.match.params.id;
   let business = state.entities.businesses[businessId];
+  let users = state.entities.users;
   return ({
-    business: business,
-    businessId
+    business,
+    businessId,
+    users,
   });
 };
 
