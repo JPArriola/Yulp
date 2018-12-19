@@ -13,14 +13,7 @@ class ReviewIndex extends React.Component {
 
     return (
       <div className="review-index-master">
-        <div>
-          <div>
-            <div>
-              {reviews}
-
-            </div>
-          </div>
-        </div>
+       {reviews}
       </div>
     );
   }
