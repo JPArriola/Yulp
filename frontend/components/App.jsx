@@ -22,3 +22,4 @@ const App = () => (
 export default App;
 
 //keep <Route path='/' component={HomeContainer} /> LAST!!!!
+// use this later <Route exact path='/businesses/:id/review' component={NewReviewContainer} />

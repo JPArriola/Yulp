@@ -11,7 +11,7 @@ Business.destroy_all
 Review.destroy_all
 
 user1 = User.create!(email: 'demo@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-pro_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/beverage-chiang-mai-cup-1581484.jpg')
+pro_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/adult-beach-beard-736716.jpg')
 user1.photos.attach(io: pro_file1, filename: 'profile1')
 
 user2 = User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')

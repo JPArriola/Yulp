@@ -1,11 +1,12 @@
 import React from "react";
 
 const ReviewIndexItem = props => {
-  console.warn(props)
   return <div className="review-master">
       <div className="review-master-child">
         <div className="review-author-container">
-          <div className="review-author-picture" />
+          <div className="review-author-picture" >
+            <img src={props.author.photoUrls[0]} />
+          </div>
           <div className="review-author-info">
             {props.author.firstName}
             {props.author.lastName}

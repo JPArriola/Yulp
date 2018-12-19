@@ -13,6 +13,7 @@ json.authors do
   @business.reviews.each do |review|
     json.set! review.author.id do
       json.partial! "api/users/user", user: review.author
+      json.photoUrls review.author.photos.map {|file| url_for(file)}
     end
   end
 end

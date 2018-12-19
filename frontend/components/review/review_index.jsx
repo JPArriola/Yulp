@@ -6,7 +6,6 @@ class ReviewIndex extends React.Component {
 
   render() {
     if (this.props.reviews.length === 0) return null;
-    console.warn(this.props)
     let reviews = this.props.reviews.map(review => {
       let author = this.props.users[review.authorId]
       return <ReviewIndexItem key={review.id} review={review} author={author} />;
@@ -14,10 +13,10 @@ class ReviewIndex extends React.Component {
 
     return (
       <div className="review-index-master">
-       {reviews}
+        {reviews}
       </div>
     );
   }
 }
 
-export default withRouter(ReviewIndex);
+export default ReviewIndex;
