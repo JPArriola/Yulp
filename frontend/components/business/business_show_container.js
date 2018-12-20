@@ -13,6 +13,7 @@ const mSP = (state, ownProps) => {
     businessId,
     users,
     hasUserReviewed: hasUserReviewed(state, businessId),
+    ownProps,
   });
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../navbar/navbar_container";
+import BusinessShowHours from "../business/business_show_hours_container";
 import ReviewIndex from "../review/review_index_container";
 import { Link } from "react-router-dom";
 
@@ -23,14 +24,6 @@ class BusinessShow extends React.Component{
     let biz = this.props.business;
     if (!biz) return null;
     let users = this.props.users;
-            /*iterate through the reviews on the business show page.
-    If one of the reviews.author-id matches that of the current 
-    user. Show the edit review button w/ link.
-
-    <Link to={`/businesses/${biz.id}/${review.id}/edit`}><i className="fas fa-star"> Edit Review</i></Link>
-
-    Else display Write a Review w/ link.
-    */
 
             return <div>
                 <Navbar />
@@ -86,9 +79,7 @@ class BusinessShow extends React.Component{
                         <div className="showpage-business-sidebar-top-info">
                           hours / price
                         </div>
-                        <div className="showpage-business-sidebar-hours">
-                          hours
-                        </div>
+                        <BusinessShowHours />
                         <div className="showpage-business-sidebar-info">
                           business info
                         </div>

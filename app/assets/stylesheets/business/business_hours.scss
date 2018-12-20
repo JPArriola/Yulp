@@ -1,0 +1,26 @@
+.showpage-business-sidebar-hours {
+  height: 180px;
+  font-size: 14px;
+}
+
+.hours-title{
+  margin-bottom: 12px;
+  color: #d32323;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.hours-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.hours-day{
+  font-weight: bold;
+}
+
+.hours-time{
+  margin-left: 60px;
+  letter-spacing: 1px;
+}
