@@ -2,6 +2,7 @@ import { connect } from "react-redux";
 import { fetchBusiness } from "../../actions/business_actions";
 import { createReview } from "../../actions/review_actions";
 import BusinessShow from './business_show';
+import {hasUserReviewed} from "../../reducers/selectors";
 
 const mSP = (state, ownProps) => {
   let businessId = ownProps.match.params.id;
@@ -11,6 +12,7 @@ const mSP = (state, ownProps) => {
     business,
     businessId,
     users,
+    hasUserReviewed: hasUserReviewed(state, businessId),
   });
 };
 

@@ -6,6 +6,7 @@ import HomeContainer from "./home/home_container";
 import BusinessShowContainer from "./business/business_show_container";
 import BusinessContainer from "./business/business_container";
 import NewReviewContainer from "./review/create_review_form_container";
+import EditReviewContainer from "./review/edit_review_form_container"
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
 const App = () => (
@@ -15,6 +16,7 @@ const App = () => (
       <AuthRoute exact path='/signup' component={SignupContainer} />
       <Route exact path='/businesses' component={BusinessContainer} />
       <Route path='/businesses/:id/review' component={NewReviewContainer} />
+      <Route path='/businesses/reviews/:id/edit' component={EditReviewContainer} />
       <Route path='/businesses/:id' component={BusinessShowContainer} />
       <Route path='/' component={HomeContainer} />
     </Switch>

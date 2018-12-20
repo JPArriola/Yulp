@@ -23,8 +23,7 @@ class ReviewForm extends React.Component {
       author_id,
       // IS IT THIS???????
     });
-    this.props.action(review);
-    this.navigateToBusinessShow();
+    this.props.action(review).then( () => this.navigateToBusinessShow());
   }
 
   update(field) {

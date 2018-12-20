@@ -5,7 +5,7 @@ import { fetchReview, updateReview } from '../../actions/review_actions';
 
 const mapStateToProps = (state, ownProps) => {
   const defaultReview = { rating: 5, body: '' };
-  const review = state.entities.reviews[ownProps.match.params.reviewId] || defaultReview;
+  const review = state.entities.reviews[ownProps.match.params.id] || defaultReview;
   const formType = 'Update Review';
 
   return { review, formType };
@@ -20,12 +20,12 @@ const mapDispatchToProps = dispatch => {
 
 class EditReviewForm extends React.Component {
   componentDidMount() {
-    this.props.fetchReview(this.props.match.params.reviewId);
+    this.props.fetchReview(this.props.match.params.id);
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.review.id != this.props.match.params.reviewId) {
-      this.props.fetchReview(this.props.match.params.reviewId);
+    if (prevProps.review.id != this.props.match.params.id) {
+      this.props.fetchReview(this.props.match.params.id);
     }
   }
 

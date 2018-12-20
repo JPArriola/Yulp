@@ -3,19 +3,27 @@ import Navbar from "../navbar/navbar_container";
 import ReviewIndex from "../review/review_index_container";
 import { Link } from "react-router-dom";
 
+
 class BusinessShow extends React.Component{
 
   componentDidMount(){
     this.props.fetchBusiness(this.props.businessId);
   }
 
+  reviewButton(){
+    if (this.props.hasUserReviewed){
+      return <Link to={`/businesses/reviews/${this.props.hasUserReviewed}/edit`}><i className="fas fa-star"> Edit Review</i></Link>;
+    } else {
+      return <Link to={`/businesses/${this.props.business.id}/review`}><i className="fas fa-star"> Write a Review</i></Link>;
+    }
+  }
 
 
   render(){
-            let biz = this.props.business;
-            if (!biz) return null;
-            let users = this.props.users;
-
+    let biz = this.props.business;
+    if (!biz) return null;
+    let users = this.props.users;
+    console.warn(this.props);
             /*iterate through the reviews on the business show page.
     If one of the reviews.author-id matches that of the current 
     user. Show the edit review button w/ link.
@@ -45,8 +53,7 @@ class BusinessShow extends React.Component{
                           </div>
                           <div className="showpage-business-info-top-right">
                             <div className="showpage-review-button-container">
-                              <Link to={`/businesses/${biz.id}/review`}>
-                                <i className="fas fa-star"> Write a Review</i></Link>
+                              {this.reviewButton()}
                             </div>
                           </div>
                         </div>

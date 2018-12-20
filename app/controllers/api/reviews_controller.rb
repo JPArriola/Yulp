@@ -1,6 +1,8 @@
 class Api::ReviewsController < ApplicationController
 
-
+  def show
+    @review = Review.find(params[:id])
+  end
 
   def create
     # review_params.author_id = current_user.id;
