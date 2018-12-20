@@ -10,19 +10,24 @@ class ReviewForm extends React.Component {
   }
 
   navigateToBusinessShow() {
-    const url = `/businesses/${this.props.match.params.id}`;
+    let url = `/businesses/${this.props.review.bizId}`;
+    if (this.props.formType === "Post Review"){
+      let homebiz = parseInt(this.props.match.params.id);
+      url = `/businesses/${homebiz}`;
+    }
     this.props.history.push(url);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    const businessId = parseInt(this.props.match.params.id);
-    const author_id = this.props.currentUser;
-    const review = Object.assign({}, this.state, {
-      biz_id: businessId,
-      author_id,
-      // IS IT THIS???????
-    });
+
+    let type = this.props.formType;
+    let id = parseInt(this.props.match.params.id);
+    let bizOrigin = this.props.review.bizId;
+    let review = Object.assign({}, this.state, { biz_id : id });
+    if (type === "Update Review") {
+      review = Object.assign({}, this.state, { id, bizOrigin });
+    }
     this.props.action(review).then( () => this.navigateToBusinessShow());
   }
 
@@ -49,7 +54,7 @@ class ReviewForm extends React.Component {
             <br></br>
             <textarea cols="30" rows="10" value={this.state.body} onChange={this.update("body")} />
             <br></br>
-            <input type="submit" value="Post Review" />
+            <input type="submit" value={this.props.formType} />
           </form>
         </div>
       </div>;

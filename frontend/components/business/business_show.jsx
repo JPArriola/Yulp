@@ -23,7 +23,6 @@ class BusinessShow extends React.Component{
     let biz = this.props.business;
     if (!biz) return null;
     let users = this.props.users;
-    console.warn(this.props);
             /*iterate through the reviews on the business show page.
     If one of the reviews.author-id matches that of the current 
     user. Show the edit review button w/ link.

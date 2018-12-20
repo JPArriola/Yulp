@@ -22,19 +22,19 @@ export const createReview = review => {
   });
 };
 
-export const updateReview = review => (
-  $.ajax({
-    url: `api/reviews/${review.id}`,
+export const updateReview = review => {
+  return $.ajax({
+    url: `/api/reviews/${review.id}`,
     method: 'PATCH',
     data: {
       review
     }
   })
-);
+};
 
 export const deleteReview = id => (
   $.ajax({
-    url: `api/reviews/${id}`,
+    url: `/api/reviews/${id}`,
     method: 'DELETE'
   })
 );

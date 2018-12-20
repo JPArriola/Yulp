@@ -53,9 +53,9 @@ export const fetchReview = id => dispatch => (
 );
 
 export const updateReview = (review) => dispatch => (
-  ApiUtil.updateReview(review).then(review => dispatch(receiveReview(review)))
+  APIUtil.updateReview(review).then(review => dispatch(receiveReview(review)))
 );
 
 export const deleteReview = (reviewId) => dispatch => (
-  ApiUtil.deleteReview(reviewId).then(review => dispatch(removeReview(reviewId)))
+  APIUtil.deleteReview(reviewId).then(review => dispatch(removeReview(reviewId)))
 );
