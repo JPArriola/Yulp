@@ -14,15 +14,15 @@ user1 = User.create!(email: 'demo@guest.com', password: 'password', first_name: 
 pro_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/adult-beach-beard-736716.jpg')
 user1.photos.attach(io: pro_file1, filename: 'profile1')
 
-user2 = User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo2@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo3@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo4@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo5@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo6@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo7@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo8@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
-User.create!(email: 'demo9@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
+user2 = User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 1', zipcode: '12345')
+user3 = User.create!(email: 'demo2@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 2', zipcode: '12345')
+user4 = User.create!(email: 'demo3@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 3', zipcode: '12345')
+user5 = User.create!(email: 'demo4@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 4', zipcode: '12345')
+user6 = User.create!(email: 'demo5@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 5', zipcode: '12345')
+user7 = User.create!(email: 'demo6@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 6', zipcode: '12345')
+user8 = User.create!(email: 'demo7@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 7', zipcode: '12345')
+user9 = User.create!(email: 'demo8@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 8', zipcode: '12345')
+user10 = User.create!(email: 'demo9@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 9', zipcode: '12345')
 
 # boba businesses
 biz1 = Business.create!(

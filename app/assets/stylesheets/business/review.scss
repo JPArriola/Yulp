@@ -7,11 +7,13 @@
   // background:rgb(162, 162, 202);
   border-top: 1px solid rgb(230, 230, 230);
   padding: 15px 0px;
+  min-height: 200px;
 }
 
 .review-master-child{
   display: flex;
   flex-direction: row;
+  min-height: 200px;
 }
 
 .review-author-container{
@@ -41,14 +43,56 @@
   padding: 0px 15px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .review-content-rating{
-  
+  padding-bottom: 10px;
 }
 
 .review-content-body{
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
+  color: rgb(17, 17, 17);
+  margin-bottom: 12px;
+}
+
+.review-content-reactions-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.review-content-review{
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.review-content-reactions-actions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.review-content-emoticons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.review-content-emoticon-container{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
   color: #333;
+}
+
+.review-content-delete{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #999;
 }

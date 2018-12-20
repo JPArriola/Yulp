@@ -16,14 +16,16 @@ class ReviewIndexItem extends React.Component{
 
   isAuthor(){
     if (this.props.currUser === this.props.author.id) {
-      return <button onClick={this.deleteReview()}>Delete Review</button>;
+      return <div className="review-content-delete">
+          <button onClick={this.deleteReview()}>
+            <i className="fas fa-trash-alt" />
+          </button>
+        </div>;
     }
   }
   
   render(){
-    
-    console.error(this.props);
-  return <div className="review-master">
+    return <div className="review-master">
       <div className="review-master-child">
         <div className="review-author-container">
           <div className="review-author-picture" >
@@ -37,7 +39,17 @@ class ReviewIndexItem extends React.Component{
         <div className="review-content-container">
           <div className="review-content-rating">{this.props.review.rating}</div>
           <div className="review-content-body">{this.props.review.body}</div>
-          {this.isAuthor()}
+          <div className="review-content-reactions-container">
+            <div className="review-content-review">Was this review ...?</div>
+            <div className="review-content-reactions-actions">
+              <div className="review-content-emoticons">
+                <div className="review-content-emoticon-container"><i className="fas fa-lightbulb"></i> Useful</div>
+                <div className="review-content-emoticon-container"><i className="far fa-grin-alt"></i> Funny</div>
+                <div className="review-content-emoticon-container"><i className="far fa-grin-stars"></i> Cool</div>
+              </div>
+              {this.isAuthor()}
+            </div>
+          </div>
         </div>
       </div>
     </div>;
