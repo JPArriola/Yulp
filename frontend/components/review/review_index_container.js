@@ -6,6 +6,7 @@ const mSP = (state, ownProps) => {
   let reviews = Object.values(state.entities.reviews);
   return ({
     reviews: reviews,
+    currUser: state.session.id,
   });
 };
 
