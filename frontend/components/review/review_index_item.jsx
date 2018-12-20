@@ -1,6 +1,7 @@
 import React from "react";
 
 const ReviewIndexItem = props => {
+  console.error(props);
   return <div className="review-master">
       <div className="review-master-child">
         <div className="review-author-container">
