@@ -13,6 +13,7 @@
 
 class Review < ApplicationRecord
   validates :body, :rating, presence: true
+  validates :biz_id, uniqueness: { scope: :author_id, message: "you done messed up" }
 
   belongs_to :business,
   foreign_key: :biz_id,

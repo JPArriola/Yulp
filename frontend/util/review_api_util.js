@@ -15,9 +15,26 @@ export const fetchReview = (id) => {
 export const createReview = review => {
   return $.ajax({
     method: 'POST',
-    url: 'api/reviews',
+    url: '/api/reviews',
     data: {
       review
     }
   });
 };
+
+export const updateReview = review => (
+  $.ajax({
+    url: `api/reviews/${review.id}`,
+    method: 'PATCH',
+    data: {
+      review
+    }
+  })
+);
+
+export const deleteReview = id => (
+  $.ajax({
+    url: `api/reviews/${id}`,
+    method: 'DELETE'
+  })
+);
