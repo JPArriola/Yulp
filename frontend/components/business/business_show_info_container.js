@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import BusinessShowInfo from './business_show_hours';
+import BusinessShowInfo from './business_show_info';
 import { withRouter } from "react-router-dom";
 
 const mSP = (state, ownProps) => {
@@ -9,6 +9,5 @@ const mSP = (state, ownProps) => {
     business,
   });
 };
-
 
 export default withRouter(connect(mSP, null)(BusinessShowInfo));

@@ -11,5 +11,4 @@ const mSP = (state, ownProps) => {
   });
 };
 
-
 export default withRouter(connect(mSP, null)(BusinessShowHours));

@@ -3,7 +3,7 @@
   font-size: 14px;
 }
 
-.hours-title{
+.sidebar-category-title{
   margin-bottom: 12px;
   color: #d32323;
   font-weight: bold;
@@ -21,6 +21,20 @@
 }
 
 .hours-time{
-  margin-left: 60px;
+  margin-left: 40px;
   letter-spacing: 1px;
+}
+
+.showpage-business-sidebar-info {
+  height: 400px;
+  font-size: 14px;
+}
+
+.sidebar-business-info-container li {
+  line-height: 24px;
+}
+
+.sidebar-business-info-item {
+  font-weight: bold;
+  padding-left: 4px;
 }

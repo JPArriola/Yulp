@@ -13,7 +13,7 @@ class BusinessShowHours extends React.Component{
 
     return(
     <div className="showpage-business-sidebar-hours">
-      <div className="hours-title">
+      <div className="sidebar-category-title">
         <h3>Hours</h3>
       </div>
       <div className="hours-info">
