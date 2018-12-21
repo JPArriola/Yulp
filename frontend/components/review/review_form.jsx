@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class ReviewForm extends React.Component {
   constructor(props) {
@@ -49,8 +49,8 @@ class ReviewForm extends React.Component {
     return <div className="new-review-page-master">
         <div className="new-review-page-working-area">
           <div className="new-review-navbar">
-            <div className="new-review-navbar-left">
-              <div className="new-review-navbar-logo" />
+            <div className="new-review-navbar-left" >
+              <Link to="/"><div className="new-review-navbar-logo" /></Link>
               <div className="new-review-navbar-formtype">{this.props.formType}</div>
             </div>
           </div>
