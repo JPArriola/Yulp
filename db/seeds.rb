@@ -10,19 +10,22 @@ User.destroy_all
 Business.destroy_all
 Review.destroy_all
 
-user1 = User.create!(email: 'demo@guest.com', password: 'password', first_name: 'Guest', last_name: 'User', zipcode: '12345')
+#demo users
+user1 = User.create!(email: 'demo@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 1', zipcode: '12345')
 pro_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/adult-beach-beard-736716.jpg')
 user1.photos.attach(io: pro_file1, filename: 'profile1')
 
-user2 = User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 1', zipcode: '12345')
-user3 = User.create!(email: 'demo2@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 2', zipcode: '12345')
-user4 = User.create!(email: 'demo3@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 3', zipcode: '12345')
-user5 = User.create!(email: 'demo4@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 4', zipcode: '12345')
-user6 = User.create!(email: 'demo5@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 5', zipcode: '12345')
-user7 = User.create!(email: 'demo6@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 6', zipcode: '12345')
-user8 = User.create!(email: 'demo7@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 7', zipcode: '12345')
-user9 = User.create!(email: 'demo8@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 8', zipcode: '12345')
-user10 = User.create!(email: 'demo9@guest.com', password: 'password', first_name: 'Guest', last_name: 'User 9', zipcode: '12345')
+user2 = User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 2', zipcode: '12345')
+user3 = User.create!(email: 'demo2@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 3', zipcode: '12345')
+user4 = User.create!(email: 'demo3@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 4', zipcode: '12345')
+user5 = User.create!(email: 'demo4@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 5', zipcode: '12345')
+
+#seed users
+seed1 = User.create!(email: 'seed1@seed.com', password: 'marklee', first_name: 'Mark', last_name: ' Lee', zipcode: '12345')
+seed2 = User.create!(email: 'seed2@seed.com', password: 'misolee', first_name: 'Miso', last_name: ' Lee', zipcode: '12345')
+seed3 = User.create!(email: 'seed3@seed.com', password: 'ericto', first_name: 'Eric', last_name: ' To', zipcode: '12345')
+seed4 = User.create!(email: 'seed4@seed.com', password: 'suepark', first_name: 'Sue', last_name: ' Park', zipcode: '12345')
+seed5 = User.create!(email: 'seed5@seed.com', password: 'adikantawala', first_name: 'Adi', last_name: ' Kantawala', zipcode: '12345')
 
 # boba businesses
 biz1 = Business.create!(
@@ -50,7 +53,7 @@ biz1 = Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "No",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["11:00", "23:00"],	
     ["11:00", "23:00"],	
@@ -69,17 +72,24 @@ photo_file3 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/
 biz1.photos.attach(io: photo_file3, filename: 'boba3')
 
 review1 = Review.create!(
-  body: "THIS IS AN EXCELLENT REVIEW OF PLENTEA. GREAT PLACE TO STUDY FOR APP ACADEMY.",
+  body: "I was sold on plentea when i heard the glass bottles were free with purchase. Very environmentally friendly though I don't know who actually brings their bottle back whenever they come to get a new drink. The drink prices are VERY fair and actually kind of cheap if you factor in getting a free glass jar. I was in San Fran for vacation and do not live here so I couldn't take the glass jar back with me. Also, if you check in, you get 15% off 2 drinks which makes it even cheaper. My boyfriend and I got the regular fruit teas and they were both pretty good and standard. I wish I could come back. If I lived in SF, this would be my go to bubble tea spot!",
   rating: 5,
   biz_id: biz1.id,
-  author_id: user1.id,
+  author_id: seed1.id,
 )
 
 review2 = Review.create!(
-  body: "THIS IS AN EXCELLENT REVIEW OF PLENTEA. GREAT PLACE TO STUDY FOR APP ACADEMY WIT MA FRENDS.",
+  body: "I had heard a lot about Plentea for awhile but as I don't live in the city, there's not a ton of chances to get it unless I'm there. Well, when the wedding reception you're going to in a block or two away, why not?? To say the other wedding guests were excited then upset that boba wasnt actually being served is a bit of an understatement. Everyone loves their boba lol... But anyway, about Plentea. I thought the quality of the tea was pretty apparent in the taste. The jasmine tea scent was sooo fragrant and obvious in taste. I'd say it's one of my favorite jasmine milk teas I've had. The boba was also chewy and fresh and tasted like it was sitting in honey too. I ordered the matcha tea latte and that was also delicious! They use all organic teas and milks which I can really taste. And the cute glass bottles are of course another great marketing point (reduce plastic!!) and was actually quite convenient to cap off when I needed to store my boba away for a second. Drinks run about $5 or more if you add boba but if you buy two drinks and check in on yelp, you can get 15% off! I'd come back if I could!",
   rating: 5,
   biz_id: biz1.id,
-  author_id: user2.id,
+  author_id: seed2.id,
+)
+
+review3 = Review.create!(
+  body: "Generally, bubble tea makes me feel bloated afterwards. I realize this is because they probably use powder, or because their tapioca comes from some questionable source, who knows. With Plentea's drink offerings, it tasted clean and like real tea and milk, which is something I appreciate a lot and I'm willing to pay the premium if I know what I'm drinking is not powder. I can even see the staff make my drink in front of me, which is more reassuring than the places that have someone take my order, disappear into the back, and come back with my drink. ",
+  rating: 5,
+  biz_id: biz1.id,
+  author_id: seed3.id,
 )
 
 biz2 = Business.create!(
@@ -107,7 +117,7 @@ biz2 = Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "Yes",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["11:00", "22:00"],	
     ["11:00", "22:00"],	
@@ -129,7 +139,7 @@ review4 = Review.create!(
   body: "THIS IS AN EXCELLENT REVIEW OF hanlin. GREAT PLACE FOR APP ACADEMY.",
   rating: 5,
   biz_id: biz2.id,
-  author_id: user1.id,
+  author_id: seed1.id,
 )
 
 biz3 = Business.create!(
@@ -157,7 +167,7 @@ biz3 = Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "No",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["12:00", "19:00"],	
     ["12:00", "19:00"],	
@@ -200,7 +210,7 @@ biz4 = Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "Yes",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["8:00", "21:00"],	
     ["8:00", "21:00"],	
@@ -243,7 +253,7 @@ biz5 = Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "Yes",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["11:00", "20:00"],	
     ["11:00", "20:00"],	
@@ -261,220 +271,220 @@ biz5.photos.attach(io: photo_file13, filename: 'boba13')
 biz5.photos.attach(io: photo_file14, filename: 'boba14')
 biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
-biz6 = Business.create!(
-  biz_name: 'i-Tea',
-  price: "$",
-  address_1: '253 Kearny St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94108',
-  lat: '37.789990',
-  lng: '-122.403890',
-  rating: 4,
-  business_info: "Authentic Boba Milk Tea, Fruit Tea & Tea Bar --Contemporary Original Taiwan Taste--",
-  phone_number: "(628) 400-4087",
-  website: "itea-usa.com",
-  takes_reservations: "No",
-  take_out: "Yes",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "Yes",
-  free_wifi: "Yes",
-  pets_allowed: "No",
-  wheelchair_accessible: "Yes",
-  good_for_kids: "Yes",
-  good_for_groups: "Yes",
-  outdoor_seating: "No",
-  caters: "Yes",
-  owner_id: user1.id,
-  hours: [
-    ["11:00", "19:00"],	
-    ["11:00", "19:00"],	
-    ["11:00", "19:00"],	
-    ["11:00", "19:00"],	
-    ["11:00", "20:00"],	
-    ["11:00", "19:00"],
-    ["12:00", "19:00"]
-  ]
-)
-photo_file16 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file17 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file18 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-biz6.photos.attach(io: photo_file16, filename: 'boba16')
-biz6.photos.attach(io: photo_file17, filename: 'boba17')
-biz6.photos.attach(io: photo_file18, filename: 'boba18')
+# biz6 = Business.create!(
+#   biz_name: 'i-Tea',
+#   price: "$",
+#   address_1: '253 Kearny St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94108',
+#   lat: '37.789990',
+#   lng: '-122.403890',
+#   rating: 4,
+#   business_info: "Authentic Boba Milk Tea, Fruit Tea & Tea Bar --Contemporary Original Taiwan Taste--",
+#   phone_number: "(628) 400-4087",
+#   website: "itea-usa.com",
+#   takes_reservations: "No",
+#   take_out: "Yes",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "Yes",
+#   free_wifi: "Yes",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "Yes",
+#   good_for_kids: "Yes",
+#   good_for_groups: "Yes",
+#   outdoor_seating: "No",
+#   caters: "Yes",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["11:00", "19:00"],	
+#     ["11:00", "19:00"],	
+#     ["11:00", "19:00"],	
+#     ["11:00", "19:00"],	
+#     ["11:00", "20:00"],	
+#     ["11:00", "19:00"],
+#     ["12:00", "19:00"]
+#   ]
+# )
+# photo_file16 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file17 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file18 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# biz6.photos.attach(io: photo_file16, filename: 'boba16')
+# biz6.photos.attach(io: photo_file17, filename: 'boba17')
+# biz6.photos.attach(io: photo_file18, filename: 'boba18')
 
-biz7 = Business.create!(
-  biz_name: 'Purple Kow',
-  price: "$",
-  address_1: '3620 Balboa St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94121',
-  lat: '37.775900',
-  lng: '-122.497820',
-  rating: 3,
-  business_info: "We are serving tea in the outer Richmond area",
-  phone_number: "(415) 387-9009",
-  website: "purplekow.com",
-  takes_reservations: "No",
-  take_out: "Yes",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "Yes",
-  free_wifi: "Yes",
-  pets_allowed: "No",
-  wheelchair_accessible: "Yes",
-  good_for_kids: "Yes",
-  good_for_groups: "Yes",
-  outdoor_seating: "No",
-  caters: "No",
-  owner_id: user1.id,
-  hours: [
-    ["11:00", "20:00"],	
-    ["11:00", "20:00"],	
-    ["11:00", "20:00"],	
-    ["11:00", "20:00"],	
-    ["11:00", "24:00"],	
-    ["11:00", "24:00"],
-    ["12:00", "20:00"]
-  ]
-)
-photo_file19 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file20 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file21 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-biz7.photos.attach(io: photo_file19, filename: 'boba19')
-biz7.photos.attach(io: photo_file20, filename: 'boba20')
-biz7.photos.attach(io: photo_file21, filename: 'boba21')
+# biz7 = Business.create!(
+#   biz_name: 'Purple Kow',
+#   price: "$",
+#   address_1: '3620 Balboa St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94121',
+#   lat: '37.775900',
+#   lng: '-122.497820',
+#   rating: 3,
+#   business_info: "We are serving tea in the outer Richmond area",
+#   phone_number: "(415) 387-9009",
+#   website: "purplekow.com",
+#   takes_reservations: "No",
+#   take_out: "Yes",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "Yes",
+#   free_wifi: "Yes",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "Yes",
+#   good_for_kids: "Yes",
+#   good_for_groups: "Yes",
+#   outdoor_seating: "No",
+#   caters: "No",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["11:00", "20:00"],	
+#     ["11:00", "20:00"],	
+#     ["11:00", "20:00"],	
+#     ["11:00", "20:00"],	
+#     ["11:00", "24:00"],	
+#     ["11:00", "24:00"],
+#     ["12:00", "20:00"]
+#   ]
+# )
+# photo_file19 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file20 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file21 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# biz7.photos.attach(io: photo_file19, filename: 'boba19')
+# biz7.photos.attach(io: photo_file20, filename: 'boba20')
+# biz7.photos.attach(io: photo_file21, filename: 'boba21')
 
-biz8 = Business.create!(
-  biz_name: 'Asha Tea House',
-  price: "$",
-  address_1: '17 Kearny St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94108',
-  lat: '37.789990',
-  lng: '-122.403890',
-  rating: 4,
-  business_info: "There is a cup of tea out there for everyone, whether it's a simple glass of straight tea, or a crafted cup of flavored tea.",
-  phone_number: "(415) 549-3688",
-  website: "ashateahouse.com",
-  takes_reservations: "No",
-  take_out: "Yes",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "Yes",
-  free_wifi: "Yes",
-  pets_allowed: "No",
-  wheelchair_accessible: "Yes",
-  good_for_kids: "Yes",
-  good_for_groups: "Yes",
-  outdoor_seating: "No",
-  caters: "Yes",
-  owner_id: user1.id,
-  hours: [
-    ["8:30", "18:30"],	
-    ["8:30", "18:30"],	
-    ["8:30", "18:30"],	
-    ["8:30", "18:30"],	
-    ["8:30", "18:30"],	
-    ["11:00", "18:30"],
-    ["11:00", "18:30"]
-  ]
-)
-photo_file22 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file23 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file24 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-biz8.photos.attach(io: photo_file22, filename: 'boba22')
-biz8.photos.attach(io: photo_file23, filename: 'boba23')
-biz8.photos.attach(io: photo_file24, filename: 'boba24')
+# biz8 = Business.create!(
+#   biz_name: 'Asha Tea House',
+#   price: "$",
+#   address_1: '17 Kearny St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94108',
+#   lat: '37.789990',
+#   lng: '-122.403890',
+#   rating: 4,
+#   business_info: "There is a cup of tea out there for everyone, whether it's a simple glass of straight tea, or a crafted cup of flavored tea.",
+#   phone_number: "(415) 549-3688",
+#   website: "ashateahouse.com",
+#   takes_reservations: "No",
+#   take_out: "Yes",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "Yes",
+#   free_wifi: "Yes",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "Yes",
+#   good_for_kids: "Yes",
+#   good_for_groups: "Yes",
+#   outdoor_seating: "No",
+#   caters: "Yes",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["8:30", "18:30"],	
+#     ["8:30", "18:30"],	
+#     ["8:30", "18:30"],	
+#     ["8:30", "18:30"],	
+#     ["8:30", "18:30"],	
+#     ["11:00", "18:30"],
+#     ["11:00", "18:30"]
+#   ]
+# )
+# photo_file22 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file23 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file24 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# biz8.photos.attach(io: photo_file22, filename: 'boba22')
+# biz8.photos.attach(io: photo_file23, filename: 'boba23')
+# biz8.photos.attach(io: photo_file24, filename: 'boba24')
 
-biz9 = Business.create!(
-  biz_name: 'T & T',
-  price: "$",
-  address_1: '601 Broadway St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94133',
-  lat: '37.797490',
-  lng: '-122.407240',
-  rating: 3,
-  business_info: "Local boba shop near Chinatown and North Beach.",
-  phone_number: "(415) 238-2992",
-  website: "",
-  takes_reservations: "No",
-  take_out: "Yes",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "No",
-  free_wifi: "Yes",
-  pets_allowed: "No",
-  wheelchair_accessible: "Yes",
-  good_for_kids: "Yes",
-  good_for_groups: "Yes",
-  outdoor_seating: "No",
-  caters: "No",
-  owner_id: user1.id,
-  hours: [
-    ["8:00", "23:00"],	
-    ["8:00", "23:00"],	
-    ["8:00", "23:00"],	
-    ["8:00", "23:00"],	
-    ["8:00", "1:00"],	
-    ["8:00", "1:00"],
-    ["8:00", "23:00"]
-  ]
-)
-photo_file25 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file26 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file27 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-biz9.photos.attach(io: photo_file25, filename: 'boba25')
-biz9.photos.attach(io: photo_file26, filename: 'boba26')
-biz9.photos.attach(io: photo_file27, filename: 'boba27')
+# biz9 = Business.create!(
+#   biz_name: 'T & T',
+#   price: "$",
+#   address_1: '601 Broadway St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94133',
+#   lat: '37.797490',
+#   lng: '-122.407240',
+#   rating: 3,
+#   business_info: "Local boba shop near Chinatown and North Beach.",
+#   phone_number: "(415) 238-2992",
+#   website: "",
+#   takes_reservations: "No",
+#   take_out: "Yes",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "No",
+#   free_wifi: "Yes",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "Yes",
+#   good_for_kids: "Yes",
+#   good_for_groups: "Yes",
+#   outdoor_seating: "No",
+#   caters: "No",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["8:00", "23:00"],	
+#     ["8:00", "23:00"],	
+#     ["8:00", "23:00"],	
+#     ["8:00", "23:00"],	
+#     ["8:00", "1:00"],	
+#     ["8:00", "1:00"],
+#     ["8:00", "23:00"]
+#   ]
+# )
+# photo_file25 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file26 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file27 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# biz9.photos.attach(io: photo_file25, filename: 'boba25')
+# biz9.photos.attach(io: photo_file26, filename: 'boba26')
+# biz9.photos.attach(io: photo_file27, filename: 'boba27')
 
-biz10 = Business.create!(
-  biz_name: 'E Tea',
-  price: "$",
-  address_1: '839 Kearny St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94108',
-  lat: '37.795830',
-  lng: '-122.405240',
-  rating: 3,
-  business_info: "Come and try Alice’s secret formula bubble tea.",
-  phone_number: "(415) 956-1868",
-  website: "eteasf.com",
-  takes_reservations: "No",
-  take_out: "Yes",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "No",
-  free_wifi: "No",
-  pets_allowed: "No",
-  wheelchair_accessible: "Yes",
-  good_for_kids: "Yes",
-  good_for_groups: "Yes",
-  outdoor_seating: "No",
-  caters: "No",
-  owner_id: user1.id,
-  hours: [
-    ["11:30", "21:30"],	
-    ["11:30", "21:30"],	
-    ["11:30", "21:30"],	
-    ["11:30", "21:30"],	
-    ["11:30", "21:30"],	
-    ["11:30", "21:30"],
-    ["11:30", "21:30"]
-  ]
-)
-photo_file28 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file29 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file30 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-biz10.photos.attach(io: photo_file28, filename: 'boba28')
-biz10.photos.attach(io: photo_file29, filename: 'boba29')
-biz10.photos.attach(io: photo_file30, filename: 'boba30')
+# biz10 = Business.create!(
+#   biz_name: 'E Tea',
+#   price: "$",
+#   address_1: '839 Kearny St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94108',
+#   lat: '37.795830',
+#   lng: '-122.405240',
+#   rating: 3,
+#   business_info: "Come and try Alice’s secret formula bubble tea.",
+#   phone_number: "(415) 956-1868",
+#   website: "eteasf.com",
+#   takes_reservations: "No",
+#   take_out: "Yes",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "No",
+#   free_wifi: "No",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "Yes",
+#   good_for_kids: "Yes",
+#   good_for_groups: "Yes",
+#   outdoor_seating: "No",
+#   caters: "No",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["11:30", "21:30"],	
+#     ["11:30", "21:30"],	
+#     ["11:30", "21:30"],	
+#     ["11:30", "21:30"],	
+#     ["11:30", "21:30"],	
+#     ["11:30", "21:30"],
+#     ["11:30", "21:30"]
+#   ]
+# )
+# photo_file28 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file29 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# photo_file30 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+# biz10.photos.attach(io: photo_file28, filename: 'boba28')
+# biz10.photos.attach(io: photo_file29, filename: 'boba29')
+# biz10.photos.attach(io: photo_file30, filename: 'boba30')
 
 # coffe shops
 Business.create!(
@@ -502,7 +512,7 @@ Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "No",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["8:00", "16:00"],	
     ["8:00", "16:00"],	
@@ -539,7 +549,7 @@ Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "Yes",
   caters: "No",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["7:30", "15:00"],	
     ["7:30", "15:00"],	
@@ -576,7 +586,7 @@ Business.create!(
   good_for_groups: "No",
   outdoor_seating: "No",
   caters: "No",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["7:00", "15:30"],	
     ["7:00", "15:30"],	
@@ -588,79 +598,79 @@ Business.create!(
   ]
 )
 
-Business.create!(
-  biz_name: 'Chapel Hill Coffee',
-  price: "$$",
-  address_1: '670 Commercial St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94111',
-  lat: '37.794210',
-  lng: '-122.404240',
-  rating: 4,
-  business_info: "Serving hyper-local, small batch, like-minded businesses that care.",
-  phone_number: "",
-  website: "chapelhillcoffee.com",
-  takes_reservations: "No",
-  take_out: "Yes",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "Yes",
-  free_wifi: "Yes",
-  pets_allowed: "No",
-  wheelchair_accessible: "Yes",
-  good_for_kids: "Yes",
-  good_for_groups: "No",
-  outdoor_seating: "No",
-  caters: "No",
-  owner_id: user1.id,
-  hours: [
-    ["8:00", "15:30"],	
-    ["8:00", "15:30"],	
-    ["8:00", "15:30"],	
-    ["8:00", "15:30"],	
-    ["8:00", "15:30"],	
-    ["8:00", "15:30"],
-    ["8:00", "15:30"]
-  ]
-)
+# Business.create!(
+#   biz_name: 'Chapel Hill Coffee',
+#   price: "$$",
+#   address_1: '670 Commercial St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94111',
+#   lat: '37.794210',
+#   lng: '-122.404240',
+#   rating: 4,
+#   business_info: "Serving hyper-local, small batch, like-minded businesses that care.",
+#   phone_number: "",
+#   website: "chapelhillcoffee.com",
+#   takes_reservations: "No",
+#   take_out: "Yes",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "Yes",
+#   free_wifi: "Yes",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "Yes",
+#   good_for_kids: "Yes",
+#   good_for_groups: "No",
+#   outdoor_seating: "No",
+#   caters: "No",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["8:00", "15:30"],	
+#     ["8:00", "15:30"],	
+#     ["8:00", "15:30"],	
+#     ["8:00", "15:30"],	
+#     ["8:00", "15:30"],	
+#     ["8:00", "15:30"],
+#     ["8:00", "15:30"]
+#   ]
+# )
 
-Business.create!(
-  biz_name: 'Joe & The Juice',
-  price: "$$",
-  address_1: '301 Howard St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94105',
-  lat: '37.789520',
-  lng: '-122.394270',
-  rating: 3,
-  business_info: "We sell products to fund the most attractive youth culture in the world.",
-  phone_number: "",
-  website: "joejuice.com",
-  takes_reservations: "No",
-  take_out: "Yes",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "Yes",
-  free_wifi: "Yes",
-  pets_allowed: "No",
-  wheelchair_accessible: "Yes",
-  good_for_kids: "Yes",
-  good_for_groups: "Yes",
-  outdoor_seating: "No",
-  caters: "No",
-  owner_id: user1.id,
-  hours: [
-    ["6:00", "21:00"],	
-    ["6:00", "21:00"],	
-    ["6:00", "21:00"],	
-    ["6:00", "21:00"],	
-    ["6:00", "21:00"],	
-    ["8:00", "19:00"],
-    ["8:00", "18:00"]
-  ]
-)
+# Business.create!(
+#   biz_name: 'Joe & The Juice',
+#   price: "$$",
+#   address_1: '301 Howard St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94105',
+#   lat: '37.789520',
+#   lng: '-122.394270',
+#   rating: 3,
+#   business_info: "We sell products to fund the most attractive youth culture in the world.",
+#   phone_number: "",
+#   website: "joejuice.com",
+#   takes_reservations: "No",
+#   take_out: "Yes",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "Yes",
+#   free_wifi: "Yes",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "Yes",
+#   good_for_kids: "Yes",
+#   good_for_groups: "Yes",
+#   outdoor_seating: "No",
+#   caters: "No",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["6:00", "21:00"],	
+#     ["6:00", "21:00"],	
+#     ["6:00", "21:00"],	
+#     ["6:00", "21:00"],	
+#     ["6:00", "21:00"],	
+#     ["8:00", "19:00"],
+#     ["8:00", "18:00"]
+#   ]
+# )
 
 #bars
 Business.create!(
@@ -688,7 +698,7 @@ Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "No",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["16:00", "2:00"],	
     ["16:00", "2:00"],	
@@ -725,7 +735,7 @@ Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "No",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["16:00", "21:00"],	
     ["16:00", "22:00"],	
@@ -762,7 +772,7 @@ Business.create!(
   good_for_groups: "Yes",
   outdoor_seating: "No",
   caters: "No",
-  owner_id: user1.id,
+  owner_id: seed3.id,
   hours: [
     ["16:00", "1:00"],	
     ["16:00", "1:00"],	
@@ -774,76 +784,76 @@ Business.create!(
   ]
 )
 
-Business.create!(
-  biz_name: 'Local Edition',
-  price: "$$",
-  address_1: '691 Market St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94105',
-  lat: '37.787410',
-  lng: '-122.403000',
-  rating: 4,
-  business_info: "Local Edition is more than just a cocktail bar.",
-  phone_number: "(415) 795-1375",
-  website: "https://www.localeditionsf.com/",
-  takes_reservations: "Yes",
-  take_out: "No",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "Yes",
-  free_wifi: "No",
-  pets_allowed: "No",
-  wheelchair_accessible: "No",
-  good_for_kids: "No",
-  good_for_groups: "Yes",
-  outdoor_seating: "No",
-  caters: "No",
-  owner_id: user1.id,
-  hours: [
-    ["5:00", "2:00"],	
-    ["5:00", "2:00"],	
-    ["5:00", "2:00"],	
-    ["5:00", "2:00"],	
-    ["4:30", "2:00"],	
-    ["7:00", "2:00"],
-    ["7:00", "2:00"]
-  ]
-)
+# Business.create!(
+#   biz_name: 'Local Edition',
+#   price: "$$",
+#   address_1: '691 Market St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94105',
+#   lat: '37.787410',
+#   lng: '-122.403000',
+#   rating: 4,
+#   business_info: "Local Edition is more than just a cocktail bar.",
+#   phone_number: "(415) 795-1375",
+#   website: "https://www.localeditionsf.com/",
+#   takes_reservations: "Yes",
+#   take_out: "No",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "Yes",
+#   free_wifi: "No",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "No",
+#   good_for_kids: "No",
+#   good_for_groups: "Yes",
+#   outdoor_seating: "No",
+#   caters: "No",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["5:00", "2:00"],	
+#     ["5:00", "2:00"],	
+#     ["5:00", "2:00"],	
+#     ["5:00", "2:00"],	
+#     ["4:30", "2:00"],	
+#     ["7:00", "2:00"],
+#     ["7:00", "2:00"]
+#   ]
+# )
 
-Business.create!(
-  biz_name: 'The Royal Exchange',
-  price: "$$",
-  address_1: '301 Sacramento St',
-  city: 'San Francisco',
-  state: 'CA',
-  zipcode: '94111',
-  lat: '37.794160',
-  lng: '-122.399140',
-  rating: 3,
-  business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
-  phone_number: "(415) 956-1710",
-  website: "royalexchange.com",
-  takes_reservations: "Yes",
-  take_out: "Yes",
-  delivery: "No",
-  credit_card: "Yes",
-  bike_parking: "Yes",
-  free_wifi: "No",
-  pets_allowed: "No",
-  wheelchair_accessible: "Yes",
-  good_for_kids: "No",
-  good_for_groups: "Yes",
-  outdoor_seating: "No",
-  caters: "Yes",
-  owner_id: user1.id,
-  hours: [
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],
-    ["11:00", "23:00"]
-  ]
-)
+# Business.create!(
+#   biz_name: 'The Royal Exchange',
+#   price: "$$",
+#   address_1: '301 Sacramento St',
+#   city: 'San Francisco',
+#   state: 'CA',
+#   zipcode: '94111',
+#   lat: '37.794160',
+#   lng: '-122.399140',
+#   rating: 3,
+#   business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
+#   phone_number: "(415) 956-1710",
+#   website: "royalexchange.com",
+#   takes_reservations: "Yes",
+#   take_out: "Yes",
+#   delivery: "No",
+#   credit_card: "Yes",
+#   bike_parking: "Yes",
+#   free_wifi: "No",
+#   pets_allowed: "No",
+#   wheelchair_accessible: "Yes",
+#   good_for_kids: "No",
+#   good_for_groups: "Yes",
+#   outdoor_seating: "No",
+#   caters: "Yes",
+#   owner_id: seed3.id,
+#   hours: [
+#     ["11:00", "23:00"],	
+#     ["11:00", "23:00"],	
+#     ["11:00", "23:00"],	
+#     ["11:00", "23:00"],	
+#     ["11:00", "23:00"],	
+#     ["11:00", "23:00"],
+#     ["11:00", "23:00"]
+#   ]
+# )

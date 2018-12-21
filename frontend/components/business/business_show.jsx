@@ -14,9 +14,9 @@ class BusinessShow extends React.Component{
 
   reviewButton(){
     if (this.props.hasUserReviewed){
-      return <Link to={`/businesses/reviews/${this.props.hasUserReviewed}/edit`}><i className="fas fa-star"> Edit Review</i></Link>;
+      return <Link to={`/businesses/reviews/${this.props.hasUserReviewed}/edit`}><i className="fas fa-star"><span className="review-button-format"> Edit Review</span></i></Link>;
     } else {
-      return <Link to={`/businesses/${this.props.business.id}/review`}><i className="fas fa-star"> Write a Review</i></Link>;
+      return <Link to={`/businesses/${this.props.business.id}/review`}><i className="fas fa-star"><span className="review-button-format"> Write a Review</span></i></Link>;
     }
   }
 

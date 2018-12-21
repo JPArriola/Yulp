@@ -7,11 +7,17 @@ class Navbar extends React.Component {
 
     this.handleClickLogo = this.handleClickLogo.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClickAllShops = this.handleClickAllShops.bind(this);
   }
 
   handleClickLogo(e) {
     e.preventDefault();
     this.props.history.push("/");
+  }
+
+  handleClickAllShops(e){
+    e.preventDefault();
+    this.props.history.push("/businesses")
   }
 
   handleSubmit(e) {
@@ -67,6 +73,11 @@ class Navbar extends React.Component {
         <div className="business-nav-bar-lower-parent">
           <div className="business-nav-bar-lower">
             <div className="nav-bar-lower-left">
+              <div className="nav-bar-lower-left-item" onClick={this.handleClickAllShops}>
+                <img src="https://cdn2.iconfinder.com/data/icons/industry-7/32/industry_shop-512.png" className="nav-bar-lower-item-img" />
+                All Shops
+                <img src="https://static.thenounproject.com/png/1558740-200.png" className="nav-bar-dropdown-arrow" />
+              </div>
               <div className="nav-bar-lower-left-item">
                 <img src="https://image.flaticon.com/icons/svg/633/633652.svg" className="nav-bar-lower-item-img" />
                 Coffee

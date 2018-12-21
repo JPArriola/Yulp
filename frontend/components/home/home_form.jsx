@@ -7,12 +7,7 @@ const DEMO_USERS = [
   { email: "demo1@guest.com", password: "password" },
   { email: "demo2@guest.com", password: "password" },
   { email: "demo3@guest.com", password: "password" },
-  { email: "demo4@guest.com", password: "password" },
-  { email: "demo5@guest.com", password: "password" },
-  { email: "demo6@guest.com", password: "password" },
-  { email: 'demo7@guest.com', password: 'password' },
-  { email: "demo8@guest.com", password: "password" },
-  { email: "demo9@guest.com", password: "password" }
+  { email: "demo4@guest.com", password: "password" }
 ];
 
 class HomeForm extends React.Component{

@@ -13,18 +13,12 @@
 }
 
 .showpage-working-size{
-  // display: flex;
   max-width: 960px;
   margin: 0 auto;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // align-items: center;
-
 }
 
 .showpage-business-info-master{
   height: 405px;
-  // width: 100%;
 }
 
 .showpage-business-info-top-master{
@@ -74,11 +68,16 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #d32323;
   border: 1px solid #7c1014;
   color: white;
   font-weight: bold;
   border-radius: 3px;
+}
+
+.review-button-format{
+  
 }
 
 .showpage-business-info-lower-master{

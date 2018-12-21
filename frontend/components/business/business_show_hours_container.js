@@ -5,7 +5,6 @@ import { withRouter } from "react-router-dom";
 const mSP = (state, ownProps) => {
   let bizId = ownProps.match.params.id;
   let hours = state.entities.businesses[bizId].hours;
-  console.warn(state.entities.businesses[bizId]);
   return ({
     hours,
   });
