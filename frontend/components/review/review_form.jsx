@@ -38,8 +38,16 @@ class ReviewForm extends React.Component {
       });
   }
 
+  componentDidMount() {
+    this.props.fetchBusiness(this.props.bizId);
+  }
+
   render() {
-    return <div>
+    let biz = this.props.business;
+    if (!biz) return null;
+
+    return <div className="new-review-page-master">
+      <div className="new-review-page-working-area">
         <div className="new-review-navbar">
           ***NAVBAR TO BE ADDED***
         </div>
@@ -57,7 +65,8 @@ class ReviewForm extends React.Component {
             <input type="submit" value={this.props.formType} />
           </form>
         </div>
-      </div>;
+      </div>
+    </div>;
   }
 }
 

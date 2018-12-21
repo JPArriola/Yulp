@@ -4,9 +4,9 @@ export default (state = [], action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_BUSINESS_ERRORS:
-      return action.errors;
+    return action.errors;
     case RECEIVE_BUSINESSES:
-      return [];
+    return [];
     case RECEIVE_BUSINESS:
       return [];
     case CLEAR_ERRORS:

@@ -16,7 +16,7 @@ const App = () => (
       <AuthRoute exact path='/signup' component={SignupContainer} />
       <Route exact path='/businesses' component={BusinessContainer} />
       <Route path='/businesses/:id/review' component={NewReviewContainer} />
-      <Route path='/businesses/reviews/:id/edit' component={EditReviewContainer} />
+      <Route path='/businesses/:bizId/reviews/:id/edit' component={EditReviewContainer} />
       <Route path='/businesses/:id' component={BusinessShowContainer} />
       <Route path='/' component={HomeContainer} />
     </Switch>
@@ -25,6 +25,3 @@ const App = () => (
 
 export default App;
 
-//keep <Route path='/' component={HomeContainer} /> LAST!!!!
-
-// <Route path='/businesses/:id/:reviewId/edit' component={EditReviewContainer} />
