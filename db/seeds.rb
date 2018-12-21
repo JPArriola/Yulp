@@ -210,25 +210,24 @@ biz3.photos.attach(io: photo_file7, filename: 'boba7')
 biz3.photos.attach(io: photo_file8, filename: 'boba8')
 biz3.photos.attach(io: photo_file9, filename: 'boba9')
 
-
 review7 = Review.create!(
   body: "Corgi Butt on my drink, yas! Finally got a chance to come to Chinatown to try boba butt and it did not disappoint! I ordered the jasmine green tea crema, sans boba because I wanted to try the flavor of the drink. Plus, boba would just take away from the drinks quality with its overpowering sugary level. It was very refreshing and the crema was not heavy which is why I enjoyed. Will definitely come again when I'm in the area. Also bought myself a corgi butt sticker for my laptop!",
   rating: 5,
-  biz_id: biz2.id,
+  biz_id: biz3.id,
   author_id: seed2.id,
 )
 
 review8 = Review.create!(
   body: "I love this Boba Butt Tea House! After months of searching for a good boba place in SF with fruit teas, I finally found one! I got the passionfruit green tea with strawberry stars/boba and was not disappointed. The service was great and the space is very cute. Although it's not cheap, I thought the quality of the boba was great. ",
   rating: 5,
-  biz_id: biz2.id,
+  biz_id: biz3.id,
   author_id: seed3.id,
 )
 
 review9 = Review.create!(
   body: "I ordered a Strawberry Milk Tea ($4.50) with boba ($0.50). The boba was chewy in a good way. The drink was not too sweet. In fact, I could actually taste the tea! I would probably come back, considering this place is not on a steep hill like some of the other shops in Chinatown; you don't have to work hard for your drink ;).",
   rating: 5,
-  biz_id: biz2.id,
+  biz_id: biz3.id,
   author_id: seed4.id,
 )
 
