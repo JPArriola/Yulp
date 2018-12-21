@@ -3,8 +3,6 @@ import React from "react";
 class ReviewIndexItem extends React.Component{
   constructor(props){
     super(props);
-
-    // this.deleteReview = this.deleteReview.bind(this);
   }  
 
   deleteReview(){
@@ -57,7 +55,3 @@ class ReviewIndexItem extends React.Component{
 }
 
 export default ReviewIndexItem;
-
-// NOOOOOO <div onClick={props.delete(props.review.id)}>Delete</div>;
-
-// <button onClick={this.deleteReview}>Delete Review</button>

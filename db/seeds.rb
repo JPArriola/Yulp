@@ -12,9 +12,6 @@ Review.destroy_all
 
 #demo users
 user1 = User.create!(email: 'demo@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 1', zipcode: '12345')
-pro_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/adult-beach-beard-736716.jpg')
-user1.photos.attach(io: pro_file1, filename: 'profile1')
-
 user2 = User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 2', zipcode: '12345')
 user3 = User.create!(email: 'demo2@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 3', zipcode: '12345')
 user4 = User.create!(email: 'demo3@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 4', zipcode: '12345')
@@ -22,6 +19,9 @@ user5 = User.create!(email: 'demo4@guest.com', password: 'password', first_name:
 
 #seed users
 seed1 = User.create!(email: 'seed1@seed.com', password: 'marklee', first_name: 'Mark', last_name: ' Lee', zipcode: '12345')
+pro_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/adult-beach-beard-736716.jpg')
+seed1.photos.attach(io: pro_file1, filename: 'profile1')
+
 seed2 = User.create!(email: 'seed2@seed.com', password: 'misolee', first_name: 'Miso', last_name: ' Lee', zipcode: '12345')
 seed3 = User.create!(email: 'seed3@seed.com', password: 'ericto', first_name: 'Eric', last_name: ' To', zipcode: '12345')
 seed4 = User.create!(email: 'seed4@seed.com', password: 'suepark', first_name: 'Sue', last_name: ' Park', zipcode: '12345')

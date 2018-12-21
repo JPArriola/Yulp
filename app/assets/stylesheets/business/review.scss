@@ -26,16 +26,18 @@
 .review-author-picture{
   height: 60px;
   width: 60px;
-  border: 1px solid black;
-  border-radius: 4px;
 }
 
 .review-author-picture img{
   height: 100%;
+  border-radius: 4px;
 }
 
 .review-author-info{
-
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0073bb;
 }
 
 .review-content-container{
