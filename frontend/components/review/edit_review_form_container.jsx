@@ -23,16 +23,16 @@ const mapDispatchToProps = dispatch => {
 };
 
 class EditReviewForm extends React.Component {
-  // componentDidMount() {
-  //   this.props.fetchReview(this.props.match.params.id);
-  //   this.props.fetchBusiness(this.props.bizId);
-  // }
+  componentDidMount() {
+    this.props.fetchReview(this.props.match.params.id);
+    this.props.fetchBusiness(this.props.bizId);
+  }
 
-  // componentDidUpdate(prevProps) {
-  //   if (prevProps.review.id != this.props.match.params.id) {
-  //     this.props.fetchReview(this.props.match.params.id);
-  //   }
-  // }
+  componentDidUpdate(prevProps) {
+    if (prevProps.review.id != this.props.match.params.id) {
+      this.props.fetchReview(this.props.match.params.id);
+    }
+  }
 
   render() {
     const { action, formType, review, fetchBusiness, bizId, business } = this.props;

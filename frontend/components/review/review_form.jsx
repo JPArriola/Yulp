@@ -47,26 +47,30 @@ class ReviewForm extends React.Component {
     if (!biz) return null;
 
     return <div className="new-review-page-master">
-      <div className="new-review-page-working-area">
-        <div className="new-review-navbar">
-          ***NAVBAR TO BE ADDED***
+        <div className="new-review-page-working-area">
+          <div className="new-review-navbar">
+            <div className="new-review-navbar-left">
+              <div className="new-review-navbar-logo" />
+              <div className="new-review-navbar-formtype">{this.props.formType}</div>
+            </div>
+          </div>
+          <div className="new-review-content">
+          <div className="new-review-bizname">{this.props.business.bizName}</div>
+            <div className="new-review-content-working-area">
+              <form onSubmit={this.handleSubmit} className="new-review-form-master">
+                <div className="new-review-inner-form">
+                  <div className="new-review-select-rating">
+                    <label>Select your rating</label>
+                    <input type="number" max={5} min={1} value={this.state.rating} onChange={this.update("rating")} />
+                  </div>  
+                  <textarea cols="30" rows="10" value={this.state.body} onChange={this.update("body")} placeholder="Your review helps others learn about great local businesses." />
+                </div>
+                <input type="submit" value={this.props.formType} className="new-review-form-submit"/>
+              </form>
+            </div>
+          </div>
         </div>
-        <div className="new-review-content">
-          <form onSubmit={this.handleSubmit}>
-            <br></br>
-            <label>Select your rating</label>
-            <br></br>
-            <input type="number" value={this.state.rating} onChange={this.update("rating")} />
-            <br></br>
-            <label>Review</label>
-            <br></br>
-            <textarea cols="30" rows="10" value={this.state.body} onChange={this.update("body")} />
-            <br></br>
-            <input type="submit" value={this.props.formType} />
-          </form>
-        </div>
-      </div>
-    </div>;
+      </div>;
   }
 }
 
