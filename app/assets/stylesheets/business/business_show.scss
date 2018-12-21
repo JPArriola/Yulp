@@ -91,17 +91,8 @@
   align-items: center;
 }
 
-.showpage-map-container{
-  width: 33.3333%;
-  border: 1px solid black;
-  height: 317px;
-  //delete this once you have a map
-  background-color: rgb(221, 221, 221);
-}
-
 .showpage-info-photos{
   width:66.6667%;
-  border: 1px solid black;
   height: 222px;
   vertical-align: middle;
   display: flex;
@@ -110,7 +101,6 @@
 
 .showpage-info-photos div {
   width: 33.3333%;
-  border: 1px solid black;
   height: inherit;
 }
 
@@ -123,7 +113,6 @@
 }
 
 .showpage-business-content-master{
-  // height: 1000px;
   margin-top: 80px;
   display: flex;
   flex-direction: row;

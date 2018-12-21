@@ -1,0 +1,60 @@
+.showpage-map-container {
+  width: 33.3333%;
+  border: 1px solid #ccc;
+  height: 317px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showpage-map{
+  height: 140px;
+  width: 307px;
+  border: 1px solid #ccc;
+  margin: 5px 0px 8px 0px;
+  background-image: url(https://i.ytimg.com/vi/pi5HtUAC1Og/hqdefault.jpg);
+  background-size: 307px 140px;
+  background-repeat: no-repeat;
+}
+
+.showpage-map-info{
+  width: 290px;
+  line-height: 23px;
+  color: #555;
+}
+
+.showpage-map-info div:hover{
+  cursor: pointer;
+}
+
+.showpage-map-address-line1{
+  font-weight: bold;
+  color: #333;
+}
+
+.showpage-map-address-line2{
+  font-weight: bold;
+  margin-left: 16px;
+  color: #333;
+}
+
+.showpage-map-link-color{
+  color: #0073bb;
+}
+
+.fa-directions {
+  color: #555;
+}
+
+.fa-share-square{
+  color: #555;
+}
+
+.fa-calendar-day {
+  color: #555;
+}
+
+.fa-mobile-alt{
+  color: #555;
+}

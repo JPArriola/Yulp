@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../navbar/navbar_container";
 import BusinessShowHours from "../business/business_show_hours_container";
 import BusinessShowInfo from "../business/business_show_info_container";
+import BusinessShowMap from "../business/business_show_map_container";
 import ReviewIndex from "../review/review_index_container";
 import { Link } from "react-router-dom";
 
@@ -51,9 +52,7 @@ class BusinessShow extends React.Component{
                 </div>
                 <div className="showpage-business-info-lower-master">
                   <div className="showpage-business-info-lower-parent">
-                    <div className="showpage-map-container">
-                      <div className="showpage-map" />
-                    </div>
+                    <BusinessShowMap />
                     <div className="showpage-info-photos">
                       <div className="showpage-info-side-photo">
                         <img src={this.props.business.photoUrls[0]} />
