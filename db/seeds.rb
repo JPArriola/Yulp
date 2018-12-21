@@ -23,9 +23,20 @@ pro_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile
 seed1.photos.attach(io: pro_file1, filename: 'profile1')
 
 seed2 = User.create!(email: 'seed2@seed.com', password: 'misolee', first_name: 'Miso', last_name: ' Lee', zipcode: '12345')
+pro_file2 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/FAN9010365.JPG')
+seed2.photos.attach(io: pro_file2, filename: 'profile2')
+
 seed3 = User.create!(email: 'seed3@seed.com', password: 'ericto', first_name: 'Eric', last_name: ' To', zipcode: '12345')
+pro_file3 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/Screen+Shot+2018-12-20+at+5.43.36+PM.png')
+seed3.photos.attach(io: pro_file3, filename: 'profile3')
+
 seed4 = User.create!(email: 'seed4@seed.com', password: 'suepark', first_name: 'Sue', last_name: ' Park', zipcode: '12345')
+pro_file4 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/BLP0062303.JPG')
+seed4.photos.attach(io: pro_file4, filename: 'profile4')
+
 seed5 = User.create!(email: 'seed5@seed.com', password: 'adikantawala', first_name: 'Adi', last_name: ' Kantawala', zipcode: '12345')
+pro_file5 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/Screen+Shot+2018-12-20+at+5.45.10+PM.png')
+seed5.photos.attach(io: pro_file5, filename: 'profile5')
 
 # boba businesses
 biz1 = Business.create!(
@@ -37,7 +48,7 @@ biz1 = Business.create!(
   zipcode: '94108',
   lat: '37.789990',
   lng: '-122.403890',
-  rating: 3,
+  rating: 5,
   business_info: "Refresh yourself with a bottle of flavorful fresh boba tea.",
   phone_number: "(415) 757-0223",
   website: "plenteaus.com",
@@ -101,7 +112,7 @@ biz2 = Business.create!(
   zipcode: '94108',
   lat: '37.795490',
   lng: '-122.405200',
-  rating: 4,
+  rating: 5,
   business_info: "Taiwanese food & Good service",
   phone_number: "(415) 780-5000",
   website: "hanlinusakearny.com",
@@ -136,7 +147,21 @@ photo_file6 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/
 biz2.photos.attach(io: photo_file6, filename: 'boba6')
 
 review4 = Review.create!(
-  body: "THIS IS AN EXCELLENT REVIEW OF hanlin. GREAT PLACE FOR APP ACADEMY.",
+  body: "Pork noodles were good and so were the beef noodle soup for entrees. All the dishes were made well and tasty. We also got popcorn chicken, a beef appetizer, cucumbers,  and tofu. I would definitely come back again. The space was clean and good for groups.",
+  rating: 5,
+  biz_id: biz2.id,
+  author_id: seed4.id,
+)
+
+review5 = Review.create!(
+  body: "Service was pretty friendly, but you would need to keep calling them since they kept forgetting customers request. I have to say the dishes were really good and really Taiwanese compared with the Taiwanese restaurants in the U.S.. Yet, the boba tea were just okay even thought the server told me the drinks are more traditional Taiwanese flavor compared with their dishes, I still believe it's dishes were more Taiwanese and you should try out if you are a Taiwanese and miss your hometown foods. Also, there were many dishes already sold out when I arrived at 3pm on Sunday. Note: The restaurant has three floors, if the first floor is full, you might want to ask about it.",
+  rating: 5,
+  biz_id: biz2.id,
+  author_id: seed5.id,
+)
+
+review6 = Review.create!(
+  body: "This is my boyfriend and I's favorite boba tea place in SF within a mile from where we live. It's quick and convenient and the people working there are always nice. He introduced me to their black boba black bubble milk tea which is divine! It's a good tea flavor and not too milky. I usually get it 75% sweet. 5 stars for the boba alone, I feel as though this place has perfected the art of boba ball cooking. They are boba engineers here! Don't come here expecting fruity or weird powdery artificial flavors. They serve real tea drinks and you can tell they really take pride in their drinks. I still can't believe my non-asian boyfriend introduced me to my favorite boba in SF lol",
   rating: 5,
   biz_id: biz2.id,
   author_id: seed1.id,
@@ -151,7 +176,7 @@ biz3 = Business.create!(
   zipcode: '94108',
   lat: '37.789990',
   lng: '-122.403890',
-  rating: 3,
+  rating: 5,
   business_info: "Boba Butt Tea House provides a truly organic and fresh experience.",
   phone_number: "",
   website: "",
@@ -178,12 +203,34 @@ biz3 = Business.create!(
     ["12:00", "19:00"]
   ]
 )
-photo_file7 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-photo_file8 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
+photo_file7 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-20+at+6.48.06+PM.png')
+photo_file8 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-20+at+6.48.30+PM.png')
 photo_file9 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
 biz3.photos.attach(io: photo_file7, filename: 'boba7')
 biz3.photos.attach(io: photo_file8, filename: 'boba8')
 biz3.photos.attach(io: photo_file9, filename: 'boba9')
+
+
+review7 = Review.create!(
+  body: "Corgi Butt on my drink, yas! Finally got a chance to come to Chinatown to try boba butt and it did not disappoint! I ordered the jasmine green tea crema, sans boba because I wanted to try the flavor of the drink. Plus, boba would just take away from the drinks quality with its overpowering sugary level. It was very refreshing and the crema was not heavy which is why I enjoyed. Will definitely come again when I'm in the area. Also bought myself a corgi butt sticker for my laptop!",
+  rating: 5,
+  biz_id: biz2.id,
+  author_id: seed2.id,
+)
+
+review8 = Review.create!(
+  body: "I love this Boba Butt Tea House! After months of searching for a good boba place in SF with fruit teas, I finally found one! I got the passionfruit green tea with strawberry stars/boba and was not disappointed. The service was great and the space is very cute. Although it's not cheap, I thought the quality of the boba was great. ",
+  rating: 5,
+  biz_id: biz2.id,
+  author_id: seed3.id,
+)
+
+review9 = Review.create!(
+  body: "I ordered a Strawberry Milk Tea ($4.50) with boba ($0.50). The boba was chewy in a good way. The drink was not too sweet. In fact, I could actually taste the tea! I would probably come back, considering this place is not on a steep hill like some of the other shops in Chinatown; you don't have to work hard for your drink ;).",
+  rating: 5,
+  biz_id: biz2.id,
+  author_id: seed4.id,
+)
 
 biz4 = Business.create!(
   biz_name: 'Boba Guys',
