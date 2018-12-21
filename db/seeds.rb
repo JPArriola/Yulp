@@ -12,10 +12,24 @@ Review.destroy_all
 
 #demo users
 user1 = User.create!(email: 'demo@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 1', zipcode: '12345')
+user_pro_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/Screen+Shot+2018-12-21+at+11.55.22+AM.png')
+user1.photos.attach(io: user_pro_file1, filename: 'userprofile1')
+
 user2 = User.create!(email: 'demo1@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 2', zipcode: '12345')
+user_pro_file2 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/Screen+Shot+2018-12-21+at+11.55.53+AM.png')
+user2.photos.attach(io: user_pro_file2, filename: 'userprofile2')
+
 user3 = User.create!(email: 'demo2@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 3', zipcode: '12345')
+user_pro_file3 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/Screen+Shot+2018-12-21+at+11.56.08+AM.png')
+user3.photos.attach(io: user_pro_file3, filename: 'userprofile3')
+
 user4 = User.create!(email: 'demo3@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 4', zipcode: '12345')
+user_pro_file4 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/Screen+Shot+2018-12-21+at+11.56.27+AM.png')
+user4.photos.attach(io: user_pro_file4, filename: 'userprofile4')
+
 user5 = User.create!(email: 'demo4@guest.com', password: 'password', first_name: 'Guest', last_name: ' User 5', zipcode: '12345')
+user_pro_file5 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Profile/Screen+Shot+2018-12-21+at+11.56.48+AM.png')
+user5.photos.attach(io: user_pro_file5, filename: 'userprofile5')
 
 #seed users
 seed1 = User.create!(email: 'seed1@seed.com', password: 'marklee', first_name: 'Mark', last_name: ' Lee', zipcode: '12345')
