@@ -8,7 +8,7 @@ class Map extends React.Component{
 
   componentDidMount(){
     const mapOptions ={
-      center: {lat: 37.8014, lng: -122.4016},
+      center: {lat: this.props.lat, lng: this.props.lng},
       zoom: 13,
       fullscreenControl: false,
       streetViewControl: false,

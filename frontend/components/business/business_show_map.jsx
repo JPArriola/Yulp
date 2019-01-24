@@ -6,7 +6,7 @@ class BusinessShowMap extends React.Component {
     return (
       <div className="showpage-map-container">
         <div className="showpage-map" >
-          <Map />
+          <Map businesses={[this.props.business]} lat={this.props.business.lat} lng={this.props.business.lng} />
         </div>
         <div className="showpage-map-info">
           <div className="showpage-map-address-line1"><i className="fas fa-map-marker-alt"></i> {this.props.business.address1}</div>
