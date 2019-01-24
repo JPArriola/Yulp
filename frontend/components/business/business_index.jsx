@@ -1,6 +1,7 @@
 import React from "react";
 import BusinessIndexItem from './business_index_item';
 import Navbar from "../navbar/navbar_container";
+import Map from "../map/map";
 
 class BusinessIndex extends React.Component{
 
@@ -26,7 +27,8 @@ class BusinessIndex extends React.Component{
             </div>
             <div className="business-index-sidebar-parent">
               <div className="business-index-sidebar-stuck">
-                <div className="fake-map">Map to be added. Stay tuned!</div>
+                <Map />
+                {/* <div className="fake-map">Map to be added. Stay tuned!</div> */}
               </div>
             </div>
           </div>
