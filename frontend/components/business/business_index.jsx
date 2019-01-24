@@ -16,6 +16,7 @@ class BusinessIndex extends React.Component{
         <BusinessIndexItem key={business.id} business={business}/>
       );
     });
+    console.warn(this.props.businesses)
 
     return <div>
         <Navbar />
@@ -28,7 +29,7 @@ class BusinessIndex extends React.Component{
             <div className="business-index-sidebar-parent">
               <div className="business-index-sidebar-stuck">
                 <div className="fake-map">
-                  <Map />
+                  <Map businesses={this.props.businesses} zoom={true} />
                 </div>
               </div>
             </div>

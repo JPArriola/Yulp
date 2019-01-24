@@ -9,11 +9,18 @@ class Map extends React.Component{
   componentDidMount(){
     const mapOptions ={
       center: {lat: 37.8014, lng: -122.4016},
-      zoom: 13
+      zoom: 13,
+      fullscreenControl: false,
+      streetViewControl: false,
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
+    this.MarkerManager.updateMarkers(this.props.businesses);
+  }
+
+  componentDidUpdate() {
+    this.MarkerManager.updateMarkers(this.props.businesses);
   }
 
   render(){
