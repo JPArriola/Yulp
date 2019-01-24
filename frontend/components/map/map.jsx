@@ -13,12 +13,12 @@ class Map extends React.Component{
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
+    this.MarkerManager = new MarkerManager(this.map);
   }
 
   render(){
     return (
-      <div className="fake-map" ref={map => this.mapNode = map} />
-      
+      <div className="map" ref={map => this.mapNode = map} />
     );
   }
 

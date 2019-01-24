@@ -1,10 +1,13 @@
 import React from 'react';
+import Map from "../map/map";
 
 class BusinessShowMap extends React.Component {
   render() {
     return (
       <div className="showpage-map-container">
-        <div className="showpage-map" ></div>
+        <div className="showpage-map" >
+          <Map />
+        </div>
         <div className="showpage-map-info">
           <div className="showpage-map-address-line1"><i className="fas fa-map-marker-alt"></i> {this.props.business.address1}</div>
           <div className="showpage-map-address-line2">{this.props.business.city}, {this.props.business.state} {this.props.business.zipcode}</div>

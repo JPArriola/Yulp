@@ -27,8 +27,9 @@ class BusinessIndex extends React.Component{
             </div>
             <div className="business-index-sidebar-parent">
               <div className="business-index-sidebar-stuck">
-                <Map />
-                {/* <div className="fake-map">Map to be added. Stay tuned!</div> */}
+                <div className="fake-map">
+                  <Map />
+                </div>
               </div>
             </div>
           </div>

@@ -8,14 +8,16 @@
   align-items: center;
 }
 
+.map{
+  height: inherit;
+  width: inherit;
+}
+
 .showpage-map{
   height: 140px;
   width: 307px;
   border: 1px solid #ccc;
   margin: 5px 0px 8px 0px;
-  background-image: url(https://i.ytimg.com/vi/pi5HtUAC1Og/hqdefault.jpg);
-  background-size: 307px 140px;
-  background-repeat: no-repeat;
 }
 
 .showpage-map-info{
