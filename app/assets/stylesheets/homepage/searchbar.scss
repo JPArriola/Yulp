@@ -17,21 +17,49 @@
 .home-search-find-title{
   font-size: 20px;
   font-weight: bold;
-  color: gray;
+  color: #666;
   display: flex;
   align-items: center;
   padding: 0 10px;
 }
 
+.home-search-find-near{
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-left: 1px solid rgb(221, 221, 221);
+}
+
 .home-search-loc{
   flex: 1;
-  // background: lightblue;
   display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.home-search-loc-input{
+  display: flex;
+  flex-direction: row;
 }
 
 .home-search-submit{
   width: 65px;
   height: 100%;
-  background: red;
+  background: #d32323;
   color: white;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+}
+
+.business-search-find {
+  font-size: 20px;
+}
+
+.business-search-near {
+  font-size: 20px;
+  color: black;
 }

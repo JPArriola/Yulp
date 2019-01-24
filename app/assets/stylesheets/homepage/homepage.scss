@@ -1,3 +1,7 @@
+.home-page{
+  height: 600px;
+}
+
 .home-main-section::after {
   content: "";
   background: url(https://s3-media4.fl.yelpcdn.com/bphoto/pkwm_5P7XMoIXHOzQR0Y7A/o.jpg);
@@ -141,4 +145,76 @@
 .nav-underline:hover {
   border-bottom: 2px solid white;
   cursor: pointer;
+}
+
+.home-page-lower{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-lower-title{
+  margin: 30px;
+  padding: 10px;
+  border-bottom: 3px solid #d32323;
+  font-size: 30px;
+  font-weight: bold;
+  color: #d32323;
+}
+
+.home-lower-categories-container{
+  height: 300px;
+  width: 900px;
+  // background: pink;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.home-drink-category{
+  width: 250px;
+  height: 300px;
+  border: 1px solid rgb(207, 207, 207);
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.home-drink-category:hover{
+  box-shadow: 3px 3px #bdbdbd;
+}
+
+.home-category-text{
+  color: #0073bb;
+  font-size: 20px;
+  font-weight: bold;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-coffee-picture{
+  background: url("https://hhp-blog.s3.amazonaws.com/2018/07/iStock-673468996.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -105px;
+  height: 85%;
+}
+
+.home-boba-picture{
+  background: url("https://themovementmenu.com/wp-content/uploads/2015/08/square-of-boba-1-of-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85%;
+}
+
+.home-beer-picture{
+  background: url("https://www.gannett-cdn.com/-mm-/89934f7b13e7717eb560f3babda84f20895abcd0/c=83-0-724-482/local/-/media/2018/07/17/DetroitFreeP/DetroitFreePress/636674313628993565-GettyImages-684133728.jpg?width=534&height=401&fit=crop");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -50px;
+  height: 85%;
 }
