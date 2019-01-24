@@ -14,10 +14,9 @@ class MarkerManager {
         this.createMarkerFromBusiness(newBusiness)
         this.markerLabel++;
       });
-
-    Object.keys(this.markers)
-      .filter(businessId => !businessesObj[businessId])
-      .forEach(businessId => this.removeMarker(this.markers[businessId]))
+    // Object.keys(this.markers)
+    //   .filter(businessId => !businessesObj[businessId])
+    //   .forEach(businessId => this.removeMarker(this.markers[businessId]))
   }
   
   createMarkerFromBusiness(business) {
@@ -32,14 +31,13 @@ class MarkerManager {
       map: this.map,
       businessId: business.id
     });
-
     this.markers[marker.businessId] = marker;
   }
 
-  removeMarker(marker) {
-    this.markers[marker.businessId].setMap(null);
-    delete this.markers[marker.businessId];
-  }
+  // removeMarker(marker) {
+  //   this.markers[marker.businessId].setMap(null);
+  //   delete this.markers[marker.businessId];
+  // }
 }
 
 export default MarkerManager;
