@@ -115,6 +115,9 @@ class HomeForm extends React.Component{
             </Link>
           </div>
         </div>
+        <div className="home-page-footer">
+
+        </div>
       </div>;
   }
 }

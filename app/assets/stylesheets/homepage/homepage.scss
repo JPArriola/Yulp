@@ -155,10 +155,9 @@
 }
 
 .home-lower-title{
-  margin: 30px;
+  margin: 20px 0 30px;
   padding: 10px;
-  border-bottom: 3px solid #d32323;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   color: #d32323;
 }
@@ -166,7 +165,6 @@
 .home-lower-categories-container{
   height: 300px;
   width: 900px;
-  // background: pink;
   justify-content: space-between;
   display: flex;
   flex-direction: row;
@@ -186,8 +184,12 @@
   box-shadow: 3px 3px #bdbdbd;
 }
 
-.home-category-text{
+.home-drink-category:hover > div {
   color: #0073bb;
+}
+
+.home-category-text{
+  color: black;
   font-size: 20px;
   font-weight: bold;
   height: 15%;
