@@ -18,9 +18,9 @@ const App = () => (
       <AuthRoute exact path='/login' component={LoginContainer} />
       <AuthRoute exact path='/signup' component={SignupContainer} />
       <Route exact path='/businesses' component={BusinessContainer} />
-      <Route exact path='/businesses/coffee' component={BusinessContainer} />
-      <Route exact path='/businesses/boba' component={BusinessContainer} />
-      <Route exact path='/businesses/beer' component={BusinessContainer} />
+      <Route exact path='/businesses/coffee' component={CoffeeContainer} />
+      <Route exact path='/businesses/boba' component={BobaContainer} />
+      <Route exact path='/businesses/beer' component={BeerContainer} />
       <Route path='/businesses/:id/review' component={NewReviewContainer} />
       <Route path='/businesses/:bizId/reviews/:id/edit' component={EditReviewContainer} />
       <Route path='/businesses/:id' component={BusinessShowContainer} />

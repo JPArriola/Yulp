@@ -92,27 +92,27 @@ class HomeForm extends React.Component{
         <div className="home-page-lower">
           <div className="home-lower-title">Your Next Gulp With Yulp Awaits</div>
           <div className="home-lower-categories-container">
-            <div className="home-drink-category" >
+            <Link to="/businesses/coffee" className="home-drink-category" >
               <div className="home-coffee-picture">
               </div>
               <div className="home-category-text">
                 Coffee
               </div>
-            </div>
-            <div className="home-drink-category" >
+            </Link>
+            <Link to="/businesses/boba" className="home-drink-category" >
               <div className="home-boba-picture">
               </div>
               <div className="home-category-text">
                 Boba
               </div>
-            </div>
-            <div className="home-drink-category" >
+            </Link>
+            <Link to="/businesses/beer" className="home-drink-category" >
               <div className="home-beer-picture">
               </div>
               <div className="home-category-text">
                 Beer
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>;
