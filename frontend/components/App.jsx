@@ -5,6 +5,9 @@ import SignupContainer from './session/signup_container';
 import HomeContainer from "./home/home_container";
 import BusinessShowContainer from "./business/business_show_container";
 import BusinessContainer from "./business/business_container";
+import CoffeeContainer from "./business/coffee_container";
+import BobaContainer from "./business/boba_container";
+import BeerContainer from "./business/beer_container";
 import NewReviewContainer from "./review/create_review_form_container";
 import EditReviewContainer from "./review/edit_review_form_container"
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
@@ -15,6 +18,9 @@ const App = () => (
       <AuthRoute exact path='/login' component={LoginContainer} />
       <AuthRoute exact path='/signup' component={SignupContainer} />
       <Route exact path='/businesses' component={BusinessContainer} />
+      <Route exact path='/businesses/coffee' component={BusinessContainer} />
+      <Route exact path='/businesses/boba' component={BusinessContainer} />
+      <Route exact path='/businesses/beer' component={BusinessContainer} />
       <Route path='/businesses/:id/review' component={NewReviewContainer} />
       <Route path='/businesses/:bizId/reviews/:id/edit' component={EditReviewContainer} />
       <Route path='/businesses/:id' component={BusinessShowContainer} />
