@@ -32,6 +32,7 @@
 #  outdoor_seating       :string
 #  caters                :string
 #  price                 :string
+#  category              :string
 #
 
 require 'test_helper'

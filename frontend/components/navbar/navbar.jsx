@@ -64,8 +64,19 @@ class Navbar extends React.Component {
           <div className="business-nav-bar-upper">
             <div className="business-logo" onClick={this.handleClickLogo} />
             <div className="business-nav-search">
-              <input className="business-search-find" type="text" placeholder="coffee, boba, beer" />
-              <input className="business-search-near" type="text" placeholder="City" />
+              <div className="home-search-find">
+                <div className="home-search-find-title">Find</div>
+                <input className="business-search-find" type="text" placeholder="coffee, boba, beer" />
+              </div>
+              <div className="home-search-loc">
+                <div className="home-search-loc-input">
+                  <div className="home-search-find-near">Near</div>
+                  <input className="business-search-near" type="text" placeholder="City" defaultValue="San Francisco" />
+                </div>
+                <button className="home-search-submit">
+                  <i className="fas fa-search" />
+                </button>
+              </div>
             </div>
             {this.loggedIn()}
           </div>

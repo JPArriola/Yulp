@@ -55,6 +55,7 @@ seed5.photos.attach(io: pro_file5, filename: 'profile5')
 # boba businesses
 biz1 = Business.create!(
   biz_name: 'Plentea',
+  category: "boba",
   price: "$",
   address_1: '341 Kearny St',
   city: 'San Francisco',
@@ -119,6 +120,7 @@ review3 = Review.create!(
 
 biz2 = Business.create!(
   biz_name: 'Hanlin Tea Restaurant',
+  category: "boba",
   price: "$$",
   address_1: '801 Kearny St',
   city: 'San Francisco',
@@ -183,6 +185,7 @@ review6 = Review.create!(
 
 biz3 = Business.create!(
   biz_name: 'Boba Butt Tea House',
+  category: "boba",
   price: "$",
   address_1: '714 Kearny St',
   city: 'San Francisco',
@@ -247,6 +250,7 @@ review9 = Review.create!(
 
 biz4 = Business.create!(
   biz_name: 'Boba Guys',
+  category: "boba",
   price: "$",
   address_1: '429 Stockton St',
   city: 'San Francisco',
@@ -290,6 +294,7 @@ biz4.photos.attach(io: photo_file12, filename: 'boba12')
 
 biz5 = Business.create!(
   biz_name: 'Identitea',
+  category: "boba",
   price: "$",
   address_1: '3109 24th St',
   city: 'San Francisco',
@@ -333,6 +338,7 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
 # biz6 = Business.create!(
 #   biz_name: 'i-Tea',
+#   category: "boba",
 #   price: "$",
 #   address_1: '253 Kearny St',
 #   city: 'San Francisco',
@@ -376,6 +382,7 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
 # biz7 = Business.create!(
 #   biz_name: 'Purple Kow',
+#   category: "boba",
 #   price: "$",
 #   address_1: '3620 Balboa St',
 #   city: 'San Francisco',
@@ -419,6 +426,7 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
 # biz8 = Business.create!(
 #   biz_name: 'Asha Tea House',
+#   category: "boba",
 #   price: "$",
 #   address_1: '17 Kearny St',
 #   city: 'San Francisco',
@@ -462,6 +470,7 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
 # biz9 = Business.create!(
 #   biz_name: 'T & T',
+#   category: "boba",
 #   price: "$",
 #   address_1: '601 Broadway St',
 #   city: 'San Francisco',
@@ -505,6 +514,7 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
 # biz10 = Business.create!(
 #   biz_name: 'E Tea',
+#   category: "boba",
 #   price: "$",
 #   address_1: '839 Kearny St',
 #   city: 'San Francisco',
@@ -549,6 +559,7 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 # coffe shops
 Business.create!(
   biz_name: 'Jackson Place Cafe',
+  category: "coffee",
   price: "$",
   address_1: '633 Battery St',
   city: 'San Francisco',
@@ -586,6 +597,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'Reveille Coffee Co. Truck',
+  category: "coffee",
   price: "$$",
   address_1: '768 Sansome St',
   city: 'San Francisco',
@@ -623,6 +635,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'Chapter 2 Coffee',
+  category: "coffee",
   price: "$",
   address_1: '411 Sansome St',
   city: 'San Francisco',
@@ -660,6 +673,7 @@ Business.create!(
 
 # Business.create!(
 #   biz_name: 'Chapel Hill Coffee',
+#   category: "coffee",
 #   price: "$$",
 #   address_1: '670 Commercial St',
 #   city: 'San Francisco',
@@ -697,6 +711,7 @@ Business.create!(
 
 # Business.create!(
 #   biz_name: 'Joe & The Juice',
+#   category: "coffee",
 #   price: "$$",
 #   address_1: '301 Howard St',
 #   city: 'San Francisco',
@@ -735,6 +750,7 @@ Business.create!(
 #bars
 Business.create!(
   biz_name: 'Pagan Idol',
+  category: "beer",
   price: "$$",
   address_1: '375 Bush St',
   city: 'San Francisco',
@@ -772,6 +788,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'The Pink Elephant Alibi',
+  category: "beer",
   price: "$$",
   address_1: '142 Minna St',
   city: 'San Francisco',
@@ -809,6 +826,7 @@ Business.create!(
 
 Business.create!(
   biz_name: 'The View Lounge',
+  category: "beer",
   price: "$$",
   address_1: '780 Mission St',
   city: 'San Francisco',
@@ -846,6 +864,7 @@ Business.create!(
 
 # Business.create!(
 #   biz_name: 'Local Edition',
+#   category: "beer",
 #   price: "$$",
 #   address_1: '691 Market St',
 #   city: 'San Francisco',
@@ -883,6 +902,7 @@ Business.create!(
 
 # Business.create!(
 #   biz_name: 'The Royal Exchange',
+#   category: "beer",
 #   price: "$$",
 #   address_1: '301 Sacramento St',
 #   city: 'San Francisco',

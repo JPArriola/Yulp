@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_18_190721) do
+ActiveRecord::Schema.define(version: 2019_01_25_175629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(version: 2018_12_18_190721) do
     t.string "outdoor_seating"
     t.string "caters"
     t.string "price"
+    t.string "category"
     t.index ["address_1"], name: "index_businesses_on_address_1", unique: true
     t.index ["biz_name"], name: "index_businesses_on_biz_name"
     t.index ["city"], name: "index_businesses_on_city"

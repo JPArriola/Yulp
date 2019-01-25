@@ -26,4 +26,5 @@ json.extract! business,
 :good_for_groups,
 :outdoor_seating,
 :caters,
-:owner_id
+:owner_id,
+:category
