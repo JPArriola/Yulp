@@ -90,7 +90,7 @@ class HomeForm extends React.Component{
           </div>
         </div>
         <div className="home-page-lower">
-          <div className="home-lower-title">Your Next Drink Awaits</div>
+          <div className="home-lower-title">Your Next Gulp With Yulp Awaits</div>
           <div className="home-lower-categories-container">
             <div className="home-drink-category" >
               <div className="home-coffee-picture">
