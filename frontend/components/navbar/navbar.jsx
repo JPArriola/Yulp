@@ -89,21 +89,21 @@ class Navbar extends React.Component {
                 All Shops
                 <img src="https://static.thenounproject.com/png/1558740-200.png" className="nav-bar-dropdown-arrow" />
               </div>
-              <div className="nav-bar-lower-left-item">
+              <Link to="/businesses/coffee" className="nav-bar-lower-left-item">
                 <img src="https://image.flaticon.com/icons/svg/633/633652.svg" className="nav-bar-lower-item-img" />
                 Coffee
                 <img src="https://static.thenounproject.com/png/1558740-200.png" className="nav-bar-dropdown-arrow" />
-              </div>
-              <div className="nav-bar-lower-left-item">
+              </Link>
+              <Link to="/businesses/boba" className="nav-bar-lower-left-item">
                 <img src="https://image.flaticon.com/icons/svg/863/863412.svg" className="nav-bar-lower-item-img" />
                 Boba
                 <img src="https://static.thenounproject.com/png/1558740-200.png" className="nav-bar-dropdown-arrow" />
-              </div>
-              <div className="nav-bar-lower-left-item">
+              </Link>
+              <Link to="/businesses/beer" className="nav-bar-lower-left-item">
                 <img src="https://image.flaticon.com/icons/svg/23/23417.svg" className="nav-bar-lower-item-img" />
                 Beer
                 <img src="https://static.thenounproject.com/png/1558740-200.png" className="nav-bar-dropdown-arrow" />
-              </div>
+              </Link>
             </div>
             <div className="nav-bar-lower-right">
               <div className="nav-bar-lower-right-item">
