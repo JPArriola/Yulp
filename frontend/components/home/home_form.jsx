@@ -80,7 +80,7 @@ class HomeForm extends React.Component{
               </div>
               <div className="home-category-navigation-bar">
                 <Link to="/businesses" className="nav-underline">
-                  Businesses
+                  All Yulp Businesses
                 </Link>
                 <div className="home-category-navigation-business-boba" />
                 <div className="home-category-navigation-business-coffee" />
