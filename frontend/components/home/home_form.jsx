@@ -90,33 +90,33 @@ class HomeForm extends React.Component{
           </div>
         </div>
         <div className="home-page-lower">
-          <div className="home-lower-title">Your Next Gulp With Yulp Awaits</div>
+          <div className="home-lower-title">
+            Your Next Gulp With Yulp Awaits
+          </div>
           <div className="home-lower-categories-container">
-            <Link to="/businesses/coffee" className="home-drink-category" >
-              <div className="home-coffee-picture">
-              </div>
-              <div className="home-category-text">
-                Coffee
-              </div>
+            <Link to="/businesses/coffee" className="home-drink-category">
+              <div className="home-coffee-picture" />
+              <div className="home-category-text">Coffee</div>
             </Link>
-            <Link to="/businesses/boba" className="home-drink-category" >
-              <div className="home-boba-picture">
-              </div>
-              <div className="home-category-text">
-                Boba
-              </div>
+            <Link to="/businesses/boba" className="home-drink-category">
+              <div className="home-boba-picture" />
+              <div className="home-category-text">Boba</div>
             </Link>
-            <Link to="/businesses/beer" className="home-drink-category" >
-              <div className="home-beer-picture">
-              </div>
-              <div className="home-category-text">
-                Beer
-              </div>
+            <Link to="/businesses/beer" className="home-drink-category">
+              <div className="home-beer-picture" />
+              <div className="home-category-text">Beer</div>
             </Link>
           </div>
         </div>
         <div className="home-page-footer">
-
+          <div className="home-page-footer-title">Meet the Developer</div>
+          <div className="home-page-footer-links">
+            <a href="https://joshua-arriola.com/" target="_blank"><i className="fas fa-user" /></a>
+            <a href="https://github.com/JPArriola" target="_blank" ><i className="fab fa-github" /></a>
+            <a href="https://www.linkedin.com/in/joshuaarriola/" target="_blank" ><i className="fab fa-linkedin" /></a>
+            <a href="https://angel.co/joshua-arriola" target="_blank"><i className="fab fa-angellist" /></a>
+            <a href="mailto:joshuapatrickarriola@gmail.com" ><i className="fas fa-envelope" /></a >
+          </div>
         </div>
       </div>;
   }

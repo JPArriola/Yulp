@@ -6,10 +6,13 @@ import Map from "../map/map";
 class BusinessIndex extends React.Component{
 
   componentDidMount(){
+    console.log("before fetch", this.props);
     this.props.fetchBusinesses();
+    console.log("after fetch", this.props);
   }
 
   render(){
+    console.log("render", this.props);
     if (this.props.businesses.length === 1) return null;
     let businesses = this.props.businesses.map(business => {
       return(

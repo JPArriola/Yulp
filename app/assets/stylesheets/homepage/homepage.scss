@@ -220,3 +220,26 @@
   background-position-x: -50px;
   height: 85%;
 }
+
+.home-page-footer{
+  height: 200px;
+  background: #F5F5F5;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-page-footer-title{
+  color: #D32223;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-page-footer-links{
+  font-size: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
