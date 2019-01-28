@@ -94,13 +94,13 @@ class HomeForm extends React.Component{
             Your Next Gulp With Yulp Awaits
           </div>
           <div className="home-lower-categories-container">
-            <Link to="/businesses/coffee" className="home-drink-category">
-              <div className="home-coffee-picture" />
-              <div className="home-category-text">Coffee</div>
-            </Link>
             <Link to="/businesses/boba" className="home-drink-category">
               <div className="home-boba-picture" />
               <div className="home-category-text">Boba</div>
+            </Link>
+            <Link to="/businesses/coffee" className="home-drink-category">
+              <div className="home-coffee-picture" />
+              <div className="home-category-text">Coffee</div>
             </Link>
             <Link to="/businesses/beer" className="home-drink-category">
               <div className="home-beer-picture" />

@@ -27,4 +27,5 @@ json.extract! business,
 :outdoor_seating,
 :caters,
 :owner_id,
-:category
+:category,
+:rating_average

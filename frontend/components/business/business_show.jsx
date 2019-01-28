@@ -26,6 +26,7 @@ class BusinessShow extends React.Component{
     let biz = this.props.business;
     if (!biz) return null;
     let users = this.props.users;
+    console.log(biz.ratingAverage);
     return <div>
         <Navbar />
         <div className="showpage-master-size">
@@ -38,7 +39,7 @@ class BusinessShow extends React.Component{
                       {biz.bizName}
                     </div>
                     <div className="showpage-business-rating">
-                      {biz.rating}
+                      {biz.ratingAverage}
                     </div>
                     <div className="showpage-business-price">
                       {biz.price}

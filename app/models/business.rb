@@ -50,4 +50,8 @@ class Business < ApplicationRecord
   class_name: :Review
 
   has_many_attached :photos
+
+  def rating_average
+    reviews.average(:rating)
+  end
 end
