@@ -45,6 +45,7 @@ class ReviewForm extends React.Component {
   render() {
     let biz = this.props.business;
     if (!biz) return null;
+    let placeholder = "Your review helps others learn about great local businesses.\n\nPlease don't review this business if you received a freebie for writing this review, or if you're connected in any way to the owner or employees.";
 
     return <div className="new-review-page-master">
         <div className="new-review-page-working-area">
@@ -63,7 +64,7 @@ class ReviewForm extends React.Component {
                     <label>Select your rating</label>
                     <input type="number" max={5} min={1} value={this.state.rating} onChange={this.update("rating")} />
                   </div>  
-                  <textarea cols="30" rows="10" value={this.state.body} onChange={this.update("body")} placeholder="Your review helps others learn about great local businesses." />
+                  <textarea cols="30" rows="10" value={this.state.body} onChange={this.update("body")} placeholder={ placeholder } />
                 </div>
                 <input type="submit" value={this.props.formType} className="new-review-form-submit"/>
               </form>
