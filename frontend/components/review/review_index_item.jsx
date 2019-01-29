@@ -23,21 +23,23 @@ class ReviewIndexItem extends React.Component{
   }
   
   render(){
-    let userReview = this.props.review.rating * 2;
+    let { photoUrls, firstName, lastName } = this.props.author;
+    let { rating, body } = this.props.review;
+    let userReview = rating * 2;
     return <div className="review-master">
       <div className="review-master-child">
         <div className="review-author-container">
           <div className="review-author-picture" >
-            <img src={this.props.author.photoUrls[0]} />
+            <img src={photoUrls[0]} />
           </div>
           <div className="review-author-info">
-            {this.props.author.firstName}
-            {this.props.author.lastName}
+            {firstName}
+            {lastName}
           </div>
         </div>
         <div className="review-content-container">
           <img className={`star-mid-${userReview}` + ` star-mid`} src="https://i.imgur.com/UkZkm0D.png"></img>
-          <div className="review-content-body">{this.props.review.body}</div>
+          <div className="review-content-body">{body}</div>
           <div className="review-content-reactions-container">
             <div className="review-content-review">Was this review ...?</div>
             <div className="review-content-reactions-actions">

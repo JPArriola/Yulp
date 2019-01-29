@@ -11,7 +11,8 @@ class BusinessIndex extends React.Component{
 
   render(){
     if (this.props.businesses.length === 1) return null;
-    let businesses = this.props.businesses.map(business => {
+    let { businesses } = this.props;
+    let allBusinesses = businesses.map(business => {
       return(
         <BusinessIndexItem key={business.id} business={business}/>
       );
@@ -23,12 +24,12 @@ class BusinessIndex extends React.Component{
         <div className="business-index-master">
           <div className="business-index-section-entire-master">
             <div className="business-index-section-parent">
-              <ul>{businesses}</ul>
+              <ul>{allBusinesses}</ul>
             </div>
             <div className="business-index-sidebar-parent">
               <div className="business-index-sidebar-stuck">
                 <div className="fake-map">
-                  <Map businesses={this.props.businesses} zoom={true} lat={37.8014} lng={-122.4016} />
+                  <Map businesses={businesses} zoom={true} lat={37.8014} lng={-122.4016} />
                 </div>
               </div>
             </div>

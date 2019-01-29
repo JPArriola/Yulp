@@ -14,19 +14,20 @@ class BusinessShow extends React.Component{
   }
 
   reviewButton(){
-    if (this.props.hasUserReviewed){
-      return <Link to={`/businesses/${this.props.businessId}/reviews/${this.props.hasUserReviewed}/edit`}><i className="fas fa-star"><span className="review-button-format"> Edit Review</span></i></Link>;
+    let {hasUserReviewed, businessId, business } = this.props;
+    if (hasUserReviewed){
+      return <Link to={`/businesses/${businessId}/reviews/${hasUserReviewed}/edit`}><i className="fas fa-star"><span className="review-button-format"> Edit Review</span></i></Link>;
     } else {
-      return <Link to={`/businesses/${this.props.business.id}/review`}><i className="fas fa-star"><span className="review-button-format"> Write a Review</span></i></Link>;
+      return <Link to={`/businesses/${business.id}/review`}><i className="fas fa-star"><span className="review-button-format"> Write a Review</span></i></Link>;
     }
   }
 
 
   render(){
-    let biz = this.props.business;
-    if (!biz) return null;
-    let users = this.props.users;
-    let businessRating = Math.floor(biz.ratingAverage * 2);
+    if (!this.props.business) return null;
+    let { users } = this.props;
+    let {bizName, price, photoUrls, ratingAverage} = this.props.business;
+    let businessRating = Math.floor(ratingAverage * 2);
     return <div>
         <Navbar />
         <div className="showpage-master-size">
@@ -36,11 +37,11 @@ class BusinessShow extends React.Component{
                 <div className="showpage-business-info-top-master">
                   <div className="showpage-business-info-top-left">
                     <div className="showpage-business-name">
-                      {biz.bizName}
+                      {bizName}
                     </div>
                     <img className={`star-lrg-${businessRating}` + ` star-lrg`} src="https://i.imgur.com/UkZkm0D.png"></img>
                     <div className="showpage-business-price">
-                      {biz.price}
+                      {price}
                     </div>
                   </div>
                   <div className="showpage-business-info-top-right">
@@ -54,13 +55,13 @@ class BusinessShow extends React.Component{
                     <BusinessShowMap />
                     <div className="showpage-info-photos">
                       <div className="showpage-info-side-photo">
-                        <img src={this.props.business.photoUrls[0]} />
+                        <img src={photoUrls[0]} />
                       </div>
                       <div className="showpage-info-middle-photo">
-                        <img src={this.props.business.photoUrls[1]} />
+                        <img src={photoUrls[1]} />
                       </div>
                       <div className="showpage-info-side-photo">
-                        <img src={this.props.business.photoUrls[2]} />
+                        <img src={photoUrls[2]} />
                       </div>
                     </div>
                   </div>
