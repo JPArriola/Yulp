@@ -23,6 +23,7 @@ class ReviewIndexItem extends React.Component{
   }
   
   render(){
+    let userReview = this.props.review.rating * 2;
     return <div className="review-master">
       <div className="review-master-child">
         <div className="review-author-container">
@@ -35,7 +36,7 @@ class ReviewIndexItem extends React.Component{
           </div>
         </div>
         <div className="review-content-container">
-          <div className="review-content-rating">{this.props.review.rating}</div>
+          <img className={`star-mid-${userReview}` + ` star-mid`} src="https://i.imgur.com/UkZkm0D.png"></img>
           <div className="review-content-body">{this.props.review.body}</div>
           <div className="review-content-reactions-container">
             <div className="review-content-review">Was this review ...?</div>
@@ -55,3 +56,6 @@ class ReviewIndexItem extends React.Component{
 }
 
 export default ReviewIndexItem;
+
+
+// {/* <div className="review-content-rating">{this.props.review.rating}</div>; */}
