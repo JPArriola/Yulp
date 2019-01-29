@@ -56,6 +56,3 @@ class ReviewIndexItem extends React.Component{
 }
 
 export default ReviewIndexItem;
-
-
-// {/* <div className="review-content-rating">{this.props.review.rating}</div>; */}

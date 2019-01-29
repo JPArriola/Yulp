@@ -85,7 +85,3 @@ class BusinessShow extends React.Component{
 }
 
 export default BusinessShow;
-
-// {/* <div className="showpage-business-rating">
-//   {biz.ratingAverage}
-// </div> */}

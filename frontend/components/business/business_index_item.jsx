@@ -39,6 +39,3 @@ class BusinessIndexItem extends React.Component{
 }
 
 export default BusinessIndexItem;
-
-
-// {/* <div>{this.props.business.ratingAverage}</div> */ }
