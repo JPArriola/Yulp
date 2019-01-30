@@ -178,10 +178,11 @@
   flex-direction: column;
   border-radius: 3px;
   cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 
 .home-drink-category:hover{
-  box-shadow: 3px 3px #bdbdbd;
+  box-shadow: 2px 2px 15px #bdbdbd;
 }
 
 .home-drink-category:hover > div {

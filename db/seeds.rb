@@ -61,8 +61,8 @@ biz1 = Business.create!(
   city: 'San Francisco',
   state: 'CA',
   zipcode: '94108',
-  lat: '37.789990',
-  lng: '-122.403890',
+  lat: '37.791251',
+  lng: '-122.404236',
   rating: 5,
   business_info: "Refresh yourself with a bottle of flavorful fresh boba tea.",
   phone_number: "(415) 757-0223",
@@ -96,27 +96,6 @@ photo_file2 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/
 biz1.photos.attach(io: photo_file2, filename: 'boba2')
 photo_file3 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.54.10+AM.png')
 biz1.photos.attach(io: photo_file3, filename: 'boba3')
-
-review1 = Review.create!(
-  body: "I was sold on plentea when i heard the glass bottles were free with purchase. Very environmentally friendly though I don't know who actually brings their bottle back whenever they come to get a new drink. The drink prices are VERY fair and actually kind of cheap if you factor in getting a free glass jar. I was in San Fran for vacation and do not live here so I couldn't take the glass jar back with me. Also, if you check in, you get 15% off 2 drinks which makes it even cheaper. My boyfriend and I got the regular fruit teas and they were both pretty good and standard. I wish I could come back. If I lived in SF, this would be my go to bubble tea spot!",
-  rating: 5,
-  biz_id: biz1.id,
-  author_id: seed1.id,
-)
-
-review2 = Review.create!(
-  body: "I had heard a lot about Plentea for awhile but as I don't live in the city, there's not a ton of chances to get it unless I'm there. Well, when the wedding reception you're going to in a block or two away, why not?? To say the other wedding guests were excited then upset that boba wasnt actually being served is a bit of an understatement. Everyone loves their boba lol... But anyway, about Plentea. I thought the quality of the tea was pretty apparent in the taste. The jasmine tea scent was sooo fragrant and obvious in taste. I'd say it's one of my favorite jasmine milk teas I've had. The boba was also chewy and fresh and tasted like it was sitting in honey too. I ordered the matcha tea latte and that was also delicious! They use all organic teas and milks which I can really taste. And the cute glass bottles are of course another great marketing point (reduce plastic!!) and was actually quite convenient to cap off when I needed to store my boba away for a second. Drinks run about $5 or more if you add boba but if you buy two drinks and check in on yelp, you can get 15% off! I'd come back if I could!",
-  rating: 5,
-  biz_id: biz1.id,
-  author_id: seed2.id,
-)
-
-review3 = Review.create!(
-  body: "Generally, bubble tea makes me feel bloated afterwards. I realize this is because they probably use powder, or because their tapioca comes from some questionable source, who knows. With Plentea's drink offerings, it tasted clean and like real tea and milk, which is something I appreciate a lot and I'm willing to pay the premium if I know what I'm drinking is not powder. I can even see the staff make my drink in front of me, which is more reassuring than the places that have someone take my order, disappear into the back, and come back with my drink. ",
-  rating: 5,
-  biz_id: biz1.id,
-  author_id: seed3.id,
-)
 
 biz2 = Business.create!(
   biz_name: 'Hanlin Tea Restaurant',
@@ -162,27 +141,6 @@ biz2.photos.attach(io: photo_file5, filename: 'boba5')
 photo_file6 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2018-12-17+at+11.56.43+AM.png')
 biz2.photos.attach(io: photo_file6, filename: 'boba6')
 
-review4 = Review.create!(
-  body: "Pork noodles were good and so were the beef noodle soup for entrees. All the dishes were made well and tasty. We also got popcorn chicken, a beef appetizer, cucumbers,  and tofu. I would definitely come back again. The space was clean and good for groups.",
-  rating: 5,
-  biz_id: biz2.id,
-  author_id: seed4.id,
-)
-
-review5 = Review.create!(
-  body: "Service was pretty friendly, but you would need to keep calling them since they kept forgetting customers request. I have to say the dishes were really good and really Taiwanese compared with the Taiwanese restaurants in the U.S.. Yet, the boba tea were just okay even thought the server told me the drinks are more traditional Taiwanese flavor compared with their dishes, I still believe it's dishes were more Taiwanese and you should try out if you are a Taiwanese and miss your hometown foods. Also, there were many dishes already sold out when I arrived at 3pm on Sunday. Note: The restaurant has three floors, if the first floor is full, you might want to ask about it.",
-  rating: 5,
-  biz_id: biz2.id,
-  author_id: seed5.id,
-)
-
-review6 = Review.create!(
-  body: "This is my boyfriend and I's favorite boba tea place in SF within a mile from where we live. It's quick and convenient and the people working there are always nice. He introduced me to their black boba black bubble milk tea which is divine! It's a good tea flavor and not too milky. I usually get it 75% sweet. 5 stars for the boba alone, I feel as though this place has perfected the art of boba ball cooking. They are boba engineers here! Don't come here expecting fruity or weird powdery artificial flavors. They serve real tea drinks and you can tell they really take pride in their drinks. I still can't believe my non-asian boyfriend introduced me to my favorite boba in SF lol",
-  rating: 5,
-  biz_id: biz2.id,
-  author_id: seed1.id,
-)
-
 biz3 = Business.create!(
   biz_name: 'Boba Butt Tea House',
   category: "boba",
@@ -191,8 +149,8 @@ biz3 = Business.create!(
   city: 'San Francisco',
   state: 'CA',
   zipcode: '94108',
-  lat: '37.789990',
-  lng: '-122.403890',
+  lat: '37.794640',
+  lng: '122.404727',
   rating: 5,
   business_info: "Boba Butt Tea House provides a truly organic and fresh experience.",
   phone_number: "",
@@ -226,27 +184,6 @@ photo_file9 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/
 biz3.photos.attach(io: photo_file7, filename: 'boba7')
 biz3.photos.attach(io: photo_file8, filename: 'boba8')
 biz3.photos.attach(io: photo_file9, filename: 'boba9')
-
-review7 = Review.create!(
-  body: "Corgi Butt on my drink, yas! Finally got a chance to come to Chinatown to try boba butt and it did not disappoint! I ordered the jasmine green tea crema, sans boba because I wanted to try the flavor of the drink. Plus, boba would just take away from the drinks quality with its overpowering sugary level. It was very refreshing and the crema was not heavy which is why I enjoyed. Will definitely come again when I'm in the area. Also bought myself a corgi butt sticker for my laptop!",
-  rating: 5,
-  biz_id: biz3.id,
-  author_id: seed2.id,
-)
-
-review8 = Review.create!(
-  body: "I love this Boba Butt Tea House! After months of searching for a good boba place in SF with fruit teas, I finally found one! I got the passionfruit green tea with strawberry stars/boba and was not disappointed. The service was great and the space is very cute. Although it's not cheap, I thought the quality of the boba was great. ",
-  rating: 5,
-  biz_id: biz3.id,
-  author_id: seed3.id,
-)
-
-review9 = Review.create!(
-  body: "I ordered a Strawberry Milk Tea ($4.50) with boba ($0.50). The boba was chewy in a good way. The drink was not too sweet. In fact, I could actually taste the tea! I would probably come back, considering this place is not on a steep hill like some of the other shops in Chinatown; you don't have to work hard for your drink ;).",
-  rating: 5,
-  biz_id: biz3.id,
-  author_id: seed4.id,
-)
 
 biz4 = Business.create!(
   biz_name: 'Boba Guys',
@@ -336,93 +273,93 @@ biz5.photos.attach(io: photo_file13, filename: 'boba13')
 biz5.photos.attach(io: photo_file14, filename: 'boba14')
 biz5.photos.attach(io: photo_file15, filename: 'boba15')
 
-# biz6 = Business.create!(
-#   biz_name: 'i-Tea',
-#   category: "boba",
-#   price: "$",
-#   address_1: '253 Kearny St',
-#   city: 'San Francisco',
-#   state: 'CA',
-#   zipcode: '94108',
-#   lat: '37.789990',
-#   lng: '-122.403890',
-#   rating: 4,
-#   business_info: "Authentic Boba Milk Tea, Fruit Tea & Tea Bar --Contemporary Original Taiwan Taste--",
-#   phone_number: "(628) 400-4087",
-#   website: "itea-usa.com",
-#   takes_reservations: "No",
-#   take_out: "Yes",
-#   delivery: "No",
-#   credit_card: "Yes",
-#   bike_parking: "Yes",
-#   free_wifi: "Yes",
-#   pets_allowed: "No",
-#   wheelchair_accessible: "Yes",
-#   good_for_kids: "Yes",
-#   good_for_groups: "Yes",
-#   outdoor_seating: "No",
-#   caters: "Yes",
-#   owner_id: seed3.id,
-#   hours: [
-#     ["11:00", "19:00"],	
-#     ["11:00", "19:00"],	
-#     ["11:00", "19:00"],	
-#     ["11:00", "19:00"],	
-#     ["11:00", "20:00"],	
-#     ["11:00", "19:00"],
-#     ["12:00", "19:00"]
-#   ]
-# )
-# photo_file16 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-# photo_file17 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-# photo_file18 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-# biz6.photos.attach(io: photo_file16, filename: 'boba16')
-# biz6.photos.attach(io: photo_file17, filename: 'boba17')
-# biz6.photos.attach(io: photo_file18, filename: 'boba18')
+biz6 = Business.create!(
+  biz_name: 'i-Tea',
+  category: "boba",
+  price: "$",
+  address_1: '253 Kearny St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94108',
+  lat: '37.790353',
+  lng: '-122.404119',
+  rating: 4,
+  business_info: "Authentic Boba Milk Tea, Fruit Tea & Tea Bar --Contemporary Original Taiwan Taste--",
+  phone_number: "(628) 400-4087",
+  website: "itea-usa.com",
+  takes_reservations: "No",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "Yes",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "Yes",
+  good_for_groups: "Yes",
+  outdoor_seating: "No",
+  caters: "Yes",
+  owner_id: seed3.id,
+  hours: [
+    ["11:00", "19:00"],	
+    ["11:00", "19:00"],	
+    ["11:00", "19:00"],	
+    ["11:00", "19:00"],	
+    ["11:00", "20:00"],	
+    ["11:00", "19:00"],
+    ["12:00", "19:00"]
+  ]
+)
+photo_file16 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2019-01-30+at+11.50.08+AM.png')
+photo_file17 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2019-01-30+at+11.50.19+AM.png')
+photo_file18 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2019-01-30+at+11.50.37+AM.png')
+biz6.photos.attach(io: photo_file16, filename: 'boba16')
+biz6.photos.attach(io: photo_file17, filename: 'boba17')
+biz6.photos.attach(io: photo_file18, filename: 'boba18')
 
-# biz7 = Business.create!(
-#   biz_name: 'Purple Kow',
-#   category: "boba",
-#   price: "$",
-#   address_1: '3620 Balboa St',
-#   city: 'San Francisco',
-#   state: 'CA',
-#   zipcode: '94121',
-#   lat: '37.775900',
-#   lng: '-122.497820',
-#   rating: 3,
-#   business_info: "We are serving tea in the outer Richmond area",
-#   phone_number: "(415) 387-9009",
-#   website: "purplekow.com",
-#   takes_reservations: "No",
-#   take_out: "Yes",
-#   delivery: "No",
-#   credit_card: "Yes",
-#   bike_parking: "Yes",
-#   free_wifi: "Yes",
-#   pets_allowed: "No",
-#   wheelchair_accessible: "Yes",
-#   good_for_kids: "Yes",
-#   good_for_groups: "Yes",
-#   outdoor_seating: "No",
-#   caters: "No",
-#   owner_id: seed3.id,
-#   hours: [
-#     ["11:00", "20:00"],	
-#     ["11:00", "20:00"],	
-#     ["11:00", "20:00"],	
-#     ["11:00", "20:00"],	
-#     ["11:00", "24:00"],	
-#     ["11:00", "24:00"],
-#     ["12:00", "20:00"]
-#   ]
-# )
-# photo_file19 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-# photo_file20 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-# photo_file21 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/charles-deluvio-1139655-unsplash.jpg')
-# biz7.photos.attach(io: photo_file19, filename: 'boba19')
-# biz7.photos.attach(io: photo_file20, filename: 'boba20')
-# biz7.photos.attach(io: photo_file21, filename: 'boba21')
+biz7 = Business.create!(
+  biz_name: 'Purple Kow',
+  category: "boba",
+  price: "$",
+  address_1: '3620 Balboa St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94121',
+  lat: '37.775900',
+  lng: '-122.497820',
+  rating: 3,
+  business_info: "We are serving tea in the outer Richmond area",
+  phone_number: "(415) 387-9009",
+  website: "purplekow.com",
+  takes_reservations: "No",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "Yes",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "Yes",
+  good_for_groups: "Yes",
+  outdoor_seating: "No",
+  caters: "No",
+  owner_id: seed3.id,
+  hours: [
+    ["11:00", "20:00"],	
+    ["11:00", "20:00"],	
+    ["11:00", "20:00"],	
+    ["11:00", "20:00"],	
+    ["11:00", "24:00"],	
+    ["11:00", "24:00"],
+    ["12:00", "20:00"]
+  ]
+)
+photo_file19 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2019-01-30+at+11.54.24+AM.png')
+photo_file20 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2019-01-30+at+11.54.36+AM.png')
+photo_file21 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Boba/Screen+Shot+2019-01-30+at+11.54.46+AM.png')
+biz7.photos.attach(io: photo_file19, filename: 'boba19')
+biz7.photos.attach(io: photo_file20, filename: 'boba20')
+biz7.photos.attach(io: photo_file21, filename: 'boba21')
 
 # biz8 = Business.create!(
 #   biz_name: 'Asha Tea House',
@@ -432,8 +369,8 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 #   city: 'San Francisco',
 #   state: 'CA',
 #   zipcode: '94108',
-#   lat: '37.789990',
-#   lng: '-122.403890',
+#   lat: '37.788199',
+#   lng: '-122.403642',
 #   rating: 4,
 #   business_info: "There is a cup of tea out there for everyone, whether it's a simple glass of straight tea, or a crafted cup of flavored tea.",
 #   phone_number: "(415) 549-3688",
@@ -555,6 +492,169 @@ biz5.photos.attach(io: photo_file15, filename: 'boba15')
 # biz10.photos.attach(io: photo_file28, filename: 'boba28')
 # biz10.photos.attach(io: photo_file29, filename: 'boba29')
 # biz10.photos.attach(io: photo_file30, filename: 'boba30')
+
+#boba reviews
+Review.create!(
+  body: "I was sold on plentea when i heard the glass bottles were free with purchase. Very environmentally friendly though I don't know who actually brings their bottle back whenever they come to get a new drink. The drink prices are VERY fair and actually kind of cheap if you factor in getting a free glass jar. I was in San Fran for vacation and do not live here so I couldn't take the glass jar back with me. Also, if you check in, you get 15% off 2 drinks which makes it even cheaper. My boyfriend and I got the regular fruit teas and they were both pretty good and standard. I wish I could come back. If I lived in SF, this would be my go to bubble tea spot!",
+  rating: 5,
+  biz_id: biz1.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "I had heard a lot about Plentea for awhile but as I don't live in the city, there's not a ton of chances to get it unless I'm there. Well, when the wedding reception you're going to in a block or two away, why not?? To say the other wedding guests were excited then upset that boba wasnt actually being served is a bit of an understatement. Everyone loves their boba lol... But anyway, about Plentea. I thought the quality of the tea was pretty apparent in the taste. The jasmine tea scent was sooo fragrant and obvious in taste. I'd say it's one of my favorite jasmine milk teas I've had. The boba was also chewy and fresh and tasted like it was sitting in honey too. I ordered the matcha tea latte and that was also delicious! They use all organic teas and milks which I can really taste. And the cute glass bottles are of course another great marketing point (reduce plastic!!) and was actually quite convenient to cap off when I needed to store my boba away for a second. Drinks run about $5 or more if you add boba but if you buy two drinks and check in on yelp, you can get 15% off! I'd come back if I could!",
+  rating: 4,
+  biz_id: biz1.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "Generally, bubble tea makes me feel bloated afterwards. I realize this is because they probably use powder, or because their tapioca comes from some questionable source, who knows. With Plentea's drink offerings, it tasted clean and like real tea and milk, which is something I appreciate a lot and I'm willing to pay the premium if I know what I'm drinking is not powder. I can even see the staff make my drink in front of me, which is more reassuring than the places that have someone take my order, disappear into the back, and come back with my drink. ",
+  rating: 5,
+  biz_id: biz1.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "Pork noodles were good and so were the beef noodle soup for entrees. All the dishes were made well and tasty. We also got popcorn chicken, a beef appetizer, cucumbers,  and tofu. I would definitely come back again. The space was clean and good for groups.",
+  rating: 4,
+  biz_id: biz2.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "Service was pretty friendly, but you would need to keep calling them since they kept forgetting customers request. I have to say the dishes were really good and really Taiwanese compared with the Taiwanese restaurants in the U.S.. Yet, the boba tea were just okay even thought the server told me the drinks are more traditional Taiwanese flavor compared with their dishes, I still believe it's dishes were more Taiwanese and you should try out if you are a Taiwanese and miss your hometown foods. Also, there were many dishes already sold out when I arrived at 3pm on Sunday. Note: The restaurant has three floors, if the first floor is full, you might want to ask about it.",
+  rating: 4,
+  biz_id: biz2.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "This is my friend and I's favorite boba tea place in SF within a mile from where we live. It's quick and convenient and the people working there are always nice. He introduced me to their black boba black bubble milk tea which is divine! It's a good tea flavor and not too milky. I usually get it 75% sweet. 5 stars for the boba alone, I feel as though this place has perfected the art of boba ball cooking. They are boba engineers here! Don't come here expecting fruity or weird powdery artificial flavors. They serve real tea drinks and you can tell they really take pride in their drinks. I still can't believe my friend introduced me to my favorite boba in SF lol",
+  rating: 5,
+  biz_id: biz2.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "Corgi Butt on my drink, yas! Finally got a chance to come to Chinatown to try boba butt and it did not disappoint! I ordered the jasmine green tea crema, sans boba because I wanted to try the flavor of the drink. Plus, boba would just take away from the drinks quality with its overpowering sugary level. It was very refreshing and the crema was not heavy which is why I enjoyed. Will definitely come again when I'm in the area. Also bought myself a corgi butt sticker for my laptop!",
+  rating: 5,
+  biz_id: biz3.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "I love this Boba Butt Tea House! After months of searching for a good boba place in SF with fruit teas, I finally found one! I got the passionfruit green tea with strawberry stars/boba and was not disappointed. The service was great and the space is very cute. Although it's not cheap, I thought the quality of the boba was great. ",
+  rating: 5,
+  biz_id: biz3.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "I ordered a Strawberry Milk Tea with boba. The boba was chewy in a good way. The drink was not too sweet. In fact, I could actually taste the tea! I would probably come back, considering this place is not on a steep hill like some of the other shops in Chinatown; you don't have to work hard for your drink ;).",
+  rating: 5,
+  biz_id: biz3.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "This location is always SO BUSY when I'm here so expect to wait 20-40minutes depending on what day/time you come. Customer service is always great! Despite the business, the workers don't show that they're tired or uninterested in taking your order or perfecting your drink to your liking. I got a regular sized strawberry matcha, while my friend got two drinks: regular black sesame and large strawberry matcha with boba in all of them!",
+  rating: 5,
+  biz_id: biz1.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "This location is always SO BUSY when I'm here so expect to wait 20-40minutes depending on what day/time you come. Customer service is always great! Despite the business, the workers don't show that they're tired or uninterested in taking your order or perfecting your drink to your liking. I got a regular sized strawberry matcha, while my friend got two drinks: regular black sesame and large strawberry matcha with boba in all of them!",
+  rating: 4,
+  biz_id: biz4.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "This location is always SO BUSY when I'm here so expect to wait 20-40minutes depending on what day/time you come. Customer service is always great! Despite the business, the workers don't show that they're tired or uninterested in taking your order or perfecting your drink to your liking. I got a regular sized strawberry matcha, while my friend got two drinks: regular black sesame and large strawberry matcha with boba in all of them!",
+  rating: 5,
+  biz_id: biz5.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "Disappointed! First off the line was way too long for decent boba tea and secondly it took forever for our boba tea to get prepared! We literally waited about 35 minutes for just BOBA TEA! The employees making the boba tea take their sweet time which is fine but some customers can't wait half an hour! ",
+  rating: 5,
+  biz_id: biz5.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "Disappointed! First off the line was way too long for decent boba tea and secondly it took forever for our boba tea to get prepared! We literally waited about 35 minutes for just BOBA TEA! The employees making the boba tea take their sweet time which is fine but some customers can't wait half an hour! ",
+  rating: 5,
+  biz_id: biz3.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "Disappointed! First off the line was way too long for decent boba tea and secondly it took forever for our boba tea to get prepared! We literally waited about 35 minutes for just BOBA TEA! The employees making the boba tea take their sweet time which is fine but some customers can't wait half an hour! ",
+  rating: 5,
+  biz_id: biz5.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "Disappointed! First off the line was way too long for decent boba tea and secondly it took forever for our boba tea to get prepared! We literally waited about 35 minutes for just BOBA TEA! The employees making the boba tea take their sweet time which is fine but some customers can't wait half an hour! ",
+  rating: 5,
+  biz_id: biz7.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "This location is always SO BUSY when I'm here so expect to wait 20-40minutes depending on what day/time you come. Customer service is always great! Despite the business, the workers don't show that they're tired or uninterested in taking your order or perfecting your drink to your liking. I got a regular sized strawberry matcha, while my friend got two drinks: regular black sesame and large strawberry matcha with boba in all of them!",
+  rating: 3,
+  biz_id: biz6.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "The line is real. I've never waited thirty minutes for bubble tea but I wanted to know if the hype was real. And it didn't disappoint. I got one the popular ones, strawberry matcha. Make sure to mix it well before you drink. The tea is light with a subtle strawberry flavor from their house made fruit purée. I didn't get boba in my drink but I tried my friend's drink, and the boba was very soft. I really like that none of their drinks have that artificial syrup flavor. They're committed to high quality ingredients and you can taste the difference. Luckily there's one open in near me so I don't have to go all the way int the city to try another boba creation.",
+  rating: 4,
+  biz_id: biz7.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "Walked to this location after strolling through China town. You can walk down from stairs next to the overpass / tunnel that says Union Square.  Line was surprisingly long. They even have the velvet ropes laid out to one side of the side walk so that the waiting patrons do not block the entrance of other businesses. Drink selection seemed pretty limited verses other boba places but, perhaps, this was one of the factors contributing to their success. I ordered the Milk Tea with Tapioca with no sugar as tapioca balls contains sweetness. The tapioca balls were extremely soft and chewy. Made the drink enjoyable than what it really was. ",
+  rating: 5,
+  biz_id: biz6.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "We came with a group so I was able to try a little bit of everything. And I must say.. the hype is real.. Strawberry matcha latte, dirty horchata and the classic milk tea were all very good. Line was out the door but moved pretty fast.",
+  rating: 5,
+  biz_id: biz7.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "Not sure why this place is so popular. I mean, the drinks are definitely decent, but they're on par to almost all the boba places near my house in L.A. My favorite drink here was the thai tea. I also tried the Hong Kong Style, which was ok once I upped my sweetener to 75%, but still was kinda bland. I also tried some of my cousin's dirty horchata ... which I didn't care for at all. Luckily the line here looks much worse than it is. It goes by fairly quick, so don't be discouraged. Stay Cheerful ;)",
+  rating: 3,
+  biz_id: biz6.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "Maybe I ordered the wrong thing, but shouldn't everything taste good here? Lol the place is small very small. This was my first time here and I had high hopes because of all the hype and instagram pictures. I ordered the spiced blood orange it tasted watered down and I didn't taste any cinnamon, ginger, or clove. The orange flavor was barely there. Sigh",
+  rating: 2,
+  biz_id: biz6.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "Came midday on a Tuesday and there was a small line that built up to about 15 people behind us within a few minutes of standing there. Still waited around 10 minutes to get our orders in. Another 5 minutes to get our drinks. We got the strawberry matcha latte, mango Fresca, and ube halaya. The strawberry matcha latte is their top seller and the one all over Instagram. It's pretty good! A different mix of flavors that work out. Mango Fresca was a decent drink but nothing spectacular I'd get again. The ube halaya is their seasonal special that I absolutely loved! It was ube and coconut milk basically, which is odd since I don't really care for coconut but these two complimented one another.",
+  rating: 3,
+  biz_id: biz7.id,
+  author_id: seed4.id,
+)
+
 
 # coffe shops
 Business.create!(
