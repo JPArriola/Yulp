@@ -80,6 +80,8 @@
 
 .new-review-select-rating{
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
 }
 
 .new-review-select-rating label{
@@ -99,3 +101,42 @@
   background-color: #d32323;
   border-radius: 3px;
 }
+
+// 
+// 
+// 
+
+.review-form-stars-input {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.review-form-stars-list {
+  display: flex;
+  width: inherit;
+    // margin-right: 8px;
+}
+
+ul > #star-selector{
+  width: 162px;
+}
+
+.review-form-stars-container {
+    height: 30px;
+    width: 20%;
+    cursor: pointer;
+}
+
+.review-star-text{
+  width: 300px;
+  padding-left: 20px;
+}
+
+// #star-text{
+//   width: 300px;
+//   padding-left: 20px;
+// }
