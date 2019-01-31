@@ -655,9 +655,8 @@ Review.create!(
   author_id: seed4.id,
 )
 
-
 # coffe shops
-Business.create!(
+coffee1 = Business.create!(
   biz_name: 'Jackson Place Cafe',
   category: "coffee",
   price: "$",
@@ -695,7 +694,14 @@ Business.create!(
   ]
 )
 
-Business.create!(
+coffee_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.39.01+PM.png')
+coffee_file2 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.39.10+PM.png')
+coffee_file3 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.39.19+PM.png')
+coffee1.photos.attach(io: coffee_file1, filename: 'coffee1')
+coffee1.photos.attach(io: coffee_file2, filename: 'coffee2')
+coffee1.photos.attach(io: coffee_file3, filename: 'coffee3')
+
+coffee2 = Business.create!(
   biz_name: 'Reveille Coffee Co. Truck',
   category: "coffee",
   price: "$$",
@@ -733,7 +739,14 @@ Business.create!(
   ]
 )
 
-Business.create!(
+coffee_file4 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.40.07+PM.png')
+coffee_file5 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.40.17+PM.png')
+coffee_file6 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.40.31+PM.png')
+coffee2.photos.attach(io: coffee_file4, filename: 'coffee4')
+coffee2.photos.attach(io: coffee_file5, filename: 'coffee5')
+coffee2.photos.attach(io: coffee_file6, filename: 'coffee6')
+
+coffee3 = Business.create!(
   biz_name: 'Chapter 2 Coffee',
   category: "coffee",
   price: "$",
@@ -771,81 +784,196 @@ Business.create!(
   ]
 )
 
-# Business.create!(
-#   biz_name: 'Chapel Hill Coffee',
-#   category: "coffee",
-#   price: "$$",
-#   address_1: '670 Commercial St',
-#   city: 'San Francisco',
-#   state: 'CA',
-#   zipcode: '94111',
-#   lat: '37.794210',
-#   lng: '-122.404240',
-#   rating: 4,
-#   business_info: "Serving hyper-local, small batch, like-minded businesses that care.",
-#   phone_number: "",
-#   website: "chapelhillcoffee.com",
-#   takes_reservations: "No",
-#   take_out: "Yes",
-#   delivery: "No",
-#   credit_card: "Yes",
-#   bike_parking: "Yes",
-#   free_wifi: "Yes",
-#   pets_allowed: "No",
-#   wheelchair_accessible: "Yes",
-#   good_for_kids: "Yes",
-#   good_for_groups: "No",
-#   outdoor_seating: "No",
-#   caters: "No",
-#   owner_id: seed3.id,
-#   hours: [
-#     ["8:00", "15:30"],	
-#     ["8:00", "15:30"],	
-#     ["8:00", "15:30"],	
-#     ["8:00", "15:30"],	
-#     ["8:00", "15:30"],	
-#     ["8:00", "15:30"],
-#     ["8:00", "15:30"]
-#   ]
-# )
+coffee_file7 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.41.06+PM.png')
+coffee_file8 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.41.19+PM.png')
+coffee_file9 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.41.30+PM.png')
+coffee3.photos.attach(io: coffee_file7, filename: 'coffee7')
+coffee3.photos.attach(io: coffee_file8, filename: 'coffee8')
+coffee3.photos.attach(io: coffee_file9, filename: 'coffee9')
 
-# Business.create!(
-#   biz_name: 'Joe & The Juice',
-#   category: "coffee",
-#   price: "$$",
-#   address_1: '301 Howard St',
-#   city: 'San Francisco',
-#   state: 'CA',
-#   zipcode: '94105',
-#   lat: '37.789520',
-#   lng: '-122.394270',
-#   rating: 3,
-#   business_info: "We sell products to fund the most attractive youth culture in the world.",
-#   phone_number: "",
-#   website: "joejuice.com",
-#   takes_reservations: "No",
-#   take_out: "Yes",
-#   delivery: "No",
-#   credit_card: "Yes",
-#   bike_parking: "Yes",
-#   free_wifi: "Yes",
-#   pets_allowed: "No",
-#   wheelchair_accessible: "Yes",
-#   good_for_kids: "Yes",
-#   good_for_groups: "Yes",
-#   outdoor_seating: "No",
-#   caters: "No",
-#   owner_id: seed3.id,
-#   hours: [
-#     ["6:00", "21:00"],	
-#     ["6:00", "21:00"],	
-#     ["6:00", "21:00"],	
-#     ["6:00", "21:00"],	
-#     ["6:00", "21:00"],	
-#     ["8:00", "19:00"],
-#     ["8:00", "18:00"]
-#   ]
-# )
+coffee4 = Business.create!(
+  biz_name: 'Chapel Hill Coffee',
+  category: "coffee",
+  price: "$$",
+  address_1: '670 Commercial St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94111',
+  lat: '37.794210',
+  lng: '-122.404240',
+  rating: 4,
+  business_info: "Serving hyper-local, small batch, like-minded businesses that care.",
+  phone_number: "",
+  website: "chapelhillcoffee.com",
+  takes_reservations: "No",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "Yes",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "Yes",
+  good_for_groups: "No",
+  outdoor_seating: "No",
+  caters: "No",
+  owner_id: seed3.id,
+  hours: [
+    ["8:00", "15:30"],	
+    ["8:00", "15:30"],	
+    ["8:00", "15:30"],	
+    ["8:00", "15:30"],	
+    ["8:00", "15:30"],	
+    ["8:00", "15:30"],
+    ["8:00", "15:30"]
+  ]
+)
+
+coffee_file10 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.42.42+PM.png')
+coffee_file11 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.42.52+PM.png')
+coffee_file12 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.43.05+PM.png')
+coffee4.photos.attach(io: coffee_file10, filename: 'coffee10')
+coffee4.photos.attach(io: coffee_file11, filename: 'coffee11')
+coffee4.photos.attach(io: coffee_file12, filename: 'coffee12')
+ 
+coffee5 = Business.create!(
+  biz_name: 'Joe & The Juice',
+  category: "coffee",
+  price: "$$",
+  address_1: '301 Howard St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94105',
+  lat: '37.789520',
+  lng: '-122.394270',
+  rating: 3,
+  business_info: "We sell products to fund the most attractive youth culture in the world.",
+  phone_number: "",
+  website: "joejuice.com",
+  takes_reservations: "No",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "Yes",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "Yes",
+  good_for_groups: "Yes",
+  outdoor_seating: "No",
+  caters: "No",
+  owner_id: seed3.id,
+  hours: [
+    ["6:00", "21:00"],	
+    ["6:00", "21:00"],	
+    ["6:00", "21:00"],	
+    ["6:00", "21:00"],	
+    ["6:00", "21:00"],	
+    ["8:00", "19:00"],
+    ["8:00", "18:00"]
+  ]
+)
+
+coffee_file13 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.43.43+PM.png')
+coffee_file14 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.43.51+PM.png')
+coffee_file15 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.44.02+PM.png')
+coffee5.photos.attach(io: coffee_file13, filename: 'coffee13')
+coffee5.photos.attach(io: coffee_file14, filename: 'coffee14')
+coffee5.photos.attach(io: coffee_file15, filename: 'coffee15')
+ 
+coffee6 = Business.create!(
+  biz_name: 'The Station SF',
+  category: "coffee",
+  price: "$$",
+  address_1: '596 Pacific Ave',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94133',
+  lat: '37.797150',
+  lng: '-122.405240',
+  rating: 3,
+  business_info: "We focus on fresh, organic and local products as much as possible with our food offerings.  Creative and flavorful, breakfast and lunch options coupled with San Francisco roasted Sightglass Coffee drinks and cold pressed juices by Project Juice.",
+  phone_number: "(415) 291-0690",
+  website: "thestationsf.com",
+  takes_reservations: "No",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "Yes",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "Yes",
+  good_for_groups: "Yes",
+  outdoor_seating: "Yes",
+  caters: "Yes",
+  owner_id: seed3.id,
+  hours: [
+    ["7:30", "16:00"],	
+    ["7:30", "16:00"],	
+    ["7:30", "16:00"],	
+    ["7:30", "16:00"],	
+    ["7:30", "16:00"],	
+    ["9:00", "15:30"],
+    ["9:00", "15:30"]
+  ]
+)
+
+coffee_file16 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+4.15.40+PM.png')
+coffee_file17 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+4.16.05+PM.png')
+coffee_file18 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+4.16.16+PM.png')
+coffee6.photos.attach(io: coffee_file16, filename: 'coffee16')
+coffee6.photos.attach(io: coffee_file17, filename: 'coffee17')
+coffee6.photos.attach(io: coffee_file18, filename: 'coffee18')
+ 
+coffee7 = Business.create!(
+  biz_name: 'Bluestone Lane',
+  category: "coffee",
+  price: "$$",
+  address_1: '227 Front St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94111',
+  lat: '37.799680',
+  lng: '-122.400060',
+  rating: 3,
+  business_info: "Bluestone Lane Coffee is influenced from the renowned coffee culture hub of Melbourne Australia, where premium coffee is a way of life. Bluestone Lane offers a refined product proposition dedicated to producing the highest quality coffee and complementary foods, delivered in an engaging way.",
+  phone_number: "(718) 374-6858",
+  website: "bluestonelane.com",
+  takes_reservations: "No",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "Yes",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "Yes",
+  good_for_groups: "Yes",
+  outdoor_seating: "No",
+  caters: "No",
+  owner_id: seed3.id,
+  hours: [
+    ["7:00", "17:00"],	
+    ["7:00", "17:00"],	
+    ["7:00", "17:00"],	
+    ["7:00", "17:00"],	
+    ["7:00", "17:00"],	
+    ["8:00", "16:00"],
+    ["8:00", "16:00"]
+  ]
+)
+
+coffee_file19 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.43.43+PM.png')
+coffee_file20 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.43.51+PM.png')
+coffee_file21 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Coffee/Screen+Shot+2019-01-30+at+2.44.02+PM.png')
+coffee7.photos.attach(io: coffee_file19, filename: 'coffee19')
+coffee7.photos.attach(io: coffee_file20, filename: 'coffee20')
+coffee7.photos.attach(io: coffee_file21, filename: 'coffee21')
+
+# coffee reviews
+
+
 
 #bars
 Business.create!(
