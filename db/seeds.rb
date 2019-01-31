@@ -150,7 +150,7 @@ biz3 = Business.create!(
   state: 'CA',
   zipcode: '94108',
   lat: '37.794640',
-  lng: '122.404727',
+  lng: '-122.404727',
   rating: 5,
   business_info: "Boba Butt Tea House provides a truly organic and fresh experience.",
   phone_number: "",
@@ -1129,7 +1129,7 @@ Review.create!(
 )
 
 #bars
-Business.create!(
+bar1 = Business.create!(
   biz_name: 'Pagan Idol',
   category: "beer",
   price: "$$",
@@ -1167,7 +1167,14 @@ Business.create!(
   ]
 )
 
-Business.create!(
+bar_file1 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.27.55+PM.png')
+bar_file2 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.28.10+PM.png')
+bar_file3 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.28.20+PM.png')
+bar1.photos.attach(io: bar_file1, filename: 'bar1')
+bar1.photos.attach(io: bar_file2, filename: 'bar2')
+bar1.photos.attach(io: bar_file3, filename: 'bar3')
+
+bar2 = Business.create!(
   biz_name: 'The Pink Elephant Alibi',
   category: "beer",
   price: "$$",
@@ -1205,7 +1212,14 @@ Business.create!(
   ]
 )
 
-Business.create!(
+bar_file4 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.33.03+PM.png')
+bar_file5 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.33.25+PM.png')
+bar_file6 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.33.42+PM.png')
+bar2.photos.attach(io: bar_file4, filename: 'bar4')
+bar2.photos.attach(io: bar_file5, filename: 'bar5')
+bar2.photos.attach(io: bar_file6, filename: 'bar6')
+
+bar3 = Business.create!(
   biz_name: 'The View Lounge',
   category: "beer",
   price: "$$",
@@ -1243,78 +1257,175 @@ Business.create!(
   ]
 )
 
-# Business.create!(
-#   biz_name: 'Local Edition',
-#   category: "beer",
-#   price: "$$",
-#   address_1: '691 Market St',
-#   city: 'San Francisco',
-#   state: 'CA',
-#   zipcode: '94105',
-#   lat: '37.787410',
-#   lng: '-122.403000',
-#   rating: 4,
-#   business_info: "Local Edition is more than just a cocktail bar.",
-#   phone_number: "(415) 795-1375",
-#   website: "https://www.localeditionsf.com/",
-#   takes_reservations: "Yes",
-#   take_out: "No",
-#   delivery: "No",
-#   credit_card: "Yes",
-#   bike_parking: "Yes",
-#   free_wifi: "No",
-#   pets_allowed: "No",
-#   wheelchair_accessible: "No",
-#   good_for_kids: "No",
-#   good_for_groups: "Yes",
-#   outdoor_seating: "No",
-#   caters: "No",
-#   owner_id: seed3.id,
-#   hours: [
-#     ["5:00", "2:00"],	
-#     ["5:00", "2:00"],	
-#     ["5:00", "2:00"],	
-#     ["5:00", "2:00"],	
-#     ["4:30", "2:00"],	
-#     ["7:00", "2:00"],
-#     ["7:00", "2:00"]
-#   ]
-# )
+bar_file7 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.36.40+PM.png')
+bar_file8 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.37.00+PM.png')
+bar_file9 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.37.10+PM.png')
+bar3.photos.attach(io: bar_file7, filename: 'bar7')
+bar3.photos.attach(io: bar_file8, filename: 'bar8')
+bar3.photos.attach(io: bar_file9, filename: 'bar9')
 
-# Business.create!(
-#   biz_name: 'The Royal Exchange',
-#   category: "beer",
-#   price: "$$",
-#   address_1: '301 Sacramento St',
-#   city: 'San Francisco',
-#   state: 'CA',
-#   zipcode: '94111',
-#   lat: '37.794160',
-#   lng: '-122.399140',
-#   rating: 3,
-#   business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
-#   phone_number: "(415) 956-1710",
-#   website: "royalexchange.com",
-#   takes_reservations: "Yes",
-#   take_out: "Yes",
-#   delivery: "No",
-#   credit_card: "Yes",
-#   bike_parking: "Yes",
-#   free_wifi: "No",
-#   pets_allowed: "No",
-#   wheelchair_accessible: "Yes",
-#   good_for_kids: "No",
-#   good_for_groups: "Yes",
-#   outdoor_seating: "No",
-#   caters: "Yes",
-#   owner_id: seed3.id,
-#   hours: [
-#     ["11:00", "23:00"],	
-#     ["11:00", "23:00"],	
-#     ["11:00", "23:00"],	
-#     ["11:00", "23:00"],	
-#     ["11:00", "23:00"],	
-#     ["11:00", "23:00"],
-#     ["11:00", "23:00"]
-#   ]
-# )
+bar4 = Business.create!(
+  biz_name: 'Local Edition',
+  category: "beer",
+  price: "$$",
+  address_1: '691 Market St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94105',
+  lat: '37.787410',
+  lng: '-122.403000',
+  rating: 4,
+  business_info: "Local Edition is more than just a cocktail bar.",
+  phone_number: "(415) 795-1375",
+  website: "https://www.localeditionsf.com/",
+  takes_reservations: "Yes",
+  take_out: "No",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "No",
+  pets_allowed: "No",
+  wheelchair_accessible: "No",
+  good_for_kids: "No",
+  good_for_groups: "Yes",
+  outdoor_seating: "No",
+  caters: "No",
+  owner_id: seed3.id,
+  hours: [
+    ["5:00", "2:00"],	
+    ["5:00", "2:00"],	
+    ["5:00", "2:00"],	
+    ["5:00", "2:00"],	
+    ["4:30", "2:00"],	
+    ["7:00", "2:00"],
+    ["7:00", "2:00"]
+  ]
+)
+
+bar_file10 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.39.56+PM.png')
+bar_file11 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.40.17+PM.png')
+bar_file12 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.40.35+PM.png')
+bar4.photos.attach(io: bar_file10, filename: 'bar10')
+bar4.photos.attach(io: bar_file11, filename: 'bar11')
+bar4.photos.attach(io: bar_file12, filename: 'bar12')
+
+bar5 = Business.create!(
+  biz_name: 'The Royal Exchange',
+  category: "beer",
+  price: "$$",
+  address_1: '301 Sacramento St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94111',
+  lat: '37.794160',
+  lng: '-122.399140',
+  rating: 3,
+  business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
+  phone_number: "(415) 956-1710",
+  website: "royalexchange.com",
+  takes_reservations: "Yes",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "No",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "No",
+  good_for_groups: "Yes",
+  outdoor_seating: "No",
+  caters: "Yes",
+  owner_id: seed3.id,
+  hours: [
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],
+    ["11:00", "23:00"]
+  ]
+)
+
+bar_file13 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.43.00+PM.png')
+bar_file14 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.43.09+PM.png')
+bar_file15 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-30+at+6.43.23+PM.png')
+bar5.photos.attach(io: bar_file13, filename: 'bar13')
+bar5.photos.attach(io: bar_file14, filename: 'bar14')
+bar5.photos.attach(io: bar_file15, filename: 'bar15')
+
+bar6 = Business.create!(
+  biz_name: 'The Royal Exchange',
+  category: "beer",
+  price: "$$",
+  address_1: '301 Sacramento St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94111',
+  lat: '37.794160',
+  lng: '-122.399140',
+  rating: 3,
+  business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
+  phone_number: "(415) 956-1710",
+  website: "royalexchange.com",
+  takes_reservations: "Yes",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "No",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "No",
+  good_for_groups: "Yes",
+  outdoor_seating: "No",
+  caters: "Yes",
+  owner_id: seed3.id,
+  hours: [
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],
+    ["11:00", "23:00"]
+  ]
+)
+
+bar7 = Business.create!(
+  biz_name: 'The Royal Exchange',
+  category: "beer",
+  price: "$$",
+  address_1: '301 Sacramento St',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: '94111',
+  lat: '37.794160',
+  lng: '-122.399140',
+  rating: 3,
+  business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
+  phone_number: "(415) 956-1710",
+  website: "royalexchange.com",
+  takes_reservations: "Yes",
+  take_out: "Yes",
+  delivery: "No",
+  credit_card: "Yes",
+  bike_parking: "Yes",
+  free_wifi: "No",
+  pets_allowed: "No",
+  wheelchair_accessible: "Yes",
+  good_for_kids: "No",
+  good_for_groups: "Yes",
+  outdoor_seating: "No",
+  caters: "Yes",
+  owner_id: seed3.id,
+  hours: [
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],	
+    ["11:00", "23:00"],
+    ["11:00", "23:00"]
+  ]
+)
