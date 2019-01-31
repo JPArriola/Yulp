@@ -973,7 +973,160 @@ coffee7.photos.attach(io: coffee_file21, filename: 'coffee21')
 
 # coffee reviews
 
+Review.create!(
+  body: "We all ordered hot coffee, which came in a glass carafe aside a colorful ceramic mug. For breakfast I got the avocado toast, which was delicious and filling. Whenever we needed something, it seemed like I had to make an effort to flag someone down, but the actual process of ordering and paying was seamless.",
+  rating: 5,
+  biz_id: coffee1.id,
+  author_id: seed1.id,
+)
 
+Review.create!(
+  body: "While I wouldn't rush to come here again, I truly enjoyed my experience and would recommend it to anyone looking for a new spot to check out in the Financial District. It's a few blocks away from Embarcadero Center, and it's open super early! Definitely lots of notable wins.",
+  rating: 4,
+  biz_id: coffee1.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "Efficient services, friendly staff, delicious food and beverage items. Some of the customers here are also very friendly. This is always a good thing. The Turkey Panini is delicious. Caffe Latte is one of my favorite beverage here. Latte art is absolutely beautiful and it is culinary creativity. Chocolate Croissant is one of my favorite pastry items here. I enjoy the texture of this pastry, the chocolate blends well with the croissant.",
+  rating: 5,
+  biz_id: coffee1.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "Huge fan! Their salads are spectacular. Kale salad with chicken is my go to. Their coffee is incredibly smooth! Staff is personable and remember your name. Their breakfast sandwich is heavenly and a must at some point. Go here often for meetings too! Killer bacon.",
+  rating: 5,
+  biz_id: coffee1.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "After having a lot of different avocado toasts, this coffee spot has made it into the Top 3! Not an easy feat when there are several places to choose from on the west coast! What really makes this cafe stand out is how you can add cherry tomatoes, prosciutto, and feta cheese to the avocado toast. They use whole grain bread that has a thick, nutty texture that makes you feel full after eating. With all the toppings, the avocado toast bursts with various, delicious flavors! Also, I recommend the oat latte, which is brewed dark and has a toasty barley flavor, if that is your thing. I love a creative twist on coffee from time to time! ",
+  rating: 4,
+  biz_id: coffee2.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "The only downsides would be the food portion and the lack of seating. This shop could've done better in making more efficient use of the space. My suggestion would be to remove the big table in the middle of the cafe and use that space to put some small tables, which could be combined into a larger table. Otherwise, you've got people awkwardly sharing one big table... If you are looking for a full on, big brunch, this is not the place for you. The portions cater to people who just want a simple, light lunch.",
+  rating: 2,
+  biz_id: coffee2.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "Regarding the food and drinks, I probably had one of the best slices of avocado toast in my life. The thick yet soft and chewy multigrain toasted bread Supported a bed of smashed avocado along with a perfectly poached egg. The entire creation was drizzled with olive oil and topped with chili flakes. I recommend you eat the toast as soon as possible as the bread will still be warm as well as the egg on top. 
+",
+  rating: 4,
+  biz_id: coffee2.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "The only downsides would be the food portion and the lack of seating. This shop could've done better in making more efficient use of the space. My suggestion would be to remove the big table in the middle of the cafe and use that space to put some small tables, which could be combined into a larger table. Otherwise, you've got people awkwardly sharing one big table... If you are looking for a full on, big brunch, this is not the place for you. The portions cater to people who just want a simple, light lunch.",
+  rating: 2,
+  biz_id: coffee3.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "We all ordered hot coffee, which came in a glass carafe aside a colorful ceramic mug. For breakfast I got the avocado toast, which was delicious and filling. Whenever we needed something, it seemed like I had to make an effort to flag someone down, but the actual process of ordering and paying was seamless.",
+  rating: 5,
+  biz_id: coffee3.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "Huge fan! Their salads are spectacular. Kale salad with chicken is my go to. Their coffee is incredibly smooth! Staff is personable and remember your name. Their breakfast sandwich is heavenly and a must at some point. Go here often for meetings too! Killer bacon.",
+  rating: 5,
+  biz_id: coffee3.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "Efficient services, friendly staff, delicious food and beverage items. Some of the customers here are also very friendly. This is always a good thing. The Turkey Panini is delicious. Caffe Latte is one of my favorite beverage here. Latte art is absolutely beautiful and it is culinary creativity. Chocolate Croissant is one of my favorite pastry items here. I enjoy the texture of this pastry, the chocolate blends well with the croissant.",
+  rating: 5,
+  biz_id: coffee4.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "The only downsides would be the food portion and the lack of seating. This shop could've done better in making more efficient use of the space. My suggestion would be to remove the big table in the middle of the cafe and use that space to put some small tables, which could be combined into a larger table. Otherwise, you've got people awkwardly sharing one big table... If you are looking for a full on, big brunch, this is not the place for you. The portions cater to people who just want a simple, light lunch.",
+  rating: 2,
+  biz_id: coffee4.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "So this place has one guy taking all the orders at the counter and two women that I saw making the drinks and food. Plus they also cleaned the tables. Seemed like there was always a line. They call your name for your coffee but bring your food to your table. They are always busy and they got our drinks and food out in a fairly good amount of time. ",
+  rating: 2,
+  biz_id: coffee4.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "The only downsides would be the food portion and the lack of seating. This shop could've done better in making more efficient use of the space. My suggestion would be to remove the big table in the middle of the cafe and use that space to put some small tables, which could be combined into a larger table. Otherwise, you've got people awkwardly sharing one big table... If you are looking for a full on, big brunch, this is not the place for you. The portions cater to people who just want a simple, light lunch.",
+  rating: 2,
+  biz_id: coffee5.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "While I wouldn't rush to come here again, I truly enjoyed my experience and would recommend it to anyone looking for a new spot to check out in the Financial District. It's a few blocks away from Embarcadero Center, and it's open super early! Definitely lots of notable wins.",
+  rating: 4,
+  biz_id: coffee5.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "We waited for the food...and waited...I even asked my wife if she thought they'd forgotten us. Sure enough, the server came by, very apologetic. She explained that there was a mixup, and that our order was now in. Brought us a very good cookie (we gnawed on it while we waited.)",
+  rating: 3,
+  biz_id: coffee5.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "We waited for the food...and waited...I even asked my wife if she thought they'd forgotten us. Sure enough, the server came by, very apologetic. She explained that there was a mixup, and that our order was now in. Brought us a very good cookie (we gnawed on it while we waited.)",
+  rating: 3,
+  biz_id: coffee6.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "Efficient services, friendly staff, delicious food and beverage items. Some of the customers here are also very friendly. This is always a good thing. The Turkey Panini is delicious. Caffe Latte is one of my favorite beverage here. Latte art is absolutely beautiful and it is culinary creativity. Chocolate Croissant is one of my favorite pastry items here. I enjoy the texture of this pastry, the chocolate blends well with the croissant.",
+  rating: 5,
+  biz_id: coffee6.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "Huge fan! Their salads are spectacular. Kale salad with chicken is my go to. Their coffee is incredibly smooth! Staff is personable and remember your name. Their breakfast sandwich is heavenly and a must at some point. Go here often for meetings too! Killer bacon.",
+  rating: 5,
+  biz_id: coffee6.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "While I wouldn't rush to come here again, I truly enjoyed my experience and would recommend it to anyone looking for a new spot to check out in the Financial District. It's a few blocks away from Embarcadero Center, and it's open super early! Definitely lots of notable wins.",
+  rating: 4,
+  biz_id: coffee7.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "After having a lot of different avocado toasts, this coffee spot has made it into the Top 3! Not an easy feat when there are several places to choose from on the west coast! What really makes this cafe stand out is how you can add cherry tomatoes, prosciutto, and feta cheese to the avocado toast. They use whole grain bread that has a thick, nutty texture that makes you feel full after eating. With all the toppings, the avocado toast bursts with various, delicious flavors! Also, I recommend the oat latte, which is brewed dark and has a toasty barley flavor, if that is your thing. I love a creative twist on coffee from time to time! ",
+  rating: 4,
+  biz_id: coffee7.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "The only downsides would be the food portion and the lack of seating. This shop could've done better in making more efficient use of the space. My suggestion would be to remove the big table in the middle of the cafe and use that space to put some small tables, which could be combined into a larger table. Otherwise, you've got people awkwardly sharing one big table... If you are looking for a full on, big brunch, this is not the place for you. The portions cater to people who just want a simple, light lunch.",
+  rating: 2,
+  biz_id: coffee7.id,
+  author_id: seed5.id,
+)
 
 #bars
 Business.create!(
