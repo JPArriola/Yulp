@@ -119,14 +119,3 @@ class HomeForm extends React.Component{
 }
 
 export default HomeForm;
-
-{/* <div className="home-page-footer">
-  <div className="home-page-footer-title">Meet the Developer</div>
-  <div className="home-page-footer-links">
-    <a href="https://joshua-arriola.com/" target="_blank"><i className="fas fa-user" /></a>
-    <a href="https://github.com/JPArriola" target="_blank" ><i className="fab fa-github" /></a>
-    <a href="https://www.linkedin.com/in/joshuaarriola/" target="_blank" ><i className="fab fa-linkedin" /></a>
-    <a href="https://angel.co/joshua-arriola" target="_blank"><i className="fab fa-angellist" /></a>
-    <a href="mailto:joshuapatrickarriola@gmail.com" ><i className="fas fa-envelope" /></a >
-  </div>
-</div> */}

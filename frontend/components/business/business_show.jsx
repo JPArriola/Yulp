@@ -5,6 +5,7 @@ import BusinessShowInfo from "../business/business_show_info_container";
 import BusinessShowMap from "../business/business_show_map_container";
 import ReviewIndex from "../review/review_index_container";
 import { Link } from "react-router-dom";
+import Footer from "../footer/footer";
 
 
 class BusinessShow extends React.Component{
@@ -81,6 +82,7 @@ class BusinessShow extends React.Component{
             </div>
           </div>
         </div>
+        <Footer />
       </div>;
   }
 }

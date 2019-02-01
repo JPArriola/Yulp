@@ -1,6 +1,7 @@
 import React from 'react';
 import LoginForm from './login_form';
 import SignupForm from './signup_form';
+import Footer from "../footer/footer";
 
 class SessionForm extends React.Component{
   constructor(props){
@@ -49,6 +50,7 @@ class SessionForm extends React.Component{
               <div className="session-img"></div>
             </div>
         </div>
+        <Footer />
       </div>
     )
   }

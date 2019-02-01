@@ -2,6 +2,7 @@ import React from "react";
 import BusinessIndexItem from './business_index_item';
 import Navbar from "../navbar/navbar_container";
 import Map from "../map/map";
+import Footer from "../footer/footer";
 
 class BusinessIndex extends React.Component{
 
@@ -35,6 +36,7 @@ class BusinessIndex extends React.Component{
             </div>
           </div>
         </div>
+        <Footer />
       </div>;
   }
 }
