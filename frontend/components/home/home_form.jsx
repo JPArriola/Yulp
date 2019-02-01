@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { sampleSize } from 'lodash';
+import Footer from "../footer/footer";
 
 const DEMO_USERS = [
   { email: "demo@guest.com", password: "password" },
@@ -55,8 +56,8 @@ class HomeForm extends React.Component{
               <div className="home-nav-bar">
                 <div className="nav-bar-left">
                   <div className="home-underline">Write a Review</div>
-                  <a href="https://github.com/JPArriola" target="_blank" className="github" />
-                  <a href="https://www.linkedin.com/in/joshuaarriola/" target="_blank" className="linkedin" />
+                  <a href="https://github.com/JPArriola" target="_blank" className="home-underline" >GitHub</a>
+                  <a href="https://www.linkedin.com/in/joshuaarriola/" target="_blank" className="home-underline" >LinkedIn</a>
                 </div>
                 <div className="nav-right-parent">{this.loggedIn()}</div>
               </div>
@@ -79,7 +80,7 @@ class HomeForm extends React.Component{
                 </div>
               </div>
               <div className="home-category-navigation-bar">
-                <Link to="/businesses" className="nav-underline">
+                <Link to="/businesses" className="home-underline">
                   All Yulp Businesses
                 </Link>
                 <div className="home-category-navigation-business-boba" />
@@ -94,6 +95,10 @@ class HomeForm extends React.Component{
             Your Next Gulp With Yulp Awaits
           </div>
           <div className="home-lower-categories-container">
+            <Link to="/businesses" className="home-drink-category">
+              <div className="home-all-picture" />
+              <div className="home-category-text">All Businesses</div>
+            </Link>
             <Link to="/businesses/boba" className="home-drink-category">
               <div className="home-boba-picture" />
               <div className="home-category-text">Boba</div>
@@ -108,18 +113,20 @@ class HomeForm extends React.Component{
             </Link>
           </div>
         </div>
-        <div className="home-page-footer">
-          <div className="home-page-footer-title">Meet the Developer</div>
-          <div className="home-page-footer-links">
-            <a href="https://joshua-arriola.com/" target="_blank"><i className="fas fa-user" /></a>
-            <a href="https://github.com/JPArriola" target="_blank" ><i className="fab fa-github" /></a>
-            <a href="https://www.linkedin.com/in/joshuaarriola/" target="_blank" ><i className="fab fa-linkedin" /></a>
-            <a href="https://angel.co/joshua-arriola" target="_blank"><i className="fab fa-angellist" /></a>
-            <a href="mailto:joshuapatrickarriola@gmail.com" ><i className="fas fa-envelope" /></a >
-          </div>
-        </div>
+        <Footer/>
       </div>;
   }
 }
 
 export default HomeForm;
+
+{/* <div className="home-page-footer">
+  <div className="home-page-footer-title">Meet the Developer</div>
+  <div className="home-page-footer-links">
+    <a href="https://joshua-arriola.com/" target="_blank"><i className="fas fa-user" /></a>
+    <a href="https://github.com/JPArriola" target="_blank" ><i className="fab fa-github" /></a>
+    <a href="https://www.linkedin.com/in/joshuaarriola/" target="_blank" ><i className="fab fa-linkedin" /></a>
+    <a href="https://angel.co/joshua-arriola" target="_blank"><i className="fab fa-angellist" /></a>
+    <a href="mailto:joshuapatrickarriola@gmail.com" ><i className="fas fa-envelope" /></a >
+  </div>
+</div> */}

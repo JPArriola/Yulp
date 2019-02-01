@@ -1,0 +1,25 @@
+.footer-categories{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-content-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-category-title{
+  font-size: 16px;
+  color: #d32323;
+  font-weight: 700;
+}
+
+.footer-category-content{
+  cursor: no-drop;
+  color: #0073bb;
+  font-size: 14px;
+}
+
+.footer-category-content:hover{
+  text-decoration: underline;
+}
