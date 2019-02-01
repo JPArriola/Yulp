@@ -55,7 +55,7 @@ class HomeForm extends React.Component{
             <div className="home-main-nav-bar">
               <div className="home-nav-bar">
                 <div className="nav-bar-left">
-                  <div className="home-underline">Write a Review</div>
+                  <div className="home-underline no-drop">Write a Review</div>
                   <a href="https://github.com/JPArriola" target="_blank" className="home-underline" >GitHub</a>
                   <a href="https://www.linkedin.com/in/joshuaarriola/" target="_blank" className="home-underline" >LinkedIn</a>
                 </div>

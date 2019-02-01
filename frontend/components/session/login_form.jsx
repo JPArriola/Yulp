@@ -78,9 +78,9 @@ class LoginForm extends React.Component{
               <input className="session-input-boxes" type="password" placeholder="Password" value={this.state.password} onChange={this.update("password")} />
             </label>
             <div className="forgot-link-div">
-              <Link className="forgot-link" to="/">
+              <a className="forgot-link no-drop" >
                 Forgot Password?
-              </Link>
+              </a>
             </div>
             <input className="login-button" type="submit" value="Log In" />
             <div className="session-errors-parent">

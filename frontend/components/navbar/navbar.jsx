@@ -106,7 +106,7 @@ class Navbar extends React.Component {
               </Link>
             </div>
             <div className="nav-bar-lower-right">
-              <div className="nav-bar-lower-right-item">
+              <div className="nav-bar-lower-right-item no-drop">
                 <img src="https://image.flaticon.com/icons/svg/61/61456.svg" className="nav-bar-lower-item-img" />
                 Write a Review
               </div>

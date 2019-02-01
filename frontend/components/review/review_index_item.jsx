@@ -44,9 +44,9 @@ class ReviewIndexItem extends React.Component{
             <div className="review-content-review">Was this review ...?</div>
             <div className="review-content-reactions-actions">
               <div className="review-content-emoticons">
-                <div className="review-content-emoticon-container"><i className="fas fa-lightbulb"></i> Useful</div>
-                <div className="review-content-emoticon-container"><i className="far fa-grin-alt"></i> Funny</div>
-                <div className="review-content-emoticon-container"><i className="far fa-grin-stars"></i> Cool</div>
+                <div className="review-content-emoticon-container no-drop"><i className="fas fa-lightbulb"></i> Useful</div>
+                <div className="review-content-emoticon-container no-drop"><i className="far fa-grin-alt"></i> Funny</div>
+                <div className="review-content-emoticon-container no-drop"><i className="far fa-grin-stars"></i> Cool</div>
               </div>
               {this.isAuthor()}
             </div>
