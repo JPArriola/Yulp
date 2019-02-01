@@ -9,9 +9,9 @@ class BusinessIndexItem extends React.Component{
     return(
       <li className="business-index-item-master">
         <div className="business-index-item-skeleton-master">
-          <div className="business-index-item-photo">
+          <Link to={`/businesses/${id}`} className="business-index-item-photo">
             <img src={photoUrls[0]} />
-          </div>
+          </Link>
           <div className="business-index-item-info-master">
             <div className="business-index-item-info-top">
               <div className="business-index-item-info-top-left">

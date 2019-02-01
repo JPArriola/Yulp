@@ -1355,25 +1355,25 @@ bar5.photos.attach(io: bar_file14, filename: 'bar14')
 bar5.photos.attach(io: bar_file15, filename: 'bar15')
 
 bar6 = Business.create!(
-  biz_name: 'The Royal Exchange',
+  biz_name: 'Barbarossa Lounge',
   category: "beer",
   price: "$$",
-  address_1: '301 Sacramento St',
+  address_1: '714 Montgomery St',
   city: 'San Francisco',
   state: 'CA',
   zipcode: '94111',
-  lat: '37.794160',
-  lng: '-122.399140',
+  lat: '37.795759',
+  lng: '-122.403258',
   rating: 3,
-  business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
-  phone_number: "(415) 956-1710",
-  website: "royalexchange.com",
+  business_info: "As one of the oldest buildings in San Francisco, having survived the famous 1906 earthquake, Barbarossa will showcase an entirely new concept--one that is full with legend and mystery as the space was used as a jailhouse in the 19th century.",
+  phone_number: "(415) 434-4204",
+  website: "barbarossalounge.com",
   takes_reservations: "Yes",
-  take_out: "Yes",
+  take_out: "No",
   delivery: "No",
   credit_card: "Yes",
   bike_parking: "Yes",
-  free_wifi: "No",
+  free_wifi: "Yes",
   pets_allowed: "No",
   wheelchair_accessible: "Yes",
   good_for_kids: "No",
@@ -1382,30 +1382,37 @@ bar6 = Business.create!(
   caters: "Yes",
   owner_id: seed3.id,
   hours: [
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],
-    ["11:00", "23:00"]
+    ["16:00", "24:00"],	
+    ["16:00", "24:00"],	
+    ["16:00", "24:00"],	
+    ["16:00", "02:00"],	
+    ["16:00", "02:00"],	
+    ["18:00", "02:00"],
+    ["13:30", "19:00"]
   ]
 )
+
+bar_file16 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-31+at+9.36.06+AM.png')
+bar_file17 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-31+at+9.36.21+AM.png')
+bar_file18 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-31+at+9.36.28+AM.png')
+bar6.photos.attach(io: bar_file16, filename: 'bar16')
+bar6.photos.attach(io: bar_file17, filename: 'bar17')
+bar6.photos.attach(io: bar_file18, filename: 'bar18')
 
 bar7 = Business.create!(
   biz_name: 'The Royal Exchange',
   category: "beer",
   price: "$$",
-  address_1: '301 Sacramento St',
+  address_1: '473 Broadway St',
   city: 'San Francisco',
   state: 'CA',
-  zipcode: '94111',
-  lat: '37.794160',
-  lng: '-122.399140',
+  zipcode: '94133',
+  lat: '37.797900',
+  lng: '-122.405002',
   rating: 3,
-  business_info: "Pub grub, lots of beers on tap & TVs tuned to sports highlight this popular Financial District bar.",
-  phone_number: "(415) 956-1710",
-  website: "royalexchange.com",
+  business_info: "Established in 2011. Monroe opened in 2011 in the historic Jazz Workshop building at 473 Broadway Street. 1920's flapper era inspired bar, lounge and event space located in the heart of North Beach.",
+  phone_number: "(415) 772-9002",
+  website: "monroesf.com",
   takes_reservations: "Yes",
   take_out: "Yes",
   delivery: "No",
@@ -1417,15 +1424,184 @@ bar7 = Business.create!(
   good_for_kids: "No",
   good_for_groups: "Yes",
   outdoor_seating: "No",
-  caters: "Yes",
+  caters: "No",
   owner_id: seed3.id,
   hours: [
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],	
-    ["11:00", "23:00"],
-    ["11:00", "23:00"]
+    ["18:00", "02:00"],	
+    ["18:00", "02:00"],	
+    ["18:00", "02:00"],	
+    ["18:00", "02:00"],	
+    ["18:00", "02:00"],	
+    ["18:00", "02:00"],
+    ["18:00", "02:00"]
   ]
+)
+
+bar_file19 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-31+at+9.38.46+AM.png')
+bar_file20 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-31+at+9.39.00+AM.png')
+bar_file21 = open('https://s3-us-west-1.amazonaws.com/yulp-project-public/Bars/Screen+Shot+2019-01-31+at+9.39.13+AM.png')
+bar7.photos.attach(io: bar_file19, filename: 'bar19')
+bar7.photos.attach(io: bar_file20, filename: 'bar20')
+bar7.photos.attach(io: bar_file21, filename: 'bar21')
+
+#bar reviews
+Review.create!(
+  body: "Was here for my company's 2018 holiday party and Monroe didn't disappoint. From the strong and well made drinks, delicious finger food and cozy back room by the second bar, it was an all around great time. The decor is both comfortable and visually pleasing with a long table in the front, long bar for patrons and cozy booths.",
+  rating: 5,
+  biz_id: bar1.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "I've also tried their moscow mule, amf, and sex on the beach. I typically don't like moscow mules since I don't like the taste of ginger,  but theirs was sweeter and the ginger was more subtle. Their amf was very strong but a bit too sweet than I would have liked it. And the sex on the beach tasted very different than any other...it was a lot more sour than most places and it was tinted red.",
+  rating: 4,
+  biz_id: bar1.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "I was here for a private event, so I can't really testify to what you might find on a regular night, and even if I had come on a regular night I don't think I'm the best judge of some of their attributes: I'm not a drinker and though I can say the bar is long and prominent, I have no idea if they sling a good cocktail.",
+  rating: 4,
+  biz_id: bar1.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "I'm not quite sure what kind of crowd they attract on weekends, so I can't really review their bar/music scene. But if you're looking to host a private party (whether it be a birthday or corporate event), you're not going to find a cooler venue. Plus, there are plenty of delicious restaurants that are within walking distance (if you're hungry before or after a night-on-the-town).",
+  rating: 3,
+  biz_id: bar1.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "The bar is very crowded,very expensive,and  not worth the one hour long queue to get in.",
+  rating: 1,
+  biz_id: bar2.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "Avoid hosting an event here if you want anyone to be able to speak to one another. I've been here now for 3-4 private events and in each case the music is so absurdly loud that it's impossible to have a normal conversation. At my last visit, multiple requests by multiple people to lower the volume were ignored by staff. Shame to spend thousands of dollars and then be ignored. Drinks are good, food is good.",
+  rating: 3,
+  biz_id: bar2.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "My friends and I moved closer to the DJ booth half way through the 80's set list. The DJs switched from time to time but all 3 or 4 of them were really great. The playlist was great, my body kept moving. I probably burned through all the calories I ate earlier. The crowd, however, was amusing; their dancing was a mix of what looked like martial arts and I'm not even sure what else to call it. Overall, I enjoyed my night",
+  rating: 3,
+  biz_id: bar2.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "I was here for a private event, so I can't really testify to what you might find on a regular night, and even if I had come on a regular night I don't think I'm the best judge of some of their attributes: I'm not a drinker and though I can say the bar is long and prominent, I have no idea if they sling a good cocktail.",
+  rating: 4,
+  biz_id: bar3.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "I'm not quite sure what kind of crowd they attract on weekends, so I can't really review their bar/music scene. But if you're looking to host a private party (whether it be a birthday or corporate event), you're not going to find a cooler venue. Plus, there are plenty of delicious restaurants that are within walking distance (if you're hungry before or after a night-on-the-town).",
+  rating: 3,
+  biz_id: bar3.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "My friend and I spent our NYE here and it was so perfect, more than we expected. The space is absolutely amazing, very elegant and everyone who working was hardworking and sweet. Thank you for such a wonderful night! Hope to come back soon!",
+  rating: 4,
+  biz_id: bar3.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "My friend and I spent our NYE here and it was so perfect, more than we expected. The space is absolutely amazing, very elegant and everyone who working was hardworking and sweet. Thank you for such a wonderful night! Hope to come back soon!",
+  rating: 4,
+  biz_id: bar4.id,
+  author_id: seed4.id,
+)
+
+Review.create!(
+  body: "Ugh, this place just reminded me that I'm no longer a recent grad. Went to their Friday happy hour which seemed good on paper. We got there at 7 and were met with a crowd of people, long lines to get drinks and really loud music. Left after one drink, because apparently I am my parents now and those things bother me.",
+  rating: 3,
+  biz_id: bar4.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "I've also tried their moscow mule, amf, and sex on the beach. I typically don't like moscow mules since I don't like the taste of ginger,  but theirs was sweeter and the ginger was more subtle. Their amf was very strong but a bit too sweet than I would have liked it. And the sex on the beach tasted very different than any other...it was a lot more sour than most places and it was tinted red.",
+  rating: 4,
+  biz_id: bar4.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "I've also tried their moscow mule, amf, and sex on the beach. I typically don't like moscow mules since I don't like the taste of ginger,  but theirs was sweeter and the ginger was more subtle. Their amf was very strong but a bit too sweet than I would have liked it. And the sex on the beach tasted very different than any other...it was a lot more sour than most places and it was tinted red.",
+  rating: 4,
+  biz_id: bar5.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "Avoid hosting an event here if you want anyone to be able to speak to one another. I've been here now for 3-4 private events and in each case the music is so absurdly loud that it's impossible to have a normal conversation. At my last visit, multiple requests by multiple people to lower the volume were ignored by staff. Shame to spend thousands of dollars and then be ignored. Drinks are good, food is good.",
+  rating: 3,
+  biz_id: bar5.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "I've also tried their moscow mule, amf, and sex on the beach. I typically don't like moscow mules since I don't like the taste of ginger,  but theirs was sweeter and the ginger was more subtle. Their amf was very strong but a bit too sweet than I would have liked it. And the sex on the beach tasted very different than any other...it was a lot more sour than most places and it was tinted red.",
+  rating: 4,
+  biz_id: bar5.id,
+  author_id: seed3.id,
+)
+
+Review.create!(
+  body: "Ugh, this place just reminded me that I'm no longer a recent grad. Went to their Friday happy hour which seemed good on paper. We got there at 7 and were met with a crowd of people, long lines to get drinks and really loud music. Left after one drink, because apparently I am my parents now and those things bother me.",
+  rating: 3,
+  biz_id: bar6.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "My friend and I spent our NYE here and it was so perfect, more than we expected. The space is absolutely amazing, very elegant and everyone who working was hardworking and sweet. Thank you for such a wonderful night! Hope to come back soon!",
+  rating: 4,
+  biz_id: bar6.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "My friends and I moved closer to the DJ booth half way through the 80's set list. The DJs switched from time to time but all 3 or 4 of them were really great. The playlist was great, my body kept moving. I probably burned through all the calories I ate earlier. The crowd, however, was amusing; their dancing was a mix of what looked like martial arts and I'm not even sure what else to call it. Overall, I enjoyed my night",
+  rating: 3,
+  biz_id: bar6.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "I'm not quite sure what kind of crowd they attract on weekends, so I can't really review their bar/music scene. But if you're looking to host a private party (whether it be a birthday or corporate event), you're not going to find a cooler venue. Plus, there are plenty of delicious restaurants that are within walking distance (if you're hungry before or after a night-on-the-town).",
+  rating: 3,
+  biz_id: bar7.id,
+  author_id: seed1.id,
+)
+
+Review.create!(
+  body: "The bar is very crowded,very expensive,and  not worth the one hour long queue to get in.",
+  rating: 1,
+  biz_id: bar7.id,
+  author_id: seed2.id,
+)
+
+Review.create!(
+  body: "My friends and I moved closer to the DJ booth half way through the 80's set list. The DJs switched from time to time but all 3 or 4 of them were really great. The playlist was great, my body kept moving. I probably burned through all the calories I ate earlier. The crowd, however, was amusing; their dancing was a mix of what looked like martial arts and I'm not even sure what else to call it. Overall, I enjoyed my night",
+  rating: 3,
+  biz_id: bar7.id,
+  author_id: seed5.id,
+)
+
+Review.create!(
+  body: "Ugh, this place just reminded me that I'm no longer a recent grad. Went to their Friday happy hour which seemed good on paper. We got there at 7 and were met with a crowd of people, long lines to get drinks and really loud music. Left after one drink, because apparently I am my parents now and those things bother me.",
+  rating: 3,
+  biz_id: bar7.id,
+  author_id: seed4.id,
 )
