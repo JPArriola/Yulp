@@ -4,13 +4,12 @@ const Footer = () => (
   <div className="home-page-footer">
     <div className="footer-categories">
       <div className="footer-content-container">
-        <div className="footer-category-title">About Me</div>
-        <a className="footer-category-content"></a>
-        <a className="footer-category-content"></a>
-        <a className="footer-category-content"></a>
-        <a className="footer-category-content"></a>
-        <a className="footer-category-content"></a>
-        <a className="footer-category-content"></a>
+        <div className="footer-category-title">About the Developer</div>
+        <a href="https://joshua-arriola.com/" target="_blank" className="footer-about-developer">About Joshua Arriola</a>
+        <a href="https://github.com/JPArriola" target="_blank" className="footer-about-developer">GitHub</a>
+        <a href="https://www.linkedin.com/in/joshuaarriola/" target="_blank" className="footer-about-developer">My Experience</a>
+        <a href="https://angel.co/joshua-arriola" target="_blank" className="footer-about-developer">AngelList</a>
+        <a href="mailto:joshuapatrickarriola@gmail.com" className="footer-about-developer">Email Me!</a >
       </div>
       <div className="footer-content-container">
         <div className="footer-category-title">Discover</div>
@@ -47,9 +46,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="footer-image">
-
-    </div>
+    <div className="footer-image"/>
   </div>
 );
 

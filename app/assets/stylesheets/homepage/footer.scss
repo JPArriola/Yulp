@@ -1,25 +1,66 @@
+.home-page-footer {
+  height: 500px;
+  background: #F5F5F5;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .footer-categories{
   display: flex;
   flex-direction: row;
+  width: 960px;
+  heigh: 300px;
+}
+
+.footer-categories > div{
+  width: 25%;
 }
 
 .footer-content-container{
   display: flex;
   flex-direction: column;
+  margin: 20px 30px;
 }
 
 .footer-category-title{
   font-size: 16px;
   color: #d32323;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-about-developer {
+  // color: #0073bb;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.footer-about-developer:hover {
+  text-decoration: underline;
 }
 
 .footer-category-content{
   cursor: no-drop;
   color: #0073bb;
   font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .footer-category-content:hover{
   text-decoration: underline;
+}
+
+.footer-image{
+  background: url('pictures/footer.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 660px 140px;
+  margin: 0px auto;
+  height: 140px;
+  width: 700px;
 }
