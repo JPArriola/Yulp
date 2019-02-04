@@ -147,8 +147,8 @@
   cursor: pointer;
 }
 
-.home-page-lower{
-  height: 500px;
+.home-page-lower-1{
+  // height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,14 +164,14 @@
 
 .home-lower-categories-container{
   height: 300px;
-  width: 900px;
+  width: 960px;
   justify-content: space-between;
   display: flex;
   flex-direction: row;
 }
 
 .home-drink-category{
-  width: 200px;
+  width: 216px;
   height: 250px;
   border: 1px solid rgb(207, 207, 207);
   display: flex;
@@ -211,7 +211,7 @@
   background: url("https://hhp-blog.s3.amazonaws.com/2018/07/iStock-673468996.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: -105px;
+  background-position-x: -100px;
   height: 85%;
 }
 
@@ -255,4 +255,87 @@
 
 .home-page-footer-links > a:hover{
   color: #D32223;
+}
+
+.home-page-lower-2 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page-categories-box{
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 4px;
+  height: 135px;
+  width: 216px;
+  padding: 17px 11px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.home-page-categories-box:hover{
+  border-color: #0073bb;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+  color: #0073bb;
+}
+
+.category-background{
+  height: 72px;
+  width: 72px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.restaurants{
+  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/7cef764a2144/assets/img/categories/72x72_restaurants@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.shopping{
+  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/559f23226d9f/assets/img/categories/72x72_shopping@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nightlife{
+  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/925cd32ac4c9/assets/img/categories/72x72_nightlife@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.active{
+  background: url("https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/2df9fcd6a68e/assets/img/categories/72x72_active_life@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.beauty{
+  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/3cfb4e602ac1/assets/img/categories/72x72_beauty@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.automotive{
+  background: url("https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/c73bd7079137/assets/img/categories/72x72_automotive@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home{
+  background: url("https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/20723ad0e5ee/assets/img/categories/72x72_home_services@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.more-categories{
+  background: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/e7be9a50bf8c/assets/img/categories/72x72_more_categories@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }

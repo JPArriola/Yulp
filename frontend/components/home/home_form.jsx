@@ -90,7 +90,7 @@ class HomeForm extends React.Component{
             </div>
           </div>
         </div>
-        <div className="home-page-lower">
+        <div className="home-page-lower-1">
           <div className="home-lower-title">
             Your Next Gulp With Yulp Awaits
           </div>
@@ -111,6 +111,47 @@ class HomeForm extends React.Component{
               <div className="home-beer-picture" />
               <div className="home-category-text">Beer</div>
             </Link>
+          </div>
+        </div>
+        <div className="home-page-lower-2">
+          <div className="home-lower-title">
+            Browse Yulp by Category
+          </div>
+          <div className="home-lower-categories-container">
+            <div className="home-page-categories-box">
+            <div className="category-background restaurants"></div>
+            Restaurants
+            </div>
+            <div className="home-page-categories-box">
+            <div className="category-background shopping"></div>
+            Shopping
+            </div>
+            <div className="home-page-categories-box">
+            <div className="category-background nightlife"></div>
+            Nightlife
+            </div>
+            <div className="home-page-categories-box">
+            <div className="category-background active"></div>
+            Active Life
+            </div>
+          </div>
+          <div className="home-lower-categories-container">  
+          <div className="home-page-categories-box">
+            <div className="category-background beauty"></div>
+            Beauty & Spas
+            </div>
+          <div className="home-page-categories-box">
+            <div className="category-background automotive"></div>
+            Automotive
+            </div>
+          <div className="home-page-categories-box">
+            <div className="category-background home"></div>
+            Home Services
+            </div>
+          <div className="home-page-categories-box">
+            <div className="category-background more-categories"></div>
+            More Categories
+            </div>
           </div>
         </div>
         <Footer/>
