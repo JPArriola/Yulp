@@ -1,5 +1,5 @@
 .home-page{
-  height: 600px;
+  height: 570px;
 }
 
 .home-main-section::after {
@@ -148,10 +148,10 @@
 }
 
 .home-page-lower-1{
-  // height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #F5F5F5;
 }
 
 .home-lower-title{
@@ -197,6 +197,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: white;
 }
 
 .home-all-picture{
@@ -277,12 +278,14 @@
   align-items: center;
   font-size: 14px;
   font-weight: bold;
+  background: white;
 }
 
 .home-page-categories-box:hover{
   border-color: #0073bb;
   box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
   color: #0073bb;
+  cursor: no-drop;
 }
 
 .category-background{
