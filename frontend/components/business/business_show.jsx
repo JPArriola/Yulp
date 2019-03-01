@@ -14,6 +14,13 @@ class BusinessShow extends React.Component{
     this.props.fetchBusiness(this.props.businessId);
   }
 
+  componentDidUpdate(prevProps) {
+    console.log(prevProps);
+    if (this.props.match.url !== prevProps.match.url) {
+      this.props.fetchBusiness(this.props.businessId);
+    }
+  }
+
   reviewButton(){
     let {hasUserReviewed, businessId, business } = this.props;
     if (hasUserReviewed){
@@ -26,6 +33,7 @@ class BusinessShow extends React.Component{
 
   render(){
     if (!this.props.business) return null;
+    console.log(this.props)
     let { users } = this.props;
     let {bizName, price, photoUrls, ratingAverage} = this.props.business;
     let businessRating = Math.floor(ratingAverage * 2);
